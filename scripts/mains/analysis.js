@@ -7,10 +7,6 @@ require([
     '../../submodules/fenix-ui-chart-creator/src/js/paths',
     '../../submodules/fenix-ui-map-creator/src/js/paths',
     '../../submodules/fenix-ui-metadata-viewer/src/js/paths',
-/*
-    '../../submodules/json-editor-faostat-theme/src/js/paths',
-*/
-   /* '../../submodules/faostat-ui-commons/js/paths',*/
     '../../submodules/fenix-ui-common/js/paths',
     '../../submodules/fenix-ui-filter/src/js/paths',
     '../../submodules/fenix-ui-common/js/Compiler',
@@ -40,12 +36,6 @@ require([
     var metadataViewerConfig = MetadataViewer;
     metadataViewerConfig.baseUrl = '../../submodules/fenix-ui-metadata-viewer/src/js/';
 
-   /* var faostatCommonsConfig = faostatCommons;
-    faostatCommonsConfig.baseUrl = '../../submodules/faostat-ui-commons/js';
-
-    var faostatThemeConfig = FAOSTAT_THEME;
-    faostatThemeConfig.baseUrl = '../../submodules/json-editor-faostat-theme/src/js';*/
-
     var fenixCommonConfig = FenixCommons;
     fenixCommonConfig.baseUrl = '../../submodules/fenix-ui-common/js';
 
@@ -55,7 +45,8 @@ require([
     var fenixReportsConfig = FenixReports;
     fenixReportsConfig.baseUrl = '../../submodules/fenix-ui-reports/src/js';
 
-    Compiler.resolve([catalogConfig, analysisConfig, menuConfig, tableCreatorConfig, chartCreatorConfig, mapCreatorConfig, metadataViewerConfig,/* faostatCommonsConfig, faostatThemeConfig,*/ fenixCommonConfig, filterConfig, fenixReportsConfig], {
+    Compiler.resolve([catalogConfig, analysisConfig, menuConfig, tableCreatorConfig, chartCreatorConfig, mapCreatorConfig, metadataViewerConfig,
+        fenixCommonConfig, filterConfig, fenixReportsConfig], {
         placeholders: {"FENIX_CDN": "//fenixrepo.fao.org/cdn"},
         config: {
             waitSeconds : 30,

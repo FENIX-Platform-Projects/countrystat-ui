@@ -3,6 +3,7 @@
 require([
     '../../submodules/fenix-ui-common/js/Compiler',
     '../../submodules/fenix-ui-common/js/paths',
+    '../../submodules/fenix-ui-datamanagement-commons/js/paths',
     '../../submodules/fenix-ui-DataEditor/js/paths',
     //'../../submodules/fenix-ui-dataUpload/js/paths',
     '../../submodules/fenix-ui-DSDEditor/js/paths',
@@ -11,15 +12,18 @@ require([
     '../../submodules/fenix-ui-menu/js/paths',
     '../../submodules/fenix-ui-data-management/src/js/paths'
 //], function (Compiler, FenixCommons, DataEditor, DataUpload, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
-], function (Compiler, FenixCommons, DataEditor, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
+], function (Compiler, FenixCommons, DataMngCommons, DataEditor, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
 
     'use strict';
 
     var dataEditorConfig = DataEditor;
     dataEditorConfig.baseUrl = '../../submodules/fenix-ui-DataEditor/js';
 
+    var dataMngCommonsConfig = DataMngCommons;
+    dataMngCommonsConfig['baseUrl'] = '../../submodules/fenix-ui-datamanagement-commons/js';
+
     /*var dataUploadConfig = DataUpload;
-    dataUploadConfig.baseUrl = '../../submodules/fenix-ui-dataUpload/js/';*/
+     dataUploadConfig.baseUrl = '../../submodules/fenix-ui-dataUpload/js/';*/
 
     var dsdEditorConfig = DSDEditor;
     dsdEditorConfig.baseUrl = '../../submodules/fenix-ui-DSDEditor/js';
@@ -40,7 +44,7 @@ require([
     fenixCommonConfig.baseUrl = '../../submodules/fenix-ui-common/js';
 
     //Compiler.resolve([dataEditorConfig, dataUploadConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig, fenixCommonConfig],
-    Compiler.resolve([dataEditorConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig, fenixCommonConfig],
+    Compiler.resolve([dataEditorConfig, dataMngCommonsConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig, fenixCommonConfig],
         {
             placeholders: {"FENIX_CDN": "//fenixrepo.fao.org/cdn"},
             config: {
@@ -69,12 +73,11 @@ require([
 
 
                     'fx-d-m/config/config': '../../config/submodules/datamng/config',
-
                     'fx-cat-br/config/config': '../../config/submodules/catalog/config',
 
-/*
-                    'fx-d-m/templates/site' : '../../submodules/fenix-ui-data-management/src/js/templates/site-sidemenu.hbs',
-*/
+                    /*
+                     'fx-d-m/templates/site' : '../../submodules/fenix-ui-data-management/src/js/templates/site-sidemenu.hbs',
+                     */
 
                     'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
 

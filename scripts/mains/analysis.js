@@ -70,13 +70,10 @@ require([
 
 
                 // METADATA VIEWER
-                'fx-mdviewer/config/': '../../config/submodules/fx-md-viewer/',
-                'fx-mdviewer/config/config': '../../config/submodules/fx-md-viewer/config',
-
+                'fx-md-v/config/': '../../config/submodules/fx-md-viewer/',
+                'fx-md-v/config/config': '../../config/submodules/fx-md-viewer/config',
 
                 'fx-report/config/md-export/config' : '../../config/submodules/fx-report/md-export/config',
-
-
             },
 
             // Underscore and Backbone are not AMD-capable per default,

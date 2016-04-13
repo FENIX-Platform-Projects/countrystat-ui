@@ -168,11 +168,11 @@ define([
 
         self.$modalMetadata.find(s.MODAL_METADATAVIEWER_CONTAINER).empty();
 
-        metadata.init({
+        metadata.render({
             lang: 'en',
-            data: model,
+            model: model,
             //domain: "rlm_" + request.inputs.indicator[0],
-            placeholder: self.$modalMetadata.find(s.MODAL_METADATAVIEWER_CONTAINER)
+            el: self.$modalMetadata.find(s.MODAL_METADATAVIEWER_CONTAINER)
         });
 
         self._listenToExportMetadata(model);
@@ -183,24 +183,31 @@ define([
         var fileName = model.title['EN'].replace(/[^a-z0-9]/gi, '_').toLowerCase();
 
         var self = this;
-        $(s.BTN_EXPORT_METADATA).on('click', function() {
+        $(s.BTN_EXPORT_METADATA).on('click', function(){
+
+            var template = model.filter && model.filter["dsd.contextSystem"] && model.filter["dsd.contextSystem"].enumeration && [0] && model.filter["dsd.contextSystem"].enumeration[0] === 'uneca'?
+                'uneca' : 'fao';
 
             var payload = {
-                input: {
-                    config: {
-                        uid: model.uid
-                    }
+                resource: {
+                    metadata : {
+                        uid : model.uid
+                    },
+                    data : []
+                },
+                input:{
                 },
                 output: {
-                    config: {
-                        lang: 'en'.toUpperCase(),
-                        fileName: fileName + '.pdf'
+                    config:{
+                        template : template,
+                        lang : 'en'.toUpperCase(),
+                        fileName: fileName+'.pdf'
                     }
                 }
             };
 
             self.$report.init('metadataExport');
-            self.$report.exportData(payload, C.MD_EXPORT_URL);
+            self.$report.exportData(payload,C.MD_EXPORT_URL);
         });
     };
 
@@ -208,11 +215,15 @@ define([
     Host.prototype.onDownloadClick = function (model) {
 
         var payload = {
+
+            resource: {
+                metadata : {
+                    uid : model.uid
+                },
+                data : []
+            },
             input:{
-                config:{
-                    uid: model.uid,
-                    environment_url : C.DATA_ENVIROMENT_URL
-                }
+                config:{}
             },
             output: {
                 config:{

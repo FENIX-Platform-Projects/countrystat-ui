@@ -31,6 +31,7 @@ require([
                     amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
                     rsvp: '{FENIX_CDN}/js/rsvp/3.0.17/rsvp',
                     'fx-menu/templates': '../../scripts/templates',
+                    'fx-common/config/auth_users': "../../config/auth_users.json",
 
                     'host/config' : '../../config/config',
 

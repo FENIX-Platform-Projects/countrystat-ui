@@ -70,6 +70,7 @@ require([
                     pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
                     'fx-menu/templates': '../../scripts/templates',
 
+                    'fx-common/config/auth_users': "../../config/auth_users.json",
 
 
                     'fx-d-m/config/config': '../../config/submodules/datamng/config',

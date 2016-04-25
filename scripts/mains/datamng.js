@@ -71,6 +71,7 @@ require([
                     'fx-menu/templates': '../../scripts/templates',
 
                     'fx-common/config/auth_users': "../../config/auth_users.json",
+                    'packery': '{FENIX_CDN}/js/packery/1.4.3/dist/packery.pkgd.min',
 
 
                     'fx-d-m/config/config': '../../config/submodules/datamng/config',

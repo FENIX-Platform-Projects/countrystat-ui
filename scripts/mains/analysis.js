@@ -68,7 +68,6 @@ require([
                 'fx-cat-br/config/config' : '../../config/submodules/fx-catalog/configAnalisi',
                 'fx-filter/config/config-default' : '../../config/submodules/filter/config',
                 'fx-common/config/auth_users': "../../config/auth_users.json",
-                'packery': '{FENIX_CDN}/js/packery/1.4.3/dist/packery.pkgd.min',
 
                 'fx-submodules/config/baseConfig': '../../config/submodules/config_base',
 

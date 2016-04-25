@@ -67,6 +67,7 @@ require([
         'domReady!'
     ], function (Host) {
 
+
         var host = new Host();
         host.initFenixComponent();
 

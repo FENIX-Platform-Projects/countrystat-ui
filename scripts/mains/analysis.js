@@ -55,7 +55,7 @@ require([
             paths: {
                 host: '../analysis/host',
                 underscore: "{FENIX_CDN}/js/underscore/1.7.0/underscore.min",
-                //'packery': '../lib/packery.1.4.1.min',
+                'packery': '{FENIX_CDN}/js/packery/1.4.3/dist/packery.pkgd.min',
 
                 'host/config' : '../../config/config',
                 'fx-menu/templates': '../../scripts/templates',
@@ -70,6 +70,7 @@ require([
                 'fx-common/config/auth_users': "../../config/auth_users.json",
                 'packery': '{FENIX_CDN}/js/packery/1.4.3/dist/packery.pkgd.min',
 
+                'fx-submodules/config/baseConfig': '../../config/submodules/config_base',
 
                 // METADATA VIEWER
                 'fx-md-v/config/': '../../config/submodules/fx-md-viewer/',

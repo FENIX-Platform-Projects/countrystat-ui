@@ -63,6 +63,7 @@ require([
                     amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
                     rsvp: '{FENIX_CDN}/js/rsvp/3.0.17/rsvp',
                     'bootstrap-datetimepicker': "{FENIX_CDN}/js/bootstrap-datetimepicker/3.1.3/bootstrap-datetimepicker",
+                    'packery': '{FENIX_CDN}/js/packery/1.4.3/dist/packery.pkgd.min',
 
                     //'fx-menu/templates': '../../scripts/templates',
                     'fx-d-m/templates/site' : '../../scripts/templates/site-sidemenu.hbs',

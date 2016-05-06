@@ -5,13 +5,11 @@ require([
     '../../submodules/fenix-ui-common/js/paths',
     '../../submodules/fenix-ui-datamanagement-commons/js/paths',
     '../../submodules/fenix-ui-DataEditor/js/paths',
-    //'../../submodules/fenix-ui-dataUpload/js/paths',
     '../../submodules/fenix-ui-DSDEditor/js/paths',
     '../../submodules/fenix-ui-metadata-editor/js/paths',
     '../../submodules/fenix-ui-catalog/js/paths',
     '../../submodules/fenix-ui-menu/js/paths',
     '../../submodules/fenix-ui-data-management/src/js/paths'
-//], function (Compiler, FenixCommons, DataEditor, DataUpload, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
 ], function (Compiler, FenixCommons, DataMngCommons, DataEditor, DSDEditor, MetadataEditor, Catalog, Menu, DataMng) {
 
     'use strict';
@@ -21,9 +19,6 @@ require([
 
     var dataMngCommonsConfig = DataMngCommons;
     dataMngCommonsConfig['baseUrl'] = '../../submodules/fenix-ui-datamanagement-commons/js';
-
-    /*var dataUploadConfig = DataUpload;
-     dataUploadConfig.baseUrl = '../../submodules/fenix-ui-dataUpload/js/';*/
 
     var dsdEditorConfig = DSDEditor;
     dsdEditorConfig.baseUrl = '../../submodules/fenix-ui-DSDEditor/js';
@@ -43,7 +38,6 @@ require([
     var fenixCommonConfig = FenixCommons;
     fenixCommonConfig.baseUrl = '../../submodules/fenix-ui-common/js';
 
-    //Compiler.resolve([dataEditorConfig, dataUploadConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig, fenixCommonConfig],
     Compiler.resolve([dataEditorConfig, dataMngCommonsConfig, dsdEditorConfig, metadataEditorConfig, catalogConfig, menuConfig, dataMngConfig, fenixCommonConfig],
         {
             placeholders: {"FENIX_CDN": "//fenixrepo.fao.org/cdn"},

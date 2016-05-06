@@ -89,5 +89,12 @@
       "EN": "Forest products"
     },
     "subject": "item"
+  },
+  {
+    "value": "CountrySTAT_Fishery_products_scientific",
+    "text": {
+      "EN": "Fishery scientific products"
+    },
+    "subject": "item"
   }
 ]

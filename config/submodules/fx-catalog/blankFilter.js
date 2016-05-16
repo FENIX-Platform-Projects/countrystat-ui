@@ -6,7 +6,7 @@ define(function () {
 
     return {
 
-        "dsd.contextSystem":{"enumeration":["cstat_cog"]}
+        "dsd.contextSystem":{"enumeration":["cstat_mdg"]}
     };
 
 });

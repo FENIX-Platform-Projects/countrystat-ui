@@ -100,7 +100,7 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
         ];
 
 
-        cfg.DSD_EDITOR_CONTEXT_SYSTEM = "cstat_mdg";
+        cfg.DSD_EDITOR_CONTEXT_SYSTEM = "cstat";
         cfg.DSD_EDITOR_LABEL = "CountrySTAT Madagascar"
         cfg.DSD_EDITOR_DATASOURCES = ["D3S"];
 

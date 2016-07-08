@@ -18,9 +18,9 @@ define(function () {
                 contextSystem: {
                     selector: {
                         source: [
-                            {value: "cstat_mdg", label: "CountrySTAT Madagascar"}
+                            {value: "cstat", label: "CountrySTAT Demo"}
                         ],
-                        default: ["cstat_mdg"]
+                        default: ["cstat"]
                     }
                 },
                 dataDomain: {
@@ -32,7 +32,7 @@ define(function () {
                 }
             },
             baseFilter: {
-                "dsd.contextSystem": {"enumeration": ["cstat_mdg"]},
+                "dsd.contextSystem": {"enumeration": ["cstat"]},
                 "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
             },
             defaultSelectors: ["referenceArea", "dataDomain"],

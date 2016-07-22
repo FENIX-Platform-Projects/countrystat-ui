@@ -18,9 +18,9 @@ define(function () {
                 contextSystem: {
                     selector: {
                         source: [
-                            {value: "cstat", label: "CountrySTAT Demo"}
+                            {value: "cstat_training", label: "CountrySTAT Training"}
                         ],
-                        default: ["cstat"]
+                        default: ["cstat_training"]
                     }
                 },
                 dataDomain: {
@@ -32,7 +32,7 @@ define(function () {
                 }
             },
             baseFilter: {
-                "dsd.contextSystem": {"enumeration": ["cstat"]},
+                "dsd.contextSystem": {"enumeration": ["cstat_training"]},
                 "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
             },
             defaultSelectors: ["referenceArea", "dataDomain"],

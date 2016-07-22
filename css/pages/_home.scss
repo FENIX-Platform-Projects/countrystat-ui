@@ -7,10 +7,11 @@
 }
 
 .country-details{
-  background-image: url(img/zam-home.jpg);
+  background-image: url(img/training-home.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
+
 
 
 
@@ -278,7 +279,7 @@ ol li:before {
   }
 
   .news-image{
-    background-image: url(img/zam-working-group.jpg);
+    background-image: url(img/working-group.jpg);
     background-size: cover;
     background-position: 50% 50%;
     height: 50%;
@@ -294,7 +295,7 @@ ol li:before {
 .home-tile.map{
   background-color: $afg-map-tile;
   position: relative;
-  background-image: url("img/home-map-zambia.svg");
+  background-image: url("img/home-map-training.svg");
   background-size: 570px 371px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -307,7 +308,7 @@ ol li:before {
 
   &:hover{
     background-size: 1600px 1035px;
-    background-position: 50% 76%;
+    background-position: 50% 50%;
     -webkit-transition: all 1s ease 0.2s;
     -moz-transition: all 1s ease 0.2s;
     -o-transition: all 1s ease 0.2s;

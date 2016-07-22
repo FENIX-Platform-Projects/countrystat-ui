@@ -70,7 +70,7 @@ define([
     Host.prototype.initPercentageAnimations = function () {
 
         var c ={
-            color: '#db514b',
+            color: '#ff8a57',
             strokeWidth: 10,
             trailWidth: 9,
             trailColor: "rgba(255,255,255,0.2)",

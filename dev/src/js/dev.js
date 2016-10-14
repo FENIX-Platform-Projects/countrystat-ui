@@ -41,7 +41,6 @@ define([
         //Bootstrap
         require("bootstrap-loader");
 
-
         //dropdown selector
         require("../../../node_modules/selectize/dist/css/selectize.bootstrap3.css");
         // fenix-ui-filter

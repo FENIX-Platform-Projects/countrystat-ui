@@ -1,2 +1,2 @@
-# countrystat-mdg-ui
-CountrySTAT Madagascar
+# countrystat-ui
+CountrySTAT

@@ -22,7 +22,7 @@ module.exports = {
     resolve: {
         root: Path.resolve(__dirname),
         alias: {
-            'bootstrap-table' : Path.join(__dirname, 'node_modules/bootstrap-table/dist/bootstrap-table.min.js'),
+            'bootstrap-table': Path.join(__dirname, 'node_modules/bootstrap-table/dist/bootstrap-table.min.js'),
             handlebars: Path.join(__dirname, 'node_modules/handlebars/dist/handlebars.js'),
             jquery: Path.join(__dirname, 'node_modules/jquery/dist/jquery')
         }
@@ -32,10 +32,7 @@ module.exports = {
 
     module: {
         loaders: [
-            isProduction(
-                {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
-                {test: /\.css$/, loader: "style-loader!css-loader"}
-            ),
+            {test: /\.css$/, loader: "style-loader!css-loader"},
             {test: /\.hbs$/, loader: "handlebars-loader"},
             {test: /\.json/, loader: "json-loader"},
             {test: /\.png$/, loader: "url-loader?limit=100000"},
@@ -59,28 +56,29 @@ module.exports = {
             compress: {warnings: false},
             output: {comments: false}
         })),
-        isProduction(new ExtractTextPlugin(packageJson.name + '.min.css')),
         isDevelop(new HtmlWebpackPlugin({
             inject: "body",
-            template: devFolderPath + "/index.template.html"
+            chunks: [getSection()],
+            template: devFolderPath + "/" + getSection() + ".template.html"
+
         }))
+
     ])
 };
 
 function getEntry() {
 
-    var entry = {};
+    var entry = {},
+        section = getSection(),
+        sections = getSections() || [];
 
-    switch (getEnvironment()) {
+    if (sections.length === 0 ) {
+        sections.push(section);
+    }
 
-        case "demo" :
-            entry["app"] = ["demo/src/js/demo.js"];
-            break;
-        case "develop" :
-            entry["app"] = ["dev/src/js/dev.js"];
-            break;
-        default :
-            entry["app"] = ["./src/js/index.js"];
+    for (var i = 0 ; i<sections.length;i++ ) {
+        console.log(sections[i])
+        entry[sections[i]] = ["./src/js/" + sections[i] + ".js"];
     }
 
     return entry;
@@ -92,25 +90,18 @@ function getOutput() {
 
     switch (getEnvironment()) {
 
-        case "demo" :
-            output = {
-                path: Path.join(__dirname, demoFolderPath),
-                filename: "index.js"
-            };
-            break;
         case "production" :
             output = {
                 path: Path.join(__dirname, distFolderPath),
-                filename: packageJson.name + '.min.js',
-                chunkFilename: 'chunk-[id].' + packageJson.name + '.min.js',
+                filename: "[name]/" +packageJson.name + '.[name].[hash].min.js',
+                chunkFilename: "[name]/" +'chunk-[id].' + packageJson.name + '.[name].[hash].min.js',
                 libraryTarget: 'amd'
             };
             break;
         case "develop" :
             output = {
                 path: Path.join(__dirname, devFolderPath),
-                //publicPath: "/dev/",
-                filename: "index.js"
+                filename: "[name].js"
             };
             break;
         default :
@@ -165,3 +156,14 @@ function isEnvironment(env) {
 function getEnvironment() {
     return process.env.NODE_ENV;
 }
+
+// sections
+
+function getSection() {
+    return process.env.SECTION;
+}
+
+function getSections() {
+    return process.env.SECTIONS.split(",");
+}
+

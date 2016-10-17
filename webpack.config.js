@@ -3,7 +3,6 @@ var distFolderPath = "dist",
     devFolderPath = "dev",
     webpack = require('webpack'),
     packageJson = require("./package.json"),
-    ExtractTextPlugin = require("extract-text-webpack-plugin"),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     CleanWebpackPlugin = require('clean-webpack-plugin'),
     Path = require('path'),
@@ -77,7 +76,6 @@ function getEntry() {
     }
 
     for (var i = 0 ; i<sections.length;i++ ) {
-        console.log(sections[i])
         entry[sections[i]] = ["./src/js/" + sections[i] + ".js"];
     }
 

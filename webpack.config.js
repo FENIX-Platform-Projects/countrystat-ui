@@ -162,6 +162,6 @@ function getSection() {
 }
 
 function getSections() {
-    return process.env.SECTIONS.split(",");
+    return (typeof process.env.SECTIONS!="undefined") ? process.env.SECTIONS.split(",") : undefined;
 }
 

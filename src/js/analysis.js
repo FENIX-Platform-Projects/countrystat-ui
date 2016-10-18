@@ -5,7 +5,9 @@ define([
 ], function ($, AnalysisConfig, FenixAnalysis) {
 
     var s = {
-        CONTAINER : "#fx-analysis-container"
+        CONTAINER : "#fx-analysis-container",
+        cache : false,
+        environment : "production"
     };
 
     function Analysis(){
@@ -24,8 +26,8 @@ define([
 
         var analysis = new FenixAnalysis($.extend(true, {
             el : s.CONTAINER,
-            cache : false,
-            environment : "production"
+            cache : s.cache,
+            environment : s.environment
         }, config));
     };
 

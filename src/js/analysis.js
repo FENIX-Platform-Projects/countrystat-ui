@@ -16,7 +16,8 @@ define([
         //var COUNTRY_CODE = 'MDG'; //Congo implement controller
 
         this._importThirdPartyCss();
-
+        //s.url = window.location.href;
+        console.log(s.url)
         var obj = {url : s.url};
         var parsedUrl = new Parser(obj)._parseURL();
         var COUNTRY_CODE = parsedUrl.searchObject.country;

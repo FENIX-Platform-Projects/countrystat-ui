@@ -13,14 +13,14 @@ define([
             lang : "EN",
             environment : "develop",
             url : ''
-            // url : 'http://example.com:3000/pathname/?country=AFG'
+            //url : 'http://example.com:3000/pathname/?country=AFG'
     };
 
     function DataManagement(){
 
         this._importThirdPartyCss();
         s.url = window.location.href;
-        //console.log(s.url)
+        console.log(s.url)
         var obj = {url : s.url};
         var parsedUrl = new Parser(obj)._parseURL();
         var COUNTRY_CODE = parsedUrl.searchObject.country;

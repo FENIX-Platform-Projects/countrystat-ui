@@ -1,0 +1,341 @@
+{
+  "dsd": {
+    "contextSystem": "cstat_mdg",
+    "datasources": [
+      "D3S"
+    ],
+    "rid": "66_2913",
+    "columns": [
+      {
+        "dataType": "year",
+        "key": true,
+        "id": "DIMENSION0",
+        "title": {
+          "EN": "year"
+        },
+        "values": {
+          "timeList": [
+            2014,
+            2013,
+            2012,
+            2011,
+            2010,
+            2009,
+            2008,
+            2007,
+            2006
+          ]
+        },
+        "subject": "time"
+      },
+      {
+        "dataType": "code",
+        "key": true,
+        "id": "DIMENSION1",
+        "title": {
+          "EN": "Indicator (code)"
+        },
+        "values": {
+          "codes": [
+            {
+              "codes": [
+                {
+                  "code": "13020201",
+                  "label": {
+                    "EN": "Industrial Marine Capture production"
+                  }
+                },
+                {
+                  "code": "13020202",
+                  "label": {
+                    "EN": "Artisanal Marine Capture production"
+                  }
+                },
+                {
+                  "code": "13020203",
+                  "label": {
+                    "EN": "Traditional Marine Capture production"
+                  }
+                },
+                {
+                  "code": "13010201",
+                  "label": {
+                    "EN": "Industrial Marine Aquaculture production"
+                  }
+                },
+                {
+                  "code": "130201",
+                  "label": {
+                    "EN": "Inland Capture production"
+                  }
+                },
+                {
+                  "code": "130101",
+                  "label": {
+                    "EN": "Inland Aquaculture production"
+                  }
+                },
+                {
+                  "code": "0301",
+                  "label": {
+                    "EN": "Export quantity"
+                  }
+                },
+                {
+                  "code": "0302",
+                  "label": {
+                    "EN": "Export value"
+                  }
+                }
+              ],
+              "idCodeList": "CountrySTAT_Indicators",
+              "extendedName": {
+                "EN": "CountrySTAT Indicators"
+              }
+            }
+          ]
+        },
+        "domain": {
+          "codes": [
+            {
+              "idCodeList": "CountrySTAT_Indicators",
+              "extendedName": {
+                "EN": "CountrySTAT Indicators"
+              }
+            }
+          ]
+        },
+        "subject": "indicator"
+      },
+      {
+        "dataType": "code",
+        "key": true,
+        "id": "DIMENSION2",
+        "title": {
+          "EN": "Species (code)"
+        },
+        "values": {
+          "codes": [
+            {
+              "codes": [
+                {
+                  "code": "45",
+                  "label": {
+                    "EN": "Shrimps, prawns"
+                  }
+                },
+                {
+                  "code": "3",
+                  "label": {
+                    "EN": "Marine fishes"
+                  }
+                },
+                {
+                  "code": "34",
+                  "label": {
+                    "EN": "Miscellaneous demersal fishes"
+                  }
+                },
+                {
+                  "code": "36",
+                  "label": {
+                    "EN": "Tunas, bonitos, billfishes"
+                  }
+                },
+                {
+                  "code": "37",
+                  "label": {
+                    "EN": "Miscellaneous pelagic fishes"
+                  }
+                },
+                {
+                  "code": "57",
+                  "label": {
+                    "EN": "Squids, cuttlefishes, octopuses"
+                  }
+                },
+                {
+                  "code": "43",
+                  "label": {
+                    "EN": "Lobsters, spiny-rock lobsters"
+                  }
+                },
+                {
+                  "code": "42",
+                  "label": {
+                    "EN": "Crabs, sea-spiders"
+                  }
+                },
+                {
+                  "code": "33",
+                  "label": {
+                    "EN": "Miscellaneous coastal fishes"
+                  }
+                },
+                {
+                  "code": "76",
+                  "label": {
+                    "EN": "Sea-urchins and other echinoderms"
+                  }
+                },
+                {
+                  "code": "38",
+                  "label": {
+                    "EN": "Sharks, rays, chimaeras"
+                  }
+                },
+                {
+                  "code": "56",
+                  "label": {
+                    "EN": "Clams, cockles, arkshells"
+                  }
+                },
+                {
+                  "code": "13",
+                  "label": {
+                    "EN": "Miscellaneous freshwater fishes"
+                  }
+                },
+                {
+                  "code": "41",
+                  "label": {
+                    "EN": "Freshwater crustaceans"
+                  }
+                },
+                {
+                  "code": "25",
+                  "label": {
+                    "EN": "Miscellaneous diadromous fishes"
+                  }
+                },
+                {
+                  "code": "55",
+                  "label": {
+                    "EN": "Scallops, pectens"
+                  }
+                },
+                {
+                  "code": "53",
+                  "label": {
+                    "EN": "Oysters"
+                  }
+                },
+                {
+                  "code": "77",
+                  "label": {
+                    "EN": "Miscellaneous aquatic invertebrates"
+                  }
+                },
+                {
+                  "code": "92",
+                  "label": {
+                    "EN": "Red seaweeds"
+                  }
+                },
+                {
+                  "code": "71",
+                  "label": {
+                    "EN": "Frogs and other amphibians"
+                  }
+                },
+                {
+                  "code": "1",
+                  "label": {
+                    "EN": "Freshwater fishes"
+                  }
+                },
+                {
+                  "code": "82",
+                  "label": {
+                    "EN": "Corals"
+                  }
+                },
+                {
+                  "code": "72",
+                  "label": {
+                    "EN": "Turtles"
+                  }
+                }
+              ],
+              "idCodeList": "CountrySTAT_Fishery_products",
+              "extendedName": {
+                "EN": "Fishery products"
+              }
+            }
+          ]
+        },
+        "domain": {
+          "codes": [
+            {
+              "idCodeList": "CountrySTAT_Fishery_products",
+              "extendedName": {
+                "EN": "Fishery products"
+              }
+            }
+          ]
+        },
+        "subject": "item"
+      },
+      {
+        "dataType": "text",
+        "key": false,
+        "id": "VALUE0",
+        "title": {
+          "EN": "Value"
+        },
+        "subject": "value"
+      },
+      {
+        "dataType": "code",
+        "key": false,
+        "id": "OTHER0",
+        "title": {
+          "EN": "um (code)"
+        },
+        "values": {
+          "codes": [
+            {
+              "codes": [
+                {
+                  "code": "0103",
+                  "label": {
+                    "EN": "ton"
+                  }
+                },
+                {
+                  "code": "0108",
+                  "label": {
+                    "EN": "units"
+                  }
+                },
+                {
+                  "code": "0105",
+                  "label": {
+                    "EN": "local currency"
+                  }
+                }
+              ],
+              "idCodeList": "CountrySTAT_UM",
+              "extendedName": {
+                "EN": "Units of measurement"
+              }
+            }
+          ]
+        },
+        "domain": {
+          "codes": [
+            {
+              "idCodeList": "CountrySTAT_UM",
+              "extendedName": {
+                "EN": "Units of measurement"
+              }
+            }
+          ]
+        },
+        "subject": "um"
+      }
+    ]
+  },
+  "rid": "12_1302",
+  "uid": "D3S_72301342456766320158096290848384418569"
+}

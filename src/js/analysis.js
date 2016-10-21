@@ -52,7 +52,7 @@ define([
         require("../../node_modules/fenix-ui-dropdown/dist/fenix-ui-dropdown.min.css");
 
         // bootstrap-table
-        require("../../node_modules/bootstrap-table/dist/bootstrap-table.min.css");
+        // require("../../node_modules/bootstrap-table/dist/bootstrap-table.min.css");
 
         //tree selector
         require("../../node_modules/jstree/dist/themes/default/style.min.css");

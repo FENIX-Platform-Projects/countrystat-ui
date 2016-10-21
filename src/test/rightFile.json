@@ -1,0 +1,164 @@
+{
+  "dsd": {
+    "contextSystem": "cstat_mdg",
+    "datasources": [
+      "D3S"
+    ],
+    "rid": "66_2890",
+    "columns": [
+      {
+        "dataType": "year",
+        "key": true,
+        "id": "DIMENSION0",
+        "title": {
+          "EN": "ANNEE"
+        },
+        "values": {
+          "timeList": [
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015
+          ]
+        },
+        "subject": "time"
+      },
+      {
+        "dataType": "code",
+        "key": true,
+        "id": "DIMENSION1",
+        "title": {
+          "EN": "INDICATEUR"
+        },
+        "values": {
+          "codes": [
+            {
+              "codes": [
+                {
+                  "code": "0301",
+                  "label": {
+                    "EN": "Export quantity"
+                  }
+                }
+              ],
+              "idCodeList": "CountrySTAT_Indicators",
+              "extendedName": {
+                "EN": "CountrySTAT Indicators"
+              }
+            }
+          ]
+        },
+        "domain": {
+          "codes": [
+            {
+              "idCodeList": "CountrySTAT_Indicators",
+              "extendedName": {
+                "EN": "CountrySTAT Indicators"
+              }
+            }
+          ]
+        },
+        "subject": "indicator"
+      },
+      {
+        "dataType": "code",
+        "key": true,
+        "id": "DIMENSION2",
+        "title": {
+          "EN": "PRODUIT"
+        },
+        "values": {
+          "codes": [
+            {
+              "version": "2.1",
+              "codes": [
+                {
+                  "code": "01802",
+                  "label": {
+                    "EN": "Sugar cane"
+                  }
+                }
+              ],
+              "idCodeList": "CPC",
+              "extendedName": {
+                "EN": "Central Product Classification"
+              }
+            }
+          ]
+        },
+        "domain": {
+          "codes": [
+            {
+              "version": "2.1",
+              "idCodeList": "CPC",
+              "extendedName": {
+                "EN": "Central Product Classification"
+              }
+            }
+          ]
+        },
+        "subject": "item"
+      },
+      {
+        "dataType": "number",
+        "key": false,
+        "id": "VALUE0",
+        "title": {
+          "EN": "VALEUR"
+        },
+        "subject": "value"
+      },
+      {
+        "dataType": "text",
+        "key": false,
+        "id": "OTHER0",
+        "title": {
+          "EN": "FLAG"
+        },
+        "subject": "flag"
+      },
+      {
+        "dataType": "code",
+        "key": false,
+        "id": "OTHER1",
+        "title": {
+          "EN": "UNITE"
+        },
+        "values": {
+          "codes": [
+            {
+              "codes": [
+                {
+                  "code": "0103",
+                  "label": {
+                    "EN": "ton"
+                  }
+                }
+              ],
+              "idCodeList": "CountrySTAT_UM",
+              "extendedName": {
+                "EN": "Units of measurement"
+              }
+            }
+          ]
+        },
+        "domain": {
+          "codes": [
+            {
+              "idCodeList": "CountrySTAT_UM",
+              "extendedName": {
+                "EN": "Units of measurement"
+              }
+            }
+          ]
+        },
+        "subject": "um"
+      }
+    ]
+  },
+  "rid": "12_1279",
+  "uid": "D3S_23884590166739340879104681457744394357"
+}

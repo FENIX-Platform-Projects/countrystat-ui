@@ -27,7 +27,7 @@ module.exports = {
         }
     },
 
-    externals: isProduction(dependencies, undefined),
+    externals: isProduction(undefined, dependencies),
 
     module: {
         loaders: [

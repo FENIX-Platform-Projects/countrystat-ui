@@ -27,8 +27,6 @@ module.exports = {
         }
     },
 
-    externals: isProduction(undefined, dependencies),
-
     module: {
         loaders: [
             {test: /\.css$/, loader: "style-loader!css-loader"},

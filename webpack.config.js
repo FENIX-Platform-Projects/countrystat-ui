@@ -91,9 +91,8 @@ function getOutput() {
         case "production" :
             output = {
                 path: Path.join(__dirname, distFolderPath),
-                filename: "[name]/" +packageJson.name + '.[name].[hash].min.js',
-                chunkFilename: "[name]/" +'chunk-[id].' + packageJson.name + '.[name].[hash].min.js',
-                libraryTarget: 'amd'
+                filename: "[name]/" +packageJson.name + '.[name].min.js',
+                chunkFilename: "[name]/" +'chunk-[id].' + packageJson.name + '.[name].min.js'
             };
             break;
         case "develop" :

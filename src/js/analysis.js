@@ -1,29 +1,34 @@
 define([
     "jquery",
     "../config/analysis",
-    "fenix-ui-analysis"
-], function ($, AnalysisConfig, FenixAnalysis) {
+    "fenix-ui-analysis",
+    "../js/parser"
+], function ($, AnalysisConfig, FenixAnalysis, Parser) {
 
     var s = {
         CONTAINER : "#fx-analysis-container",
         cache : false,
-        environment : "production"
+        environment : "production",
+        url : 'http://example.com:3000/pathname/?country=MDG'
     };
 
     function Analysis(){
-
-        var COUNTRY_CODE = 'COG'; //Congo implement controller
+        //var COUNTRY_CODE = 'MDG'; //Congo implement controller
 
         this._importThirdPartyCss();
 
+        var obj = {url : s.url};
+        var parsedUrl = new Parser(obj)._parseURL();
+        var COUNTRY_CODE = parsedUrl.searchObject.country;
         this._analysisInit(COUNTRY_CODE);
-
     }
 
     Analysis.prototype._analysisInit = function (COUNTRY_CODE) {
 
+        console.log(COUNTRY_CODE)
         var config = AnalysisConfig[COUNTRY_CODE];
 
+        console.log(config)
         var analysis = new FenixAnalysis($.extend(true, {
             el : s.CONTAINER,
             cache : s.cache,
@@ -32,7 +37,6 @@ define([
     };
 
     //style
-
     Analysis.prototype._importThirdPartyCss = function () {
 
         //Bootstrap

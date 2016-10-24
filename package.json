@@ -1,6 +1,6 @@
 {
   "name": "countrystat-ui",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "Repo for countrystat controller",
   "main": "index.js",
   "scripts": {

@@ -86,9 +86,11 @@ function getOutput() {
 
     switch (getEnvironment()) {
 
+        // http://fenixrepo.fao.org/countrystat/analysis
         case "production" :
             output = {
                 path: Path.join(__dirname, distFolderPath),
+                //publicPath: 'http://fenixrepo.fao.org/countrystat/',
                 filename: "[name]/" +packageJson.name + '.[name].min.js',
                 chunkFilename: "[name]/" +'chunk-[id].' + packageJson.name + '.[name].min.js'
             };

@@ -10,14 +10,15 @@ define([
         cache : false,
         environment : "production",
         url : ''
-       // url : 'http://example.com:3000/pathname/?country=MDG'
+        //url : 'http://example.com:3000/pathname/?country=COG'
+        //url : 'http://example.com:3000/pathname/?country=MDG'
     };
 
     function Analysis(){
         //var COUNTRY_CODE = 'MDG'; //Congo implement controller
 
         this._importThirdPartyCss();
-        s.url = window.location.href;
+        //s.url = window.location.href;
         console.log(s.url)
         var obj = {url : s.url};
         var parsedUrl = new Parser(obj)._parseURL();

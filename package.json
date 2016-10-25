@@ -20,8 +20,9 @@
     "url": "https://github.com/FENIX-Platform-Projects/countrystat-ui/issues"
   },
   "dependencies": {
-    "fenix-ui-analysis": "^3.0.0-beta.3",
-    "fenix-ui-data-management": "^2.0.0-beta.2",
+    "bootstrap-table": "^1.11.0",
+    "fenix-ui-analysis": "^3.0.0-beta.7",
+    "fenix-ui-data-management": "^2.0.0-beta.12",
     "jquery": "^3.1.0"
   },
   "devDependencies": {

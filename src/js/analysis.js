@@ -9,8 +9,8 @@ define([
         CONTAINER : "#fx-analysis-container",
         cache : false,
         environment : "production",
-        url : ''
-        //url : 'http://example.com:3000/pathname/?country=COG'
+        //url : ''
+        url : 'http://example.com:3000/pathname/?country=COG'
         //url : 'http://example.com:3000/pathname/?country=MDG'
     };
 
@@ -54,7 +54,7 @@ define([
         require("../../node_modules/fenix-ui-dropdown/dist/fenix-ui-dropdown.min.css");
 
         // bootstrap-table
-        // require("../../node_modules/bootstrap-table/dist/bootstrap-table.min.css");
+        require("../../node_modules/bootstrap-table/dist/bootstrap-table.min.css");
 
         //tree selector
         require("../../node_modules/jstree/dist/themes/default/style.min.css");

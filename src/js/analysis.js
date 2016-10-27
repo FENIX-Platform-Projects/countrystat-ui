@@ -77,8 +77,6 @@ define([
         //fenix-ui-analisys
         require("../../node_modules/fenix-ui-analysis/dist/fenix-ui-analysis.min.css");
 
-        //fenix-ui-analisys
-        require("../../node_modules/fenix-ui-analysis/dist/fenix-ui-analysis.min.css");
     };
 
     return new Analysis();

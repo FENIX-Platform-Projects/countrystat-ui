@@ -3,6 +3,7 @@ var distFolderPath = "dist",
     devFolderPath = "dev",
     webpack = require('webpack'),
     packageJson = require("./package.json"),
+    ExtractTextPlugin = require("extract-text-webpack-plugin"),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     CleanWebpackPlugin = require('clean-webpack-plugin'),
     Path = require('path'),
@@ -29,7 +30,10 @@ module.exports = {
 
     module: {
         loaders: [
-            {test: /\.css$/, loader: "style-loader!css-loader"},
+            isProduction(
+                {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
+                {test: /\.css$/, loader: "style-loader!css-loader"}
+            ),
             {test: /\.hbs$/, loader: "handlebars-loader"},
             {test: /\.json/, loader: "json-loader"},
             {test: /\.png$/, loader: "url-loader?limit=100000"},
@@ -53,13 +57,12 @@ module.exports = {
             compress: {warnings: false},
             output: {comments: false}
         })),
+        isProduction(new ExtractTextPlugin(packageJson.name + '.min.css')),
         isDevelop(new HtmlWebpackPlugin({
             inject: "body",
             chunks: [getSection()],
             template: devFolderPath + "/" + getSection() + ".template.html"
-
         }))
-
     ])
 };
 

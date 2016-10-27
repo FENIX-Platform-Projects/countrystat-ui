@@ -21,9 +21,10 @@
   },
   "dependencies": {
     "bootstrap-table": "^1.11.0",
-    "fenix-ui-analysis": "^3.0.0-beta.7",
-    "fenix-ui-data-management": "^2.0.0-beta.12",
-    "jquery": "^3.1.0"
+    "fenix-ui-analysis": "^3.0.0-beta.10",
+    "fenix-ui-data-management": "^2.0.0-beta.14",
+    "jquery": "^3.1.0",
+    "webpack": "^1.13.3"
   },
   "devDependencies": {
     "bootstrap-loader": "^2.0.0-beta.11",

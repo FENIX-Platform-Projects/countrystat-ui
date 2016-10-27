@@ -12,9 +12,10 @@ define([
             cache : false,
             lang : "EN",
             environment : "develop",
-            //url : ''
-            url : 'http://example.com:3000/pathname/?country=COG'
+           url : ''
+            // url : 'http://example.com:3000/pathname/?country=COG'
             //url : 'http://example.com:3000/pathname/?country=AFG'
+       // url : 'http://example.com:3000/pathname/?country=MDG'
     };
 
     function DataManagement(){
@@ -70,11 +71,22 @@ define([
         // jquery-grid for fenix-ui-metadata-viewer
         require("../../node_modules/jquery-treegrid-webpack/css/jquery.treegrid.css");
 
+        //range selector
+        require("../../node_modules/ion-rangeslider/css/ion.rangeSlider.css");
+        require("../../node_modules/ion-rangeslider/css/ion.rangeSlider.skinHTML5.css");
+
+        //time selector
+        require("../../node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css");
+
+        require("../../node_modules/fenix-ui-metadata-editor/dist/fenix-ui-metadata-editor.min.css");
+
         // iDangerous swiper
         require("../../node_modules/swiper/dist/css/swiper.min.css");
 
         // fenix-ui-visualization-box
         require("../../node_modules/fenix-ui-visualization-box/dist/fenix-ui-visualization-box.min.css");
+
+        require("../../node_modules/fenix-ui-DataEditor/dist/fenix-ui-DataEditor.min.css");
 
         // fenix-ui-catalog
         require("../../node_modules/fenix-ui-catalog/dist/fenix-ui-catalog.min.css");
@@ -82,6 +94,8 @@ define([
         //fenix-ui-analisys
         require("../../node_modules/fenix-ui-analysis/dist/fenix-ui-analysis.min.css");
 
+        require("../../node_modules/fenix-ui-DSDEditor/dist/fenix-ui-DSDEditor.min.css");
+        require("../../node_modules/toastr/build/toastr.min.css");
     };
 
     return new DataManagement();

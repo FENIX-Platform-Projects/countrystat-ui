@@ -12,16 +12,16 @@ define([
             cache : false,
             lang : "EN",
             environment : "develop",
-            url : ''
-            // url : 'http://example.com:3000/pathname/?country=COG'
+            //url : ''
+            url : 'http://example.com:3000/pathname/?country=COG'
             //url : 'http://example.com:3000/pathname/?country=AFG'
-       // url : 'http://example.com:3000/pathname/?country=MDG'
+            // url : 'http://example.com:3000/pathname/?country=MDG'
     };
 
     function DataManagement(){
 
         this._importThirdPartyCss();
-        s.url = window.location.href;
+        //s.url = window.location.href;
         console.log(s.url)
         var obj = {url : s.url};
         var parsedUrl = new Parser(obj)._parseURL();
@@ -31,7 +31,8 @@ define([
 
     DataManagement.prototype._dataManagementInit = function (COUNTRY_CODE) {
 
-        var dsdConfig = DMConfigDsdEditor;
+        var country_lowerCase = COUNTRY_CODE.toLocaleLowerCase();
+        var dsdConfig = $.extend(true, DMConfigDsdEditor, {"contextSystem":"cstat_"+country_lowerCase});
         var metadataConfig = DMConfigMetadataEditor;
         var config = DMConfig[COUNTRY_CODE];
 

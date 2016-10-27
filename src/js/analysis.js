@@ -9,8 +9,8 @@ define([
         CONTAINER : "#fx-analysis-container",
         cache : false,
         environment : "production",
-        url : ''
-        //url : 'http://example.com:3000/pathname/?country=COG'
+        //url : ''
+        url : 'http://example.com:3000/pathname/?country=COG'
         //url : 'http://example.com:3000/pathname/?country=MDG'
     };
 

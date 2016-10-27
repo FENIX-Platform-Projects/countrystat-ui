@@ -6,7 +6,10 @@ define(function(){
         MLEditor: {
             langs: ["EN", "FR"]
         },
+            "contextSystem":"cstat_afg",
+            "datasources":["D3S"],
         D3SConnector: {
+
         },
         lang: "EN",
         DSD_EDITOR_CODELISTS: [

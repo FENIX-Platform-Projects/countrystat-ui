@@ -8,6 +8,7 @@
     "dev": "echo \"Error: please specify a valid section to develop [e.g. npm run dev:analysis]\" && exit 1",
     "dev:analysis": "SECTION=analysis NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "dev:data_management": "SECTION=data_management NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
+    "w-dev:data_managment" : "SET NODE_ENV=develop&&SET SECTION=data_management&&webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "build": "SECTIONS=analysis,data_management NODE_ENV=production webpack --display-error-details --profile --json  > stats.json"
   },
   "repository": {
@@ -22,7 +23,7 @@
   "dependencies": {
     "bootstrap-table": "^1.11.0",
     "fenix-ui-analysis": "^3.0.0-beta.10",
-    "fenix-ui-data-management": "^2.0.0-beta.14",
+    "fenix-ui-data-management": "^2.0.0-beta.15",
     "jquery": "^3.1.0",
     "webpack": "^1.13.3"
   },

@@ -1,5 +1,4 @@
 var distFolderPath = "dist",
-    demoFolderPath = "demo",
     devFolderPath = "dev",
     webpack = require('webpack'),
     packageJson = require("./package.json"),
@@ -7,82 +6,70 @@ var distFolderPath = "dist",
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     CleanWebpackPlugin = require('clean-webpack-plugin'),
     Path = require('path'),
-    dependencies = Object.keys(packageJson.dependencies);
+    sections = getSections();
 
-module.exports = {
+module.exports = sections.map(function (section) {
 
-    debug: isProduction(false, true),
+    var entry = {};
+    entry[section] = ["./src/js/" + section + ".js"];
 
-    devtool: isProduction('source-map', 'eval'),
+    return {
 
-    entry: getEntry(),
+        debug: isProduction(false, true),
 
-    output: getOutput(),
+        devtool: isProduction('source-map', 'eval'),
 
-    resolve: {
-        root: Path.resolve(__dirname),
-        alias: {
-            'bootstrap-table': Path.join(__dirname, 'node_modules/bootstrap-table/dist/bootstrap-table.min.js'),
-            handlebars: Path.join(__dirname, 'node_modules/handlebars/dist/handlebars.js'),
-            jquery: Path.join(__dirname, 'node_modules/jquery/dist/jquery')
-        }
-    },
+        entry: entry,
 
-    module: {
-        loaders: [
-/*            isProduction(
-                {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
-                {test: /\.css$/, loader: "style-loader!css-loader"}
-            ),*/
-            { test: /\.css$/, loader: "style-loader!css-loader" },
-            {test: /\.hbs$/, loader: "handlebars-loader"},
-            {test: /\.json/, loader: "json-loader"},
-            {test: /\.png$/, loader: "url-loader?limit=100000"},
-            {test: /\.jpg$/, loader: "file-loader?name=[name].[ext]&limit=100000"},
-            {test: /\.svg/, loader: "file-loader?name=[name].[ext]&limit=100000"},
-            {test: /\.gif/, loader: "file-loader?name=[name].[ext]&limit=100000"},
+        output: getOutput(),
 
-            //Bootstrap loader
-            {test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery'},
-            {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/font-woff"},
-            {test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/font-woff"},
-            {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/octet-stream"},
-            {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file"}
-        ]
-    },
+        resolve: {
+            root: Path.resolve(__dirname),
+            alias: {
+                'bootstrap-table': Path.join(__dirname, 'node_modules/bootstrap-table/dist/bootstrap-table.min.js'),
+                handlebars: Path.join(__dirname, 'node_modules/handlebars/dist/handlebars.js'),
+                jquery: Path.join(__dirname, 'node_modules/jquery/dist/jquery')
+            }
+        },
 
-    plugins: clearArray([
-        new webpack.ProvidePlugin({$: "jquery", jQuery: "jquery"}),
-        isProduction(new CleanWebpackPlugin([distFolderPath]), undefined),
-        isProduction(new webpack.optimize.UglifyJsPlugin({
-            compress: {warnings: false},
-            output: {comments: false}
-        })),
-        //isProduction(new ExtractTextPlugin(packageJson.name + '.min.css')),
-        isDevelop(new HtmlWebpackPlugin({
-            inject: "body",
-            chunks: [getSection()],
-            template: devFolderPath + "/" + getSection() + ".template.html"
-        }))
-    ])
-};
+        module: {
+            loaders: [
+                isProduction(
+                    {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
+                    {test: /\.css$/, loader: "style-loader!css-loader"}
+                ),
+                {test: /\.hbs$/, loader: "handlebars-loader"},
+                {test: /\.json/, loader: "json-loader"},
+                {test: /\.png$/, loader: "url-loader?limit=100000"},
+                {test: /\.jpg$/, loader: "file-loader?name=[name].[ext]&limit=100000"},
+                {test: /\.svg/, loader: "file-loader?name=[name].[ext]&limit=100000"},
+                {test: /\.gif/, loader: "file-loader?name=[name].[ext]&limit=100000"},
 
-function getEntry() {
+                //Bootstrap loader
+                {test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery'},
+                {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/font-woff"},
+                {test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/font-woff"},
+                {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&minetype=application/octet-stream"},
+                {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file"}
+            ]
+        },
 
-    var entry = {},
-        section = getSection(),
-        sections = getSections() || [];
-
-    if (sections.length === 0 ) {
-        sections.push(section);
+        plugins: clearArray([
+            new webpack.ProvidePlugin({$: "jquery", jQuery: "jquery"}),
+            isProduction(new CleanWebpackPlugin([distFolderPath]), undefined),
+            isProduction(new webpack.optimize.UglifyJsPlugin({
+                compress: {warnings: false},
+                output: {comments: false}
+            })),
+            isProduction(new ExtractTextPlugin(section + "/" + packageJson.name + "." + section + '.min.css')),
+            isDevelop(new HtmlWebpackPlugin({
+                inject: "body",
+                chunks: [section],
+                template: devFolderPath + "/" + section + ".template.html"
+            }))
+        ])
     }
-
-    for (var i = 0 ; i<sections.length;i++ ) {
-        entry[sections[i]] = ["./src/js/" + sections[i] + ".js"];
-    }
-
-    return entry;
-}
+});
 
 function getOutput() {
 
@@ -95,8 +82,8 @@ function getOutput() {
             output = {
                 path: Path.join(__dirname, distFolderPath),
                 publicPath: 'http://fenixrepo.fao.org/countrystat/',
-                filename: "[name]/" +packageJson.name + '.[name].min.js',
-                chunkFilename: "[name]/" +'chunk-[id].' + packageJson.name + '.[name].min.js'
+                filename: "[name]/" + packageJson.name + '.[name].min.js',
+                chunkFilename: "[name]/" + 'chunk-[id].' + packageJson.name + '.[name].min.js'
             };
             break;
         case "develop" :
@@ -140,16 +127,6 @@ function isDevelop(valid, invalid) {
     return isEnvironment('develop') ? valid : invalid;
 }
 
-function isTest(valid, invalid) {
-
-    return isEnvironment('develop') ? valid : invalid;
-}
-
-function isDemo(valid, invalid) {
-
-    return isEnvironment('demo') ? valid : invalid;
-}
-
 function isEnvironment(env) {
     return getEnvironment() === env;
 }
@@ -160,11 +137,6 @@ function getEnvironment() {
 
 // sections
 
-function getSection() {
-    return process.env.SECTION;
-}
-
 function getSections() {
-    return (typeof process.env.SECTIONS!="undefined") ? process.env.SECTIONS.split(",") : undefined;
+    return (typeof process.env.SECTIONS != "undefined") ? process.env.SECTIONS.split(",") : undefined;
 }
-

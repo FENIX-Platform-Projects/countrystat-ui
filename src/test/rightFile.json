@@ -1,164 +1,176 @@
 {
-  "dsd": {
-    "contextSystem": "cstat_mdg",
-    "datasources": [
-      "D3S"
-    ],
-    "rid": "66_2890",
-    "columns": [
-      {
-        "dataType": "year",
-        "key": true,
-        "id": "DIMENSION0",
-        "title": {
-          "EN": "ANNEE"
+  "format": {
+    "selector": {
+      "id": "dropdown",
+      "source": [
+        {
+          "value": "localstring",
+          "label": "Local String"
         },
-        "values": {
-          "timeList": [
-            2009,
-            2010,
-            2011,
-            2012,
-            2013,
-            2014,
-            2015
-          ]
-        },
-        "subject": "time"
+        {
+          "value": "value",
+          "label": "Raw Value"
+        }
+      ],
+      "config": {
+        "maxItems": 1
       },
-      {
-        "dataType": "code",
-        "key": true,
-        "id": "DIMENSION1",
-        "title": {
-          "EN": "INDICATEUR"
-        },
-        "values": {
-          "codes": [
-            {
-              "codes": [
-                {
-                  "code": "0301",
-                  "label": {
-                    "EN": "Export quantity"
-                  }
-                }
-              ],
-              "idCodeList": "CountrySTAT_Indicators",
-              "extendedName": {
-                "EN": "CountrySTAT Indicators"
-              }
-            }
-          ]
-        },
-        "domain": {
-          "codes": [
-            {
-              "idCodeList": "CountrySTAT_Indicators",
-              "extendedName": {
-                "EN": "CountrySTAT Indicators"
-              }
-            }
-          ]
-        },
-        "subject": "indicator"
-      },
-      {
-        "dataType": "code",
-        "key": true,
-        "id": "DIMENSION2",
-        "title": {
-          "EN": "PRODUIT"
-        },
-        "values": {
-          "codes": [
-            {
-              "version": "2.1",
-              "codes": [
-                {
-                  "code": "01802",
-                  "label": {
-                    "EN": "Sugar cane"
-                  }
-                }
-              ],
-              "idCodeList": "CPC",
-              "extendedName": {
-                "EN": "Central Product Classification"
-              }
-            }
-          ]
-        },
-        "domain": {
-          "codes": [
-            {
-              "version": "2.1",
-              "idCodeList": "CPC",
-              "extendedName": {
-                "EN": "Central Product Classification"
-              }
-            }
-          ]
-        },
-        "subject": "item"
-      },
-      {
-        "dataType": "number",
-        "key": false,
-        "id": "VALUE0",
-        "title": {
-          "EN": "VALEUR"
-        },
-        "subject": "value"
-      },
-      {
-        "dataType": "text",
-        "key": false,
-        "id": "OTHER0",
-        "title": {
-          "EN": "FLAG"
-        },
-        "subject": "flag"
-      },
-      {
-        "dataType": "code",
-        "key": false,
-        "id": "OTHER1",
-        "title": {
-          "EN": "UNITE"
-        },
-        "values": {
-          "codes": [
-            {
-              "codes": [
-                {
-                  "code": "0103",
-                  "label": {
-                    "EN": "ton"
-                  }
-                }
-              ],
-              "idCodeList": "CountrySTAT_UM",
-              "extendedName": {
-                "EN": "Units of measurement"
-              }
-            }
-          ]
-        },
-        "domain": {
-          "codes": [
-            {
-              "idCodeList": "CountrySTAT_UM",
-              "extendedName": {
-                "EN": "Units of measurement"
-              }
-            }
-          ]
-        },
-        "subject": "um"
-      }
-    ]
+      "default": [
+        "localstring"
+      ]
+    },
+    "template": {
+      "title": "Format"
+    }
   },
-  "rid": "12_1279",
-  "uid": "D3S_23884590166739340879104681457744394357"
+  "decimals": {
+    "selector": {
+      "id": "dropdown",
+      "source": [
+        {
+          "value": "0",
+          "label": 0
+        },
+        {
+          "value": "1",
+          "label": 1
+        },
+        {
+          "value": "2",
+          "label": 2
+        },
+        {
+          "value": "3",
+          "label": 3
+        },
+        {
+          "value": "4",
+          "label": 4
+        },
+        {
+          "value": "5",
+          "label": 5
+        }
+      ],
+      "config": {
+        "maxItems": 1
+      },
+      "default": [
+        2
+      ]
+    },
+    "template": {
+      "title": "Decimals"
+    },
+    "className": "testDec"
+  },
+  "show": {
+    "selector": {
+      "id": "input",
+      "type": "checkbox",
+      "source": [
+        {
+          "value": "unit",
+          "label": "Unit"
+        },
+        {
+          "value": "flag",
+          "label": "Flag"
+        },
+        {
+          "value": "code",
+          "label": "Code"
+        }
+      ]
+    },
+    "template": {
+      "title": "Show"
+    }
+  },
+  "dimensionsSort": {
+    "selector": {
+      "id": "sortable",
+      "source": [
+        {
+          "value": "OTHER1",
+          "label": "unit",
+          "parent": "aggregations"
+        },
+        {
+          "value": "DIMENSION0",
+          "label": "ANNEE",
+          "parent": "columns"
+        },
+        {
+          "value": "DIMENSION1",
+          "label": "INDICATEUR",
+          "parent": "rows"
+        },
+        {
+          "value": "DIMENSION2",
+          "label": "PRODUIT",
+          "parent": "rows"
+        },
+        {
+          "value": "VALUE0",
+          "label": "value",
+          "parent": "values"
+        }
+      ],
+      "config": {
+        "groups": {
+          "rows": "Rows",
+          "columns": "Columns",
+          "hidden": "Hidden",
+          "aggregations": "Aggregation",
+          "values": "Values"
+        }
+      }
+    },
+    "template": {
+      "hideSwitch": true,
+      "hideRemoveButton": true,
+      "title": "Sort dimension"
+    }
+  },
+  "aggregatorValue": {
+    "selector": {
+      "id": "dropdown",
+      "source": [
+        {
+          "value": "sum",
+          "label": "Sum"
+        },
+        {
+          "value": "avg",
+          "label": "avg"
+        },
+        {
+          "value": "median",
+          "label": "median"
+        },
+        {
+          "value": "stdev",
+          "label": "stdev"
+        },
+        {
+          "value": "count",
+          "label": "count"
+        },
+        {
+          "value": "concat",
+          "label": "concat"
+        }
+      ],
+      "config": {
+        "maxItems": 1
+      },
+      "default": [
+        "sum"
+      ]
+    },
+    "template": {
+      "title": "Aggregator for Value"
+    }
+  }
 }

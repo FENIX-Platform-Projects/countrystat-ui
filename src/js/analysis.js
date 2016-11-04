@@ -1,14 +1,17 @@
 define([
     "jquery",
+    "loglevel",
+    "../config/config",
     "../config/analysis",
     "fenix-ui-analysis",
     "../js/parser"
-], function ($, AnalysisConfig, FenixAnalysis, Parser) {
+], function ($, log, Config, AnalysisConfig, FenixAnalysis, Parser) {
 
     var s = {
-        CONTAINER : "#fx-analysis-container",
-        cache : false,
-        environment : "production",
+        CONTAINER : Config.ANALYSIS_CONTENT,
+        cache : Config.CACHE,
+        environment : Config.ENVIROMENT_PROD,
+        default_lang : Config.LANG,
         //url : ''
         url : 'http://example.com:3000/pathname/?country=COG'
         //url : 'http://example.com:3000/pathname/?country=MDG'
@@ -20,23 +23,53 @@ define([
         this._importThirdPartyCss();
         //s.url = window.location.href;
         console.log(s.url)
+        console.log($("html").attr("lang"))
+
+        if((s.lang!=null)&&(typeof s.lang!="undefined")){
+            s.lang = $("html").attr("lang");
+            s.lang = s.lang.toUpperCase();
+        }
+        else{
+            s.lang = s.default_lang;
+        }
+
         var obj = {url : s.url};
-        var parsedUrl = new Parser(obj)._parseURL();
+        var parsedUrl = new Parser(obj).parseURL();
         var COUNTRY_CODE = parsedUrl.searchObject.country;
         this._analysisInit(COUNTRY_CODE);
     }
 
     Analysis.prototype._analysisInit = function (COUNTRY_CODE) {
 
-        console.log(COUNTRY_CODE)
-        var config = AnalysisConfig[COUNTRY_CODE];
+        if((COUNTRY_CODE!=null)&&(typeof COUNTRY_CODE!= 'undefined')&&(typeof COUNTRY_CODE === 'string')&&(isNaN(COUNTRY_CODE))&&(COUNTRY_CODE.length== 3)) {
+            COUNTRY_CODE = COUNTRY_CODE.toUpperCase();
+            var config = AnalysisConfig[COUNTRY_CODE];
+            if((config!=null)&&(typeof config != 'undefined')){
+                var analysis = new FenixAnalysis($.extend(true, {
+                    el : s.CONTAINER,
+                    cache : s.cache,
+                    environment : s.environment,
+                    lang : s.lang
+                }, config));
+            }
+            else{
+                log.error(Config.ERROR.NO_COUNTRY_CONFIG);
+                this._analysisDefaultInit();
+            }
+        }
+        else {
+            this._analysisDefaultInit();
+        }
+    };
 
-        console.log(config)
+    Analysis.prototype._analysisDefaultInit = function () {
+
         var analysis = new FenixAnalysis($.extend(true, {
             el : s.CONTAINER,
             cache : s.cache,
-            environment : s.environment
-        }, config));
+            environment : s.environment,
+            lang : s.lang
+        }));
     };
 
     //style

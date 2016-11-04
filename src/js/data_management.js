@@ -1,17 +1,19 @@
 define([
     "jquery",
+    "loglevel",
+    "../config/config",
     "../config/data_management_dsdEditor",
     "../config/data_management_metadataEditor",
     "../config/data_management",
     "fenix-ui-data-management",
     "../js/parser"
-], function ($, DMConfigDsdEditor, DMConfigMetadataEditor, DMConfig, FenixDataManagement, Parser) {
+], function ($, log, Config, DMConfigDsdEditor, DMConfigMetadataEditor, DMConfig, FenixDataManagement, Parser) {
 
     var s = {
-            DATA_MNG: "#data-mng",
-            cache : false,
-            lang : "EN",
-            environment : "develop",
+            DATA_MNG: Config.DATA_MNG_CONTENT,
+            cache : Config.CACHE,
+            default_lang : Config.LANG,
+            environment : Config.ENVIROMENT_DEVELOP,
             //url : ''
             url : 'http://example.com:3000/pathname/?country=COG'
             //url : 'http://example.com:3000/pathname/?country=AFG'
@@ -23,27 +25,58 @@ define([
         this._importThirdPartyCss();
         //s.url = window.location.href;
         console.log(s.url)
+        console.log($("html").attr("lang"))
+
+        if((s.lang!=null)&&(typeof s.lang!="undefined")){
+            s.lang = $("html").attr("lang");
+            s.lang = s.lang.toUpperCase();
+        }
+        else{
+            s.lang = s.default_lang;
+        }
         var obj = {url : s.url};
-        var parsedUrl = new Parser(obj)._parseURL();
+        var parsedUrl = new Parser(obj).parseURL();
         var COUNTRY_CODE = parsedUrl.searchObject.country;
         this._dataManagementInit(COUNTRY_CODE);
     }
 
     DataManagement.prototype._dataManagementInit = function (COUNTRY_CODE) {
 
-        var country_lowerCase = COUNTRY_CODE.toLocaleLowerCase();
-        var dsdConfig = $.extend(true, DMConfigDsdEditor, {"contextSystem":"cstat_"+country_lowerCase});
         var metadataConfig = DMConfigMetadataEditor;
-        var config = DMConfig[COUNTRY_CODE];
+        if((COUNTRY_CODE!=null)&&(typeof COUNTRY_CODE!= 'undefined')&&(typeof COUNTRY_CODE === 'string')&&(isNaN(COUNTRY_CODE))&&(COUNTRY_CODE.length== 3)) {
+            var country_lowerCase = COUNTRY_CODE.toLocaleLowerCase();
+            var dsdConfig = $.extend(true, DMConfigDsdEditor, {"contextSystem":"cstat_"+country_lowerCase});
+            var config = DMConfig[COUNTRY_CODE];
+            if((config!=null)&&(typeof config != 'undefined')) {
+                var dataMng = new FenixDataManagement($.extend(true, {
+                    environment: s.environment,
+                    el: s.DATA_MNG,
+                    cache: s.cache,
+                    lang: s.lang,
+                    dsdEditor: dsdConfig,
+                    metadataEditor: metadataConfig
+                }, config));
+            }
+            else{
+                log.error(Config.ERROR.NO_COUNTRY_CONFIG);
+                this._dataManagementDefaultInit()
+            }
+        }
+        else{
+            this._dataManagementDefaultInit()
+        }
+    };
 
+    DataManagement.prototype._dataManagementDefaultInit = function (COUNTRY_CODE) {
+
+        var metadataConfig = DMConfigMetadataEditor;
         var dataMng = new FenixDataManagement($.extend(true, {
             environment: s.environment,
             el: s.DATA_MNG,
             cache: s.cache,
             lang: s.lang,
-            dsdEditor: dsdConfig,
             metadataEditor: metadataConfig
-        }, config));
+        }));
     };
 
     //style

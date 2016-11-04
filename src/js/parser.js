@@ -26,7 +26,7 @@ define([
         $.extend(s, conf);
     }
 
-    Parser.prototype._parseURL = function (url) {
+    Parser.prototype.parseURL = function (url) {
         var url = s.url;
 
         var parser = document.createElement('a'),

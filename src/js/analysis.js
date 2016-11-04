@@ -12,8 +12,9 @@ define([
         cache : Config.CACHE,
         environment : Config.ENVIROMENT_PROD,
         default_lang : Config.LANG,
+        default_countryCode : Config.COUNTRY_ISO3_CODE,
         //url : ''
-        url : 'http://example.com:3000/pathname/?country=COG'
+        url : 'http://example.com:3000/pathname/?country=cog'
         //url : 'http://example.com:3000/pathname/?country=MDG'
     };
 
@@ -41,35 +42,62 @@ define([
 
     Analysis.prototype._analysisInit = function (COUNTRY_CODE) {
 
-        if((COUNTRY_CODE!=null)&&(typeof COUNTRY_CODE!= 'undefined')&&(typeof COUNTRY_CODE === 'string')&&(isNaN(COUNTRY_CODE))&&(COUNTRY_CODE.length== 3)) {
-            COUNTRY_CODE = COUNTRY_CODE.toUpperCase();
-            var config = AnalysisConfig[COUNTRY_CODE];
-            if((config!=null)&&(typeof config != 'undefined')){
-                var analysis = new FenixAnalysis($.extend(true, {
-                    el : s.CONTAINER,
-                    cache : s.cache,
-                    environment : s.environment,
-                    lang : s.lang
-                }, config));
+        var country_code = COUNTRY_CODE;
+        var config = '';
+        var default_country = false;
+        if((country_code!=null)&&(typeof country_code!= 'undefined')&&(typeof country_code === 'string')&&(isNaN(country_code))&&(country_code.length== 3)) {
+            //Config Current Country
+            config = AnalysisConfig[country_code.toUpperCase()];
+            if((config!=null)&&(typeof config != 'undefined')) {
             }
             else{
-                log.error(Config.ERROR.NO_COUNTRY_CONFIG);
-                this._analysisDefaultInit();
+                config = '';
+                country_code = s.default_countryCode;
+                default_country = true;
+                log.error(Config.ERROR.NO_CURRENT_COUNTRY_CONFIG);
             }
         }
-        else {
-            this._analysisDefaultInit();
+        else{
+            country_code = s.default_countryCode;
+            default_country = true;
+            log.error(Config.ERROR.INVALID_COUNTRY_PARAM);
+        }
+
+        if(default_country){
+            //Config Default Country
+            config = AnalysisConfig[country_code.toUpperCase()];
+        }
+
+        //Country and configuration found (Could be either Current or Default)
+        if((config!=null)&&(typeof config != 'undefined')) {
+            this._analysisCreation(config);
+        }
+        else{
+            log.error(Config.ERROR.NO_COUNTRY_CONFIG);
+            this._analysisCreation();
         }
     };
 
-    Analysis.prototype._analysisDefaultInit = function () {
+    //This function is not used
+    //No config as argument
+    Analysis.prototype._analysisCreation = function (config) {
 
-        var analysis = new FenixAnalysis($.extend(true, {
-            el : s.CONTAINER,
-            cache : s.cache,
-            environment : s.environment,
-            lang : s.lang
-        }));
+        if((config!=null)&&(typeof config != 'undefined')) {
+            var analysis = new FenixAnalysis($.extend(true, {
+                el : s.CONTAINER,
+                cache : s.cache,
+                environment : s.environment,
+                lang : s.lang
+            }, config));
+        }
+        else{
+            var analysis = new FenixAnalysis($.extend(true, {
+                el : s.CONTAINER,
+                cache : s.cache,
+                environment : s.environment,
+                lang : s.lang
+            }));
+        }
     };
 
     //style

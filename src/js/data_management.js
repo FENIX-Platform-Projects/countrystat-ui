@@ -13,7 +13,9 @@ define([
             DATA_MNG: Config.DATA_MNG_CONTENT,
             cache : Config.CACHE,
             default_lang : Config.LANG,
+            default_countryCode : Config.COUNTRY_ISO3_CODE,
             environment : Config.ENVIROMENT_DEVELOP,
+
             //url : ''
             url : 'http://example.com:3000/pathname/?country=COG'
             //url : 'http://example.com:3000/pathname/?country=AFG'
@@ -42,41 +44,73 @@ define([
 
     DataManagement.prototype._dataManagementInit = function (COUNTRY_CODE) {
 
-        var metadataConfig = DMConfigMetadataEditor;
-        if((COUNTRY_CODE!=null)&&(typeof COUNTRY_CODE!= 'undefined')&&(typeof COUNTRY_CODE === 'string')&&(isNaN(COUNTRY_CODE))&&(COUNTRY_CODE.length== 3)) {
-            var country_lowerCase = COUNTRY_CODE.toLocaleLowerCase();
-            var dsdConfig = $.extend(true, DMConfigDsdEditor, {"contextSystem":"cstat_"+country_lowerCase});
-            var config = DMConfig[COUNTRY_CODE];
-            if((config!=null)&&(typeof config != 'undefined')) {
-                var dataMng = new FenixDataManagement($.extend(true, {
-                    environment: s.environment,
-                    el: s.DATA_MNG,
-                    cache: s.cache,
-                    lang: s.lang,
-                    dsdEditor: dsdConfig,
-                    metadataEditor: metadataConfig
-                }, config));
+        var country_code = COUNTRY_CODE;
+        var country_lowerCase = '';
+        var dsdConfig = '';
+        var config = '';
+        var default_country = false;
+        if((country_code!=null)&&(typeof country_code!= 'undefined')&&(typeof country_code === 'string')&&(isNaN(country_code))&&(country_code.length== 3)) {
+
+            //Config Current Country
+            country_lowerCase = country_code.toLocaleLowerCase();
+            dsdConfig = $.extend(true, DMConfigDsdEditor, {"contextSystem":"cstat_"+country_lowerCase});
+            config = DMConfig[country_code.toUpperCase()];
+            if((dsdConfig!=null)&&(typeof dsdConfig != 'undefined')&&(config!=null)&&(typeof config != 'undefined')) {
             }
             else{
-                log.error(Config.ERROR.NO_COUNTRY_CONFIG);
-                this._dataManagementDefaultInit()
+                dsdConfig = '';
+                config = '';
+                country_code = s.default_countryCode;
+                default_country = true;
+                log.error(Config.ERROR.NO_CURRENT_COUNTRY_CONFIG);
             }
         }
         else{
-            this._dataManagementDefaultInit()
+            country_code = s.default_countryCode;
+            default_country = true;
+            log.error(Config.ERROR.INVALID_COUNTRY_PARAM);
+        }
+
+        if(default_country){
+            //Config Default Country
+            country_lowerCase = country_code.toLocaleLowerCase();
+            dsdConfig = $.extend(true, DMConfigDsdEditor, {"contextSystem":"cstat_"+country_lowerCase});
+            config = DMConfig[country_code.toUpperCase()];
+        }
+
+        //Country and configuration found (Or Current Or Default)
+        if((dsdConfig!=null)&&(typeof dsdConfig != 'undefined')&&(config!=null)&&(typeof config != 'undefined')) {
+            this._dataManagementCreation(dsdConfig, config);
+        }
+        else{
+            log.error(Config.ERROR.NO_COUNTRY_CONFIG);
+            this._dataManagementCreation();
         }
     };
 
-    DataManagement.prototype._dataManagementDefaultInit = function (COUNTRY_CODE) {
+    //This function is not used
+    //No config as argument
+    DataManagement.prototype._dataManagementCreation = function (dsdConfig, config) {
 
         var metadataConfig = DMConfigMetadataEditor;
-        var dataMng = new FenixDataManagement($.extend(true, {
-            environment: s.environment,
-            el: s.DATA_MNG,
-            cache: s.cache,
-            lang: s.lang,
-            metadataEditor: metadataConfig
-        }));
+        if((dsdConfig!=null)&&(typeof dsdConfig != 'undefined')&&(config!=null)&&(typeof config != 'undefined')) {
+            var dataMng = new FenixDataManagement($.extend(true, {
+                environment: s.environment,
+                el: s.DATA_MNG,
+                cache: s.cache,
+                lang: s.lang,
+                metadataEditor: metadataConfig
+            }));
+        }
+        else{
+            var dataMng = new FenixDataManagement($.extend(true, {
+                environment: s.environment,
+                el: s.DATA_MNG,
+                cache: s.cache,
+                lang: s.lang,
+                metadataEditor: metadataConfig
+            }));
+        }
     };
 
     //style

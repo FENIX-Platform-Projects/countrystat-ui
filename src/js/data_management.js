@@ -99,7 +99,10 @@ define([
                 el: s.DATA_MNG,
                 cache: s.cache,
                 lang: s.lang,
-                metadataEditor: metadataConfig
+                metadataEditor: metadataConfig,
+                catalog: config.catalog,
+                dsdEditor: dsdConfig
+
             }));
         }
         else{
@@ -140,7 +143,6 @@ define([
 
         require("../../node_modules/fenix-ui-data-management/dist/fenix-ui-data-management.min.css");
         require("../../node_modules/toastr/build/toastr.min.css");
-
     };
 
     return new DataManagement();

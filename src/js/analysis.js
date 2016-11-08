@@ -137,6 +137,10 @@ define([
 
         // fenix-ui-visualization-box
         require("../../node_modules/fenix-ui-visualization-box/dist/fenix-ui-visualization-box.min.css");
+
+        //host override
+        require('../css/countrystat-ui.css');
+
     };
 
     return new Analysis();

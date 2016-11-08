@@ -142,6 +142,8 @@ define([
 
         require("../../node_modules/fenix-ui-data-management/dist/fenix-ui-data-management.min.css");
         require("../../node_modules/toastr/build/toastr.min.css");
+        //host override
+        require('../css/countrystat-ui.css');
     };
 
     return new DataManagement();

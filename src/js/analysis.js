@@ -104,7 +104,7 @@ define([
     Analysis.prototype._importThirdPartyCss = function () {
 
         //Bootstrap
-        require("bootstrap-loader");
+        require('bootstrap/dist/css/bootstrap.css');
 
         //dropdown selector
         require("../../node_modules/selectize/dist/css/selectize.bootstrap3.css");
@@ -129,15 +129,14 @@ define([
         // iDangerous swiper
         require("../../node_modules/swiper/dist/css/swiper.min.css");
 
-        // fenix-ui-visualization-box
-        require("../../node_modules/fenix-ui-visualization-box/dist/fenix-ui-visualization-box.min.css");
-
         // fenix-ui-catalog
         require("../../node_modules/fenix-ui-catalog/dist/fenix-ui-catalog.min.css");
 
         //fenix-ui-analisys
         require("../../node_modules/fenix-ui-analysis/dist/fenix-ui-analysis.min.css");
 
+        // fenix-ui-visualization-box
+        require("../../node_modules/fenix-ui-visualization-box/dist/fenix-ui-visualization-box.min.css");
     };
 
     return new Analysis();

@@ -26,7 +26,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "fenix-ui-analysis": "^3.0.0-beta.19",
-    "fenix-ui-data-management": "^2.0.0-beta.32",
+    "fenix-ui-data-management": "^2.0.0-beta.33",
     "jquery": "^3.1.0"
   },
   "devDependencies": {

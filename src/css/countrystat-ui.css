@@ -6300,116 +6300,116 @@ div.tx-dynalist-pi1-pagination {
     13 side-menu button normal state
     14 side-menu button hover and active state
 */
-body.cog .country-welcome {
+body[data-country='COG'] .country-welcome {
   background-color: #e4c779; }
-body.cog .country-details {
-  background-image: url("http://fenixrepo.fao.org/countrystat/assets/cog/cog-home.jpg"); }
-body.cog .home-content {
+body[data-country='COG'] .country-details {
+  background-image: url("http://fenixrepo.fao.org/countrystat/assets/COG/COG-home.jpg"); }
+body[data-country='COG'] .home-content {
   background-color: #2b686a; }
-  body.cog .home-content .home-detail-pointer {
+  body[data-country='COG'] .home-content .home-detail-pointer {
     background-color: #f5e5bb; }
-    body.cog .home-content .home-detail-pointer:before {
+    body[data-country='COG'] .home-content .home-detail-pointer:before {
       border-color: transparent transparent transparent #f5e5bb; }
-body.cog .country-details .home-stats-footer {
+body[data-country='COG'] .country-details .home-stats-footer {
   background-color: rgba(219, 81, 75, 0.5); }
-body.cog .partners-holder {
+body[data-country='COG'] .partners-holder {
   background-color: #e0f1ee; }
-  body.cog .partners-holder h4 {
+  body[data-country='COG'] .partners-holder h4 {
     color: #abb9c4; }
-body.cog .home-tile.aims ol li:before {
+body[data-country='COG'] .home-tile.aims ol li:before {
   color: #b8d7da; }
-body.cog .home-tile.gray {
+body[data-country='COG'] .home-tile.gray {
   background-color: #869c93; }
-body.cog .home-tile.map {
+body[data-country='COG'] .home-tile.map {
   background-color: #97bead;
-  background-image: url("http://fenixrepo.fao.org/countrystat/assets/cog/cog-map.svg"); }
-  body.cog .home-tile.map:hover {
+  background-image: url("http://fenixrepo.fao.org/countrystat/assets/COG/COG-map.svg"); }
+  body[data-country='COG'] .home-tile.map:hover {
     background-position: 50% 76%; }
-  body.cog .home-tile.map .afg-title {
+  body[data-country='COG'] .home-tile.map .afg-title {
     background-color: #97bead; }
-body.cog #sidebar-wrapper {
+body[data-country='COG'] #sidebar-wrapper {
   background-color: #29403e; }
-  body.cog #sidebar-wrapper .sidebar-nav li {
+  body[data-country='COG'] #sidebar-wrapper .sidebar-nav li {
     background-color: #305a52; }
-    body.cog #sidebar-wrapper .sidebar-nav li.active a {
+    body[data-country='COG'] #sidebar-wrapper .sidebar-nav li.active a {
       background-color: #3a7f70; }
-      body.cog #sidebar-wrapper .sidebar-nav li.active a:before {
+      body[data-country='COG'] #sidebar-wrapper .sidebar-nav li.active a:before {
         background-color: #db514b; }
-      body.cog #sidebar-wrapper .sidebar-nav li.active a:hover, body.cog #sidebar-wrapper .sidebar-nav li.active a:active, body.cog #sidebar-wrapper .sidebar-nav li.active a:focus, body.cog #sidebar-wrapper .sidebar-nav li.active a:visited {
+      body[data-country='COG'] #sidebar-wrapper .sidebar-nav li.active a:hover, body[data-country='COG'] #sidebar-wrapper .sidebar-nav li.active a:active, body[data-country='COG'] #sidebar-wrapper .sidebar-nav li.active a:focus, body[data-country='COG'] #sidebar-wrapper .sidebar-nav li.active a:visited {
         background-color: #3a7f70; }
-    body.cog #sidebar-wrapper .sidebar-nav li a:hover, body.cog #sidebar-wrapper .sidebar-nav li a:active, body.cog #sidebar-wrapper .sidebar-nav li a:focus, body.cog #sidebar-wrapper .sidebar-nav li a:visited {
+    body[data-country='COG'] #sidebar-wrapper .sidebar-nav li a:hover, body[data-country='COG'] #sidebar-wrapper .sidebar-nav li a:active, body[data-country='COG'] #sidebar-wrapper .sidebar-nav li a:focus, body[data-country='COG'] #sidebar-wrapper .sidebar-nav li a:visited {
       background-color: #3a7f70; }
-body.cog .fx-text-primary-color {
+body[data-country='COG'] .fx-text-primary-color {
   color: #db514b; }
-body.cog .fx-background-color-primary-color {
+body[data-country='COG'] .fx-background-color-primary-color {
   background-color: #db514b; }
-body.cog .fx-button-primary-color {
+body[data-country='COG'] .fx-button-primary-color {
   color: white;
   border-color: #cb2f29;
   background-color: #db514b; }
-  body.cog .fx-button-primary-color:hover {
+  body[data-country='COG'] .fx-button-primary-color:hover {
     color: white;
     border-color: #cb2f29;
     background-color: #d73c36; }
-  body.cog .fx-button-primary-color:focus {
+  body[data-country='COG'] .fx-button-primary-color:focus {
     color: white;
     border-color: #a02520;
     background-color: #b52a24; }
-body.cog .jstree-default .jstree-wholerow-clicked {
+body[data-country='COG'] .jstree-default .jstree-wholerow-clicked {
   background: none;
   background-color: #fdf5f5; }
-body.cog .jstree-default .jstree-wholerow-hovered {
+body[data-country='COG'] .jstree-default .jstree-wholerow-hovered {
   background: none;
   background-color: white; }
-body.cog .jstree-default .jstree-disabled.jstree-clicked {
+body[data-country='COG'] .jstree-default .jstree-disabled.jstree-clicked {
   background: none;
   background-color: #fdf5f5; }
-body.cog .irs-bar {
+body[data-country='COG'] .irs-bar {
   border-top: 1px solid #db514b;
   border-bottom: 1px solid #db514b; }
-body.cog .irs-bar-edge {
+body[data-country='COG'] .irs-bar-edge {
   border: 1px solid #db514b; }
-body.cog .irs-bar, body.cog .irs-bar-edge {
+body[data-country='COG'] .irs-bar, body[data-country='COG'] .irs-bar-edge {
   background: #db514b; }
-body.cog .irs-from, body.cog .irs-to, body.cog .irs-single {
+body[data-country='COG'] .irs-from, body[data-country='COG'] .irs-to, body[data-country='COG'] .irs-single {
   color: #db514b; }
-body.cog [data-selector-time] .day.active {
+body[data-country='COG'] [data-selector-time] .day.active {
   background-color: #db514b; }
-  body.cog [data-selector-time] .day.active:hover {
+  body[data-country='COG'] [data-selector-time] .day.active:hover {
     background-color: #a58381; }
-body.cog [data-selector-time] .day.today:before {
+body[data-country='COG'] [data-selector-time] .day.today:before {
   border-bottom-color: #db514b; }
-body.cog [data-selector-time] .month.active {
+body[data-country='COG'] [data-selector-time] .month.active {
   background-color: #db514b; }
-body.cog [data-selector-time] .year.active {
+body[data-country='COG'] [data-selector-time] .year.active {
   background-color: #db514b; }
-body.cog [data-selector-time] .fx-time-addon {
+body[data-country='COG'] [data-selector-time] .fx-time-addon {
   color: #db514b; }
-body.cog [data-selector-time] [data-action="incrementHours"], body.cog [data-selector-time] [data-action="decrementHours"], body.cog [data-selector-time] [data-action="incrementMinutes"], body.cog [data-selector-time] [data-action="decrementMinutes"] {
+body[data-country='COG'] [data-selector-time] [data-action="incrementHours"], body[data-country='COG'] [data-selector-time] [data-action="decrementHours"], body[data-country='COG'] [data-selector-time] [data-action="incrementMinutes"], body[data-country='COG'] [data-selector-time] [data-action="decrementMinutes"] {
   color: #db514b; }
-body.cog [data-selector-time] [data-action="togglePicker"] span {
+body[data-country='COG'] [data-selector-time] [data-action="togglePicker"] span {
   color: #db514b; }
-body.cog .cat-toolbar button:hover {
+body[data-country='COG'] .cat-toolbar button:hover {
   color: #db514b; }
-body.cog .bootstrap-table .pagination > li > a, body.cog .bootstrap-table .pagination > li > span {
+body[data-country='COG'] .bootstrap-table .pagination > li > a, body[data-country='COG'] .bootstrap-table .pagination > li > span {
   color: #db514b; }
-body.cog .bootstrap-table .pagination > .active > a, body.cog .bootstrap-table .pagination > .active > a:hover, body.cog .bootstrap-table .pagination > .active > a:focus, body.cog .bootstrap-table .pagination > .active > span, body.cog .bootstrap-table .pagination > .active > span:hover, body.cog .bootstrap-table .pagination > .active > span:focus {
+body[data-country='COG'] .bootstrap-table .pagination > .active > a, body[data-country='COG'] .bootstrap-table .pagination > .active > a:hover, body[data-country='COG'] .bootstrap-table .pagination > .active > a:focus, body[data-country='COG'] .bootstrap-table .pagination > .active > span, body[data-country='COG'] .bootstrap-table .pagination > .active > span:hover, body[data-country='COG'] .bootstrap-table .pagination > .active > span:focus {
   color: white;
   background-color: #db514b;
   border-color: #db514b; }
-body.cog .vb-toolbar button:hover {
+body[data-country='COG'] .vb-toolbar button:hover {
   color: #db514b; }
-body.cog .swiper-button-prev {
+body[data-country='COG'] .swiper-button-prev {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'#db514b'%2F%3E%3C%2Fsvg%3E"); }
-body.cog .swiper-button-next {
+body[data-country='COG'] .swiper-button-next {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'#db514b'%2F%3E%3C%2Fsvg%3E"); }
-body.cog .swiper-pagination-bullet-active {
+body[data-country='COG'] .swiper-pagination-bullet-active {
   background: #db514b; }
-body.cog .gt-row-over td {
+body[data-country='COG'] .gt-row-over td {
   border-bottom-color: #db514b; }
-body.cog .fm-controller-box-item .ui-widget-header {
+body[data-country='COG'] .fm-controller-box-item .ui-widget-header {
   background-color: #db514b; }
-body.cog .pulse-button {
+body[data-country='COG'] .pulse-button {
   box-shadow: 0 0 0 0 rgba(219, 81, 75, 0.7); }
 @-webkit-keyframes pulse {
   to {
@@ -6423,116 +6423,116 @@ body.cog .pulse-button {
 @keyframes pulse {
   to {
     box-shadow: 0 0 0 45px rgba(219, 81, 75, 0); } }
-body.mdg .country-welcome {
+body[data-country='MDG'] .country-welcome {
   background-color: #e4c779; }
-body.mdg .country-details {
-  background-image: url("http://fenixrepo.fao.org/countrystat/assets/mdg/mdg-home.jpg"); }
-body.mdg .home-content {
+body[data-country='MDG'] .country-details {
+  background-image: url("http://fenixrepo.fao.org/countrystat/assets/MDG/MDG-home.jpg"); }
+body[data-country='MDG'] .home-content {
   background-color: #2b686a; }
-  body.mdg .home-content .home-detail-pointer {
+  body[data-country='MDG'] .home-content .home-detail-pointer {
     background-color: #f5e5bb; }
-    body.mdg .home-content .home-detail-pointer:before {
+    body[data-country='MDG'] .home-content .home-detail-pointer:before {
       border-color: transparent transparent transparent #f5e5bb; }
-body.mdg .country-details .home-stats-footer {
+body[data-country='MDG'] .country-details .home-stats-footer {
   background-color: rgba(219, 81, 75, 0.5); }
-body.mdg .partners-holder {
+body[data-country='MDG'] .partners-holder {
   background-color: #e0f1ee; }
-  body.mdg .partners-holder h4 {
+  body[data-country='MDG'] .partners-holder h4 {
     color: #abb9c4; }
-body.mdg .home-tile.aims ol li:before {
+body[data-country='MDG'] .home-tile.aims ol li:before {
   color: #b8d7da; }
-body.mdg .home-tile.gray {
+body[data-country='MDG'] .home-tile.gray {
   background-color: #869c93; }
-body.mdg .home-tile.map {
+body[data-country='MDG'] .home-tile.map {
   background-color: #29403e;
-  background-image: url("http://fenixrepo.fao.org/countrystat/assets/mdg/mdg-map.svg"); }
-  body.mdg .home-tile.map:hover {
+  background-image: url("http://fenixrepo.fao.org/countrystat/assets/MDG/MDG-map.svg"); }
+  body[data-country='MDG'] .home-tile.map:hover {
     background-position: #305a52; }
-  body.mdg .home-tile.map .afg-title {
+  body[data-country='MDG'] .home-tile.map .afg-title {
     background-color: #29403e; }
-body.mdg #sidebar-wrapper {
+body[data-country='MDG'] #sidebar-wrapper {
   background-color: #3a7f70; }
-  body.mdg #sidebar-wrapper .sidebar-nav li {
+  body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li {
     background-color: #3a7f70; }
-    body.mdg #sidebar-wrapper .sidebar-nav li.active a {
+    body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li.active a {
       background-color: #3a7f70; }
-      body.mdg #sidebar-wrapper .sidebar-nav li.active a:before {
+      body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li.active a:before {
         background-color: #db514b; }
-      body.mdg #sidebar-wrapper .sidebar-nav li.active a:hover, body.mdg #sidebar-wrapper .sidebar-nav li.active a:active, body.mdg #sidebar-wrapper .sidebar-nav li.active a:focus, body.mdg #sidebar-wrapper .sidebar-nav li.active a:visited {
+      body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li.active a:hover, body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li.active a:active, body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li.active a:focus, body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li.active a:visited {
         background-color: #3a7f70; }
-    body.mdg #sidebar-wrapper .sidebar-nav li a:hover, body.mdg #sidebar-wrapper .sidebar-nav li a:active, body.mdg #sidebar-wrapper .sidebar-nav li a:focus, body.mdg #sidebar-wrapper .sidebar-nav li a:visited {
+    body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li a:hover, body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li a:active, body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li a:focus, body[data-country='MDG'] #sidebar-wrapper .sidebar-nav li a:visited {
       background-color: #3a7f70; }
-body.mdg .fx-text-primary-color {
+body[data-country='MDG'] .fx-text-primary-color {
   color: #db514b; }
-body.mdg .fx-background-color-primary-color {
+body[data-country='MDG'] .fx-background-color-primary-color {
   background-color: #db514b; }
-body.mdg .fx-button-primary-color {
+body[data-country='MDG'] .fx-button-primary-color {
   color: white;
   border-color: #cb2f29;
   background-color: #db514b; }
-  body.mdg .fx-button-primary-color:hover {
+  body[data-country='MDG'] .fx-button-primary-color:hover {
     color: white;
     border-color: #cb2f29;
     background-color: #d73c36; }
-  body.mdg .fx-button-primary-color:focus {
+  body[data-country='MDG'] .fx-button-primary-color:focus {
     color: white;
     border-color: #a02520;
     background-color: #b52a24; }
-body.mdg .jstree-default .jstree-wholerow-clicked {
+body[data-country='MDG'] .jstree-default .jstree-wholerow-clicked {
   background: none;
   background-color: #fdf5f5; }
-body.mdg .jstree-default .jstree-wholerow-hovered {
+body[data-country='MDG'] .jstree-default .jstree-wholerow-hovered {
   background: none;
   background-color: white; }
-body.mdg .jstree-default .jstree-disabled.jstree-clicked {
+body[data-country='MDG'] .jstree-default .jstree-disabled.jstree-clicked {
   background: none;
   background-color: #fdf5f5; }
-body.mdg .irs-bar {
+body[data-country='MDG'] .irs-bar {
   border-top: 1px solid #db514b;
   border-bottom: 1px solid #db514b; }
-body.mdg .irs-bar-edge {
+body[data-country='MDG'] .irs-bar-edge {
   border: 1px solid #db514b; }
-body.mdg .irs-bar, body.mdg .irs-bar-edge {
+body[data-country='MDG'] .irs-bar, body[data-country='MDG'] .irs-bar-edge {
   background: #db514b; }
-body.mdg .irs-from, body.mdg .irs-to, body.mdg .irs-single {
+body[data-country='MDG'] .irs-from, body[data-country='MDG'] .irs-to, body[data-country='MDG'] .irs-single {
   color: #db514b; }
-body.mdg [data-selector-time] .day.active {
+body[data-country='MDG'] [data-selector-time] .day.active {
   background-color: #db514b; }
-  body.mdg [data-selector-time] .day.active:hover {
+  body[data-country='MDG'] [data-selector-time] .day.active:hover {
     background-color: #a58381; }
-body.mdg [data-selector-time] .day.today:before {
+body[data-country='MDG'] [data-selector-time] .day.today:before {
   border-bottom-color: #db514b; }
-body.mdg [data-selector-time] .month.active {
+body[data-country='MDG'] [data-selector-time] .month.active {
   background-color: #db514b; }
-body.mdg [data-selector-time] .year.active {
+body[data-country='MDG'] [data-selector-time] .year.active {
   background-color: #db514b; }
-body.mdg [data-selector-time] .fx-time-addon {
+body[data-country='MDG'] [data-selector-time] .fx-time-addon {
   color: #db514b; }
-body.mdg [data-selector-time] [data-action="incrementHours"], body.mdg [data-selector-time] [data-action="decrementHours"], body.mdg [data-selector-time] [data-action="incrementMinutes"], body.mdg [data-selector-time] [data-action="decrementMinutes"] {
+body[data-country='MDG'] [data-selector-time] [data-action="incrementHours"], body[data-country='MDG'] [data-selector-time] [data-action="decrementHours"], body[data-country='MDG'] [data-selector-time] [data-action="incrementMinutes"], body[data-country='MDG'] [data-selector-time] [data-action="decrementMinutes"] {
   color: #db514b; }
-body.mdg [data-selector-time] [data-action="togglePicker"] span {
+body[data-country='MDG'] [data-selector-time] [data-action="togglePicker"] span {
   color: #db514b; }
-body.mdg .cat-toolbar button:hover {
+body[data-country='MDG'] .cat-toolbar button:hover {
   color: #db514b; }
-body.mdg .bootstrap-table .pagination > li > a, body.mdg .bootstrap-table .pagination > li > span {
+body[data-country='MDG'] .bootstrap-table .pagination > li > a, body[data-country='MDG'] .bootstrap-table .pagination > li > span {
   color: #db514b; }
-body.mdg .bootstrap-table .pagination > .active > a, body.mdg .bootstrap-table .pagination > .active > a:hover, body.mdg .bootstrap-table .pagination > .active > a:focus, body.mdg .bootstrap-table .pagination > .active > span, body.mdg .bootstrap-table .pagination > .active > span:hover, body.mdg .bootstrap-table .pagination > .active > span:focus {
+body[data-country='MDG'] .bootstrap-table .pagination > .active > a, body[data-country='MDG'] .bootstrap-table .pagination > .active > a:hover, body[data-country='MDG'] .bootstrap-table .pagination > .active > a:focus, body[data-country='MDG'] .bootstrap-table .pagination > .active > span, body[data-country='MDG'] .bootstrap-table .pagination > .active > span:hover, body[data-country='MDG'] .bootstrap-table .pagination > .active > span:focus {
   color: white;
   background-color: #db514b;
   border-color: #db514b; }
-body.mdg .vb-toolbar button:hover {
+body[data-country='MDG'] .vb-toolbar button:hover {
   color: #db514b; }
-body.mdg .swiper-button-prev {
+body[data-country='MDG'] .swiper-button-prev {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'#db514b'%2F%3E%3C%2Fsvg%3E"); }
-body.mdg .swiper-button-next {
+body[data-country='MDG'] .swiper-button-next {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'#db514b'%2F%3E%3C%2Fsvg%3E"); }
-body.mdg .swiper-pagination-bullet-active {
+body[data-country='MDG'] .swiper-pagination-bullet-active {
   background: #db514b; }
-body.mdg .gt-row-over td {
+body[data-country='MDG'] .gt-row-over td {
   border-bottom-color: #db514b; }
-body.mdg .fm-controller-box-item .ui-widget-header {
+body[data-country='MDG'] .fm-controller-box-item .ui-widget-header {
   background-color: #db514b; }
-body.mdg .pulse-button {
+body[data-country='MDG'] .pulse-button {
   box-shadow: 0 0 0 0 rgba(219, 81, 75, 0.7); }
 @-webkit-keyframes pulse {
   to {

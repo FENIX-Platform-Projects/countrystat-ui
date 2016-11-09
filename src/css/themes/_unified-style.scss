@@ -16,18 +16,17 @@
 
 
 $countries: (
-    (cog, #db514b, #e4c779, #2b686a, #f5e5bb,#e0f1ee,#abb9c4, #b8d7da, #869c93,#97bead,50% 76%,#29403e, #305a52, #3a7f70),
-    (mdg, #db514b, #e4c779, #2b686a, #f5e5bb,#e0f1ee,#abb9c4, #b8d7da, #869c93,     #29403e, #305a52, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70)
+    (COG, #db514b, #e4c779, #2b686a, #f5e5bb,#e0f1ee,#abb9c4, #b8d7da, #869c93,#97bead,50% 76%,#29403e, #305a52, #3a7f70),
+    (MDG, #db514b, #e4c779, #2b686a, #f5e5bb,#e0f1ee,#abb9c4, #b8d7da, #869c93,     #29403e, #305a52, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70, #3a7f70)
 );
 
 
 @each $country in $countries{
 
-  body.#{nth($country, 1)} {
+  body[data-country='#{nth($country, 1)}']{
 
 
     //// Start of theme builder
-
 
 
     //CountrySTAT Home

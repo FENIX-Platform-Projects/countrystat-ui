@@ -14,7 +14,7 @@ define([
             cache : Config.CACHE,
             default_lang : Config.LANG,
             default_countryCode : Config.COUNTRY_ISO3_CODE,
-            environment : Config.ENVIROMENT_DEVELOP,
+            environment : Config.ENVIROMENT_PROD,
             data_country_var : 'data-country',
 
             //url : ''

@@ -1,9 +1,15 @@
 /* Typo 3 Countrystat style */
 
+#sidebar-wrapper ul.sidebar-nav li.spacer {
+  height: 130px;
+  margin: 0;
+  background-color: transparent !important;
+}
+
 
 
 .language{
-  position: absolute;
+  position: fixed;
   right: 20px;
   top: 10px;
 

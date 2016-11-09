@@ -17,7 +17,7 @@
 
 $countries: (
     (COG, #db514b, #e4c779, #2b686a, #f5e5bb,#e0f1ee,#abb9c4, #b8d7da, #869c93,#97bead,50% 76%,#29403e, #305a52, #3a7f70),
-    (MDG, #db514b, #df6660, #eca3a0, #f5e5bb,#e0f1ee,#abb9c4, #b8d7da, #869c93,#97bead,63% 94%,#29403e, #305a52, #3a7f70)
+    (MDG, #db514b, #df6660, #2b686a, #eca3a0,#e0f1ee,#abb9c4, #b8d7da, #869c93,#97bead,63% 94%,#29403e, #305a52, #3a7f70)
 );
 
 
@@ -65,7 +65,7 @@ $countries: (
     .country-details {
 
       .home-stats-footer {
-        background-color: rgba(nth($country, 2), 0.5);
+        background-color: rgba(nth($country, 4), 0.5);
       }
     }
 

@@ -13,6 +13,8 @@ define([
         environment : Config.ENVIROMENT_PROD,
         default_lang : Config.LANG,
         default_countryCode : Config.COUNTRY_ISO3_CODE,
+
+        data_country_var : 'data-country',
         //url : ''
         url : 'http://example.com:3000/pathname/?country=cog'
         //url : 'http://example.com:3000/pathname/?country=MDG'
@@ -21,6 +23,7 @@ define([
     function Analysis(){
         //var COUNTRY_CODE = 'MDG'; //Congo implement controller
 
+        console.log($(document.body).attr(s.data_country_var))
         this._importThirdPartyCss();
         //s.url = window.location.href;
         console.log(s.url)
@@ -34,9 +37,10 @@ define([
             s.lang = s.default_lang;
         }
 
-        var obj = {url : s.url};
-        var parsedUrl = new Parser(obj).parseURL();
-        var COUNTRY_CODE = parsedUrl.searchObject.country;
+        // var obj = {url : s.url};
+        // var parsedUrl = new Parser(obj).parseURL();
+        // var COUNTRY_CODE = parsedUrl.searchObject.country;
+        var COUNTRY_CODE = $(document.body).attr(s.data_country_var);
         this._analysisInit(COUNTRY_CODE);
     }
 

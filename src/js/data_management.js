@@ -15,6 +15,7 @@ define([
             default_lang : Config.LANG,
             default_countryCode : Config.COUNTRY_ISO3_CODE,
             environment : Config.ENVIROMENT_DEVELOP,
+            data_country_var : 'data-country',
 
             //url : ''
             url : 'http://example.com:3000/pathname/?country=COG'
@@ -26,7 +27,7 @@ define([
 
         this._importThirdPartyCss();
         //s.url = window.location.href;
-        console.log(s.url)
+        // console.log(s.url)
         console.log($("html").attr("lang"))
 
         if((s.lang!=null)&&(typeof s.lang!="undefined")){
@@ -38,7 +39,9 @@ define([
         }
         var obj = {url : s.url};
         var parsedUrl = new Parser(obj).parseURL();
-        var COUNTRY_CODE = parsedUrl.searchObject.country;
+        // var COUNTRY_CODE = parsedUrl.searchObject.country;
+
+        var COUNTRY_CODE = $(document.body).attr(s.data_country_var);
         this._dataManagementInit(COUNTRY_CODE);
     }
 

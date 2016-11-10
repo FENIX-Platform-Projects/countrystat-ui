@@ -3,112 +3,58 @@ define([
     "loglevel",
     "../config/config",
     "../config/analysis",
-    "fenix-ui-analysis",
-    "../js/parser"
-], function ($, log, Config, AnalysisConfig, FenixAnalysis, Parser) {
+    "fenix-ui-analysis"
+], function ($, log, C, AC, Analysis) {
 
     var s = {
-        CONTAINER : Config.ANALYSIS_CONTENT,
-        cache : Config.CACHE,
-        environment : Config.ENVIROMENT_PROD,
-        default_lang : Config.LANG,
-        default_countryCode : Config.COUNTRY_ISO3_CODE,
-
-        data_country_var : 'data-country',
-        //url : ''
-        url : 'http://example.com:3000/pathname/?country=cog'
-        //url : 'http://example.com:3000/pathname/?country=MDG'
+        COUNTRY: 'data-country'
     };
 
-    function Analysis(){
-        //var COUNTRY_CODE = 'MDG'; //Congo implement controller
+    function SearchAndVisualize() {
 
-        console.log($(document.body).attr(s.data_country_var))
         this._importThirdPartyCss();
-        //s.url = window.location.href;
-        console.log(s.url)
-        console.log($("html").attr("lang"))
-
-        if((s.lang!=null)&&(typeof s.lang!="undefined")){
-            s.lang = $("html").attr("lang");
-            s.lang = s.lang.toUpperCase();
-        }
-        else{
-            s.lang = s.default_lang;
-        }
-
-        // var obj = {url : s.url};
-        // var parsedUrl = new Parser(obj).parseURL();
-        // var COUNTRY_CODE = parsedUrl.searchObject.country;
-        var COUNTRY_CODE = $(document.body).attr(s.data_country_var);
-        this._analysisInit(COUNTRY_CODE);
+        
+        var c = {
+            lang : $("html").attr("lang") || C.LANG,
+            country : $(document.body).attr(s.COUNTRY) || ""
+        };
+        
+        // force to be string and uppercase
+        c.lang = String(c.lang).toUpperCase();
+        c.country = String(c.country).toUpperCase();
+             
+        this._initAnalysis(c);
     }
 
-    Analysis.prototype._analysisInit = function (COUNTRY_CODE) {
+    SearchAndVisualize.prototype._initAnalysis = function (opts) {
 
-        var country_code = COUNTRY_CODE;
-        var config = '';
-        var default_country = false;
-        if((country_code!=null)&&(typeof country_code!= 'undefined')&&(typeof country_code === 'string')&&(isNaN(country_code))&&(country_code.length== 3)) {
-            //Config Current Country
-            config = AnalysisConfig[country_code.toUpperCase()];
-            if((config!=null)&&(typeof config != 'undefined')) {
-            }
-            else{
-                config = '';
-                country_code = s.default_countryCode;
-                default_country = true;
-                log.error(Config.ERROR.NO_CURRENT_COUNTRY_CONFIG);
-            }
-        }
-        else{
-            country_code = s.default_countryCode;
-            default_country = true;
-            log.error(Config.ERROR.INVALID_COUNTRY_PARAM);
+        log.warn("Parsed configuration:");
+        log.warn(opts);
+
+        var config,
+            country = opts.country;
+
+        if (!AC.hasOwnProperty(country)) {
+            log.warn("Impossible to find configuration for country: " + opts.country);
+            country = C.country;
+            log.warn("Using default country instead: " + C.country);
         }
 
-        if(default_country){
-            //Config Default Country
-            config = AnalysisConfig[country_code.toUpperCase()];
-        }
+        config = $.extend(true, {
+            el: C.analysisEl,
+            cache: C.cache,
+            environment: C.environment,
+            lang: opts.lang
+        }, AC[country]);
 
-        //Country and configuration found (Could be either Current or Default)
-        if((config!=null)&&(typeof config != 'undefined')) {
-            this._analysisCreation(config);
-        }
-        else{
-            log.error(Config.ERROR.NO_COUNTRY_CONFIG);
-            this._analysisCreation();
-        }
+        log.warn("Analysis configuration: ");
+        log.warn(config);
+
+        this.analysis = new Analysis(config);
+
     };
 
-    //This function is not used
-    //No config as argument
-    Analysis.prototype._analysisCreation = function (config) {
-
-        console.log("Config analysis")
-        console.log(s)
-
-        if((config!=null)&&(typeof config != 'undefined')) {
-            var analysis = new FenixAnalysis($.extend(true, {
-                el : s.CONTAINER,
-                cache : s.cache,
-                environment : s.environment,
-                lang : s.lang
-            }, config));
-        }
-        else{
-            var analysis = new FenixAnalysis($.extend(true, {
-                el : s.CONTAINER,
-                cache : s.cache,
-                environment : s.environment,
-                lang : s.lang
-            }));
-        }
-    };
-
-    //style
-    Analysis.prototype._importThirdPartyCss = function () {
+    SearchAndVisualize.prototype._importThirdPartyCss = function () {
 
         //Bootstrap
         require('bootstrap/dist/css/bootstrap.css');
@@ -118,17 +64,13 @@ define([
 
         //dropdown selector
         require("../../node_modules/selectize/dist/css/selectize.bootstrap3.css");
-
-        // fenix-ui-filter
-        require("../../node_modules/fenix-ui-filter/dist/fenix-ui-filter.min.css");
-        // fenix-ui-dropdown
-        require("../../node_modules/fenix-ui-dropdown/dist/fenix-ui-dropdown.min.css");
-
-        // bootstrap-table
-        require("../../node_modules/bootstrap-table/dist/bootstrap-table.min.css");
-
         //tree selector
         require("../../node_modules/jstree/dist/themes/default/style.min.css");
+        // fenix-ui-filter
+        require("../../node_modules/fenix-ui-filter/dist/fenix-ui-filter.min.css");
+
+        // fenix-ui-dropdown
+        require("../../node_modules/fenix-ui-dropdown/dist/fenix-ui-dropdown.min.css");
 
         // fenix-ui-table-creator
         require("../../node_modules/fenix-ui-table-creator/dist/fenix-ui-table-creator.min.css");
@@ -136,15 +78,16 @@ define([
         // jquery-grid for fenix-ui-metadata-viewer
         require("../../node_modules/jquery-treegrid-webpack/css/jquery.treegrid.css");
 
-        // iDangerous swiper
-        require("../../node_modules/swiper/dist/css/swiper.min.css");
-
+        // bootstrap-table
+        require("../../node_modules/bootstrap-table/dist/bootstrap-table.min.css");
         // fenix-ui-catalog
         require("../../node_modules/fenix-ui-catalog/dist/fenix-ui-catalog.min.css");
 
-        //fenix-ui-analisys
+        //fenix-ui-analysis
         require("../../node_modules/fenix-ui-analysis/dist/fenix-ui-analysis.min.css");
 
+        // iDangerous swiper
+        require("../../node_modules/swiper/dist/css/swiper.min.css");
         // fenix-ui-visualization-box
         require("../../node_modules/fenix-ui-visualization-box/dist/fenix-ui-visualization-box.min.css");
 
@@ -153,5 +96,5 @@ define([
 
     };
 
-    return new Analysis();
+    return new SearchAndVisualize();
 });

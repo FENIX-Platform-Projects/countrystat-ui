@@ -10,10 +10,10 @@ define([
 ], function ($, log, Config, DMConfigDsdEditor, DMConfigMetadataEditor, DMConfig, FenixDataManagement, Parser) {
 
     var s = {
-            DATA_MNG: Config.DATA_MNG_CONTENT,
-            cache : Config.CACHE,
-            default_lang : Config.LANG,
-            default_countryCode : Config.COUNTRY_ISO3_CODE,
+            DATA_MNG: Config.dataManagementEl,
+            cache : Config.cache,
+            default_lang : Config.lang,
+            default_countryCode : Config.country,
             environment : Config.ENVIROMENT_PROD,
             data_country_var : 'data-country',
 

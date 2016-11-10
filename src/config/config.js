@@ -5,13 +5,21 @@ define(function () {
 
     return {
 
-        CACHE : false,
-        LANG : "EN",
+        cache : false,
+        lang : "EN",
+        country : 'COG',
+
+        environment : "production",
+
+        analysisEl : "#fx-analysis-container",
+
+        //Data management
+
         COUNTRY_ISO3_CODE : 'COG',
         ENVIROMENT_DEVELOP : "develop",
         ENVIROMENT_PROD : "production",
 
-        DATA_MNG_CONTENT : "#data-mng",
+        dataManagementEl : "#data-mng",
         ANALYSIS_CONTENT : "#fx-analysis-container",
 
 

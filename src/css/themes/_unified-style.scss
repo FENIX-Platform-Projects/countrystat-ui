@@ -194,6 +194,41 @@ $countries: (
 
     //// Filter
 
+
+    /* Radio Buttons */
+
+    input[type="radio"] + label  {
+
+
+      &:before {
+        border-color:$fx-cool-blue;
+      }
+    }
+
+    input[type="radio"]:checked + label {
+      color: $fx-cool-blue;
+    }
+
+
+
+
+    /* Checkbox Buttons */
+
+
+    input[type="checkbox"] + label  {
+
+
+
+      &:before {
+        border-color:$fx-cool-blue;
+      }
+    }
+
+    input[type="checkbox"]:checked + label {
+      color: $fx-cool-blue;
+    }
+
+
     //jsTree
 
     .jstree-default .jstree-wholerow-clicked{

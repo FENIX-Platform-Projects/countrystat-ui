@@ -86,6 +86,9 @@ define([
     //No config as argument
     Analysis.prototype._analysisCreation = function (config) {
 
+        console.log("Config analysis")
+        console.log(s)
+
         if((config!=null)&&(typeof config != 'undefined')) {
             var analysis = new FenixAnalysis($.extend(true, {
                 el : s.CONTAINER,
@@ -109,6 +112,9 @@ define([
 
         //Bootstrap
         require('bootstrap/dist/css/bootstrap.css');
+
+        //map
+        require("../../node_modules/leaflet/dist/leaflet.css");
 
         //dropdown selector
         require("../../node_modules/selectize/dist/css/selectize.bootstrap3.css");

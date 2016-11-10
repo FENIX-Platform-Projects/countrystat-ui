@@ -95,6 +95,9 @@ define([
     //No config as argument
     DataManagement.prototype._dataManagementCreation = function (dsdConfig, config) {
 
+        console.log("Config data manamegemnt")
+        console.log(s)
+
         var metadataConfig = DMConfigMetadataEditor;
         if((dsdConfig!=null)&&(typeof dsdConfig != 'undefined')&&(config!=null)&&(typeof config != 'undefined')) {
             var dataMng = new FenixDataManagement($.extend(true, {

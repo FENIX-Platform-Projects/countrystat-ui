@@ -30,7 +30,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_afg"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ["referenceArea", "dataDomain"],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -58,7 +58,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_ago"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ["referenceArea", "dataDomain"],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -86,7 +86,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_ben"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ["referenceArea", "dataDomain"],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -114,7 +114,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_bfa"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ["referenceArea", "dataDomain"],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -143,7 +143,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_cmr"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ["referenceArea", "dataDomain"],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -171,7 +171,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_civ"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ["referenceArea", "dataDomain"],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -200,7 +200,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_cog"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -229,7 +229,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_eth"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -257,7 +257,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_gha"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -285,7 +285,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_gnb"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -313,7 +313,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_hti"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -341,7 +341,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_ken"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ["MDGreferenceArea", "dataDomain"],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -369,7 +369,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_mdg"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -397,7 +397,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_mwi"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -425,7 +425,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_mli"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -453,7 +453,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_moz"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -481,7 +481,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_ner"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -509,7 +509,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_nga"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -537,7 +537,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_rwa"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -565,7 +565,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_sen"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -593,7 +593,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_tza"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -621,7 +621,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_tgo"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -649,7 +649,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_uga"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         },
@@ -677,7 +677,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_zmb"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ['resourceType', 'contextSystem'],
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
         }

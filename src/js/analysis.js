@@ -2,23 +2,25 @@ define([
     "jquery",
     "loglevel",
     "../config/config",
-    "../config/analysis",
+    "../config/shared",
     "fenix-ui-analysis"
-], function ($, log, C, AC, Analysis) {
+], function ($, log, C, SC, Analysis) {
 
     var s = {
         COUNTRY: 'data-country'
     };
 
-    function SearchAndVisualize() {
+    function SearchAndVisualizeSection() {
+
+        console.clear();
 
         this._importThirdPartyCss();
-        
+
         var c = {
-            lang : $("html").attr("lang") || C.LANG,
+            lang : C.forceLang || $("html").attr("lang") || C.lang,
             country : $(document.body).attr(s.COUNTRY) || ""
         };
-        
+
         // force to be string and uppercase
         c.lang = String(c.lang).toUpperCase();
         c.country = String(c.country).toUpperCase();
@@ -26,7 +28,7 @@ define([
         this._initAnalysis(c);
     }
 
-    SearchAndVisualize.prototype._initAnalysis = function (opts) {
+    SearchAndVisualizeSection.prototype._initAnalysis = function (opts) {
 
         log.warn("Parsed configuration:");
         log.warn(opts);
@@ -34,7 +36,7 @@ define([
         var config,
             country = opts.country;
 
-        if (!AC.hasOwnProperty(country)) {
+        if (!SC.hasOwnProperty(country)) {
             log.warn("Impossible to find configuration for country: " + opts.country);
             country = C.country;
             log.warn("Using default country instead: " + C.country);
@@ -45,7 +47,7 @@ define([
             cache: C.cache,
             environment: C.environment,
             lang: opts.lang
-        }, AC[country]);
+        }, SC[country]);
 
         log.warn("Analysis configuration: ");
         log.warn(config);
@@ -54,13 +56,14 @@ define([
 
     };
 
-    SearchAndVisualize.prototype._importThirdPartyCss = function () {
+    SearchAndVisualizeSection.prototype._importThirdPartyCss = function () {
 
         //Bootstrap
         require('bootstrap/dist/css/bootstrap.css');
 
         //map
         require("../../node_modules/leaflet/dist/leaflet.css");
+        require("../../node_modules/fenix-ui-map/dist/fenix-ui-map.min.css");
 
         //dropdown selector
         require("../../node_modules/selectize/dist/css/selectize.bootstrap3.css");
@@ -96,5 +99,5 @@ define([
 
     };
 
-    return new SearchAndVisualize();
+    return new SearchAndVisualizeSection();
 });

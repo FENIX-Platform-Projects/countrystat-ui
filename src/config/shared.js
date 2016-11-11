@@ -8,10 +8,6 @@ define(function () {
 
         //Afghanistan AFG
         "AFG": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -40,10 +36,6 @@ define(function () {
         },
         //Angola AGO
         "AGO": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -72,10 +64,6 @@ define(function () {
         },
         //Benin BEN
         "BEN": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -104,10 +92,6 @@ define(function () {
         },
         //Burkina Faso BFA
         "BFA": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -137,10 +121,6 @@ define(function () {
 
         //Cameroon CMR
         "CMR": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -169,10 +149,6 @@ define(function () {
         },
         //Cote d’Ivoire CIV
         "CIV": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -202,10 +178,6 @@ define(function () {
 
         //Congo COG
         "COG": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -235,10 +207,6 @@ define(function () {
 
         //Ethiopia ETH
         "ETH": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -267,10 +235,6 @@ define(function () {
         },
         //Ghana GHA
         "GHA": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -299,10 +263,6 @@ define(function () {
         },
         //Guinea-Bissau GNB
         "GNB": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -331,10 +291,6 @@ define(function () {
         },
         //Haiti HTI
         "HTI": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -363,10 +319,6 @@ define(function () {
         },
         //Kenya KEN
         "KEN": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -395,10 +347,6 @@ define(function () {
         },
         //Madagascar MDG
         "MDG": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -427,10 +375,6 @@ define(function () {
         },
         //Malawi MWI
         "MWI": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -459,10 +403,6 @@ define(function () {
         },
         //Mali MLI
         "MLI": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -491,10 +431,6 @@ define(function () {
         },
         //Mozambique MOZ
         "MOZ": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -523,10 +459,6 @@ define(function () {
         },
         //Niger NER
         "NER": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -555,10 +487,6 @@ define(function () {
         },
         //Nigeria NGA
         "NGA": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -587,10 +515,6 @@ define(function () {
         },
         //Rwanda RWA
         "RWA": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -619,10 +543,6 @@ define(function () {
         },
         //Senegal SEN
         "SEN": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -651,10 +571,6 @@ define(function () {
         },
         //Tanzania TZA
         "TZA": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -683,10 +599,6 @@ define(function () {
         },
         //Togo TGO
         "TGO": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -715,10 +627,6 @@ define(function () {
         },
         //Uganda UGA
         "UGA": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
@@ -747,10 +655,6 @@ define(function () {
         },
         //Zambia ZMB
         "ZMB": {
-            el: '#fx-analysis-container',
-            //all components
-            cache: false,
-            environment: "production",
             catalog: {
                 pluginRegistry: {
                     contextSystem: {

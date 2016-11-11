@@ -7,10 +7,7 @@ define(function(){
         //Afghanistan AFG
         "AFG": {
             catalog: {
-                el: "",
-                lang: "",
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -43,10 +40,7 @@ define(function(){
         //Angola AGO
         "AGO": {
             catalog: {
-                el: "",
-                lang: "",
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -78,10 +72,7 @@ define(function(){
         //Benin BEN
         "BEN": {
             catalog: {
-                el: "",
-                lang: "",
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -113,10 +104,7 @@ define(function(){
         //Burkina Faso BFA
         "BFA": {
             catalog: {
-                el: "",
-                lang: "",
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -149,10 +137,7 @@ define(function(){
         //Cameroon CMR
         "CMR": {
             catalog: {
-                el: "",
-                lang: "",
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -184,10 +169,9 @@ define(function(){
         //Cote d’Ivoire CIV
         "CIV": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -220,10 +204,9 @@ define(function(){
         //Congo COG
         "COG": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -256,10 +239,9 @@ define(function(){
         //Ethiopia ETH
         "ETH": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -291,10 +273,9 @@ define(function(){
         //Ghana GHA
         "GHA": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -326,10 +307,9 @@ define(function(){
         //Guinea-Bissau GNB
         "GNB": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -361,10 +341,9 @@ define(function(){
         //Haiti HTI
         "HTI": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -396,10 +375,9 @@ define(function(){
         //Kenya KEN
         "KEN": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -431,10 +409,9 @@ define(function(){
         //Madagascar MDG
         "MDG": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -466,10 +443,9 @@ define(function(){
         //Malawi MWI
         "MWI": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -501,10 +477,9 @@ define(function(){
         //Mali MLI
         "MLI": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -536,10 +511,9 @@ define(function(){
         //Mozambique MOZ
         "MOZ": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -571,10 +545,9 @@ define(function(){
         //Niger NER
         "NER": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -606,10 +579,9 @@ define(function(){
         //Nigeria NGA
         "NGA": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -641,10 +613,9 @@ define(function(){
         //Rwanda RWA
         "RWA": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -676,10 +647,9 @@ define(function(){
         //Senegal SEN
         "SEN": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -711,10 +681,9 @@ define(function(){
         //Tanzania TZA
         "TZA": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -746,10 +715,9 @@ define(function(){
         //Togo TGO
         "TGO": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -781,10 +749,9 @@ define(function(){
         //Uganda UGA
         "UGA": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {
@@ -816,10 +783,9 @@ define(function(){
         //Zambia ZMB
         "ZMB": {
             catalog: {
-                el: "",
-                lang: "",
+               
                 defaultSelectors: ['resourceType', 'contextSystem'],
-                environment: "",
+                
                 hideCloseButton: true,
                 pluginRegistry: {
                     contextSystem: {

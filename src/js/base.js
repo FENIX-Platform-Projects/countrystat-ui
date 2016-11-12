@@ -4,9 +4,20 @@ define([
     'progressbar.js'
 ], function ($, Charts, ProgressBar) {
 
+    var s = {
+        COUNTRY: 'data-country'
+    };
 
     function Base() {
+
         this._importThirdPartyCss();
+
+        var f = {
+            country : $(document.body).attr(s.COUNTRY) || "none"
+        }
+
+        console.log("Country loaded is" + f.country);
+
         this._initCharts("AFG");
         console.log(Charts["AFG"].color);
     }
@@ -57,4 +68,5 @@ define([
     }
 
     return new Base();
+
 });

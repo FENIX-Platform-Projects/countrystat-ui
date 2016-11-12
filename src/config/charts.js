@@ -15,14 +15,14 @@ define(function () {
         //Angola AGO
         "AGO": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.20,
+            percentageTwo: 0.80
         },
         //Benin BEN
         "BEN": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.44,
+            percentageTwo: 0.56
         },
         //Burkina Faso BFA
         "BFA": {
@@ -33,15 +33,15 @@ define(function () {
 
         //Cameroon CMR
         "CMR": {
-            color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            color: '#f07f52',
+            percentageOne: 0.20,
+            percentageTwo: 0.80
         },
         //Cote d’Ivoire CIV
         "CIV": {
-            color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            color: '#f07f52',
+            percentageOne: 0.63,
+            percentageTwo: 0.37
         },
 
         //Congo COG
@@ -84,8 +84,8 @@ define(function () {
         //Madagascar MDG
         "MDG": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.09,
+            percentageTwo: 0.91
         },
         //Malawi MWI
         "MWI": {
@@ -96,8 +96,8 @@ define(function () {
         //Mali MLI
         "MLI": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.33,
+            percentageTwo: 0.67
         },
         //Mozambique MOZ
         "MOZ": {
@@ -119,15 +119,15 @@ define(function () {
         },
         //Rwanda RWA
         "RWA": {
-            color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            color: '#f07f52',
+            percentageOne: 0.76,
+            percentageTwo: 0.24
         },
         //Senegal SEN
         "SEN": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.48,
+            percentageTwo: 0.52
         },
         //Tanzania TZA
         "TZA": {

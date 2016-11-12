@@ -18,8 +18,8 @@ define([
 
         console.log("Country loaded is" + f.country);
 
-        this._initCharts("AFG");
-        console.log(Charts["AFG"].color);
+        this._initCharts(f.country);
+
     }
 
     //style

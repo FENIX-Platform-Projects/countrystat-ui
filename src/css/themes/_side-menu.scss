@@ -99,25 +99,38 @@
 
 #wrapper.toggled {
 
-  .page-content-toolbar-btn{
-    left: 260px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+
+  /* Default */
+
+  @media (min-width: 768px)  {
+
+
+
+    .page-content-toolbar-btn{
+      left: 260px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+
+    }
+
+    .page-content-toolbar-btn.pull-right{
+      right: 10px;
+      left: 0;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+
+
 
   }
 
-  .page-content-toolbar-btn.pull-right{
-    right: 10px;
-    left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-
+  
 }
+
 
 
 #wrapper #sidebar-wrapper {

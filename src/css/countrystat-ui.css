@@ -1,3 +1,4 @@
+/* Default */
 /* Fenix - Buttons Component */
 /** avoid dotted lines when clicking on button**/
 input[type="button"] {
@@ -5844,19 +5845,22 @@ input[type="radio"]:disabled + label {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-#wrapper.toggled .page-content-toolbar-btn {
-  left: 260px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-#wrapper.toggled .page-content-toolbar-btn.pull-right {
-  right: 10px;
-  left: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+#wrapper.toggled {
+  /* Default */ }
+  @media (min-width: 768px) {
+    #wrapper.toggled .page-content-toolbar-btn {
+      left: 260px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    #wrapper.toggled .page-content-toolbar-btn.pull-right {
+      right: 10px;
+      left: 0;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; } }
 
 #wrapper #sidebar-wrapper .brand-logo {
   margin-left: 50px;
@@ -6094,7 +6098,7 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
     color: #333;
     font-size: 40px;
     padding: 0; }
-    .page-content-toolbar .page-content-toolbar-btn:active, .page-content-toolbar .page-content-toolbar-btn:active:focus, .page-content-toolbar .page-content-toolbar-btn:focus, .page-content-toolbar .page-content-toolbar-btn:active:hover, .page-content-toolbar .page-content-toolbar-btn:hover {
+    .page-content-toolbar .page-content-toolbar-btn.active, .page-content-toolbar .page-content-toolbar-btn:active, .page-content-toolbar .page-content-toolbar-btn:hover, .page-content-toolbar .page-content-toolbar-btn:active:hover, .page-content-toolbar .page-content-toolbar-btn:active:focus, .page-content-toolbar .page-content-toolbar-btn:focus {
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;

@@ -232,6 +232,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small
     color: $fenix-text;
     font-size: 40px;
     padding: 0;
+
+    &:active, &:active:focus, &:focus, &:active:hover, &:hover{
+      @include fx-noshadow;
+      border-color: transparent;
+      background-color: transparent;
+    }
+
   }
 
 }

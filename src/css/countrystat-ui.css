@@ -5641,7 +5641,8 @@ input[type="radio"]:disabled + label {
     position: absolute;
     width: 100%;
     bottom: 0;
-    left: 0; }
+    left: 0;
+    pointer-events: none; }
 
 .home-tile.map {
   background-color: #97bead;
@@ -6093,6 +6094,12 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
     color: #333;
     font-size: 40px;
     padding: 0; }
+    .page-content-toolbar .page-content-toolbar-btn:active, .page-content-toolbar .page-content-toolbar-btn:active:focus, .page-content-toolbar .page-content-toolbar-btn:focus, .page-content-toolbar .page-content-toolbar-btn:active:hover, .page-content-toolbar .page-content-toolbar-btn:hover {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border-color: transparent;
+      background-color: transparent; }
 
 .catalog-ico.img-responsive {
   position: relative;
@@ -6331,7 +6338,7 @@ body[data-country='AGO'] {
     background-color: #b4a0a9;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/AGO/AGO-map.svg"); }
     body[data-country='AGO'] .home-tile.map:hover {
-      background-position: 50% 76%; }
+      background-position: 50% 100%; }
     body[data-country='AGO'] .home-tile.map .afg-title {
       background-color: #b4a0a9; }
   body[data-country='AGO'] #sidebar-wrapper {
@@ -6465,7 +6472,7 @@ body[data-country='BEN'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/BEN/BEN-map.svg"); }
     body[data-country='BEN'] .home-tile.map:hover {
-      background-position: 50% 76%; }
+      background-position: 46% 76%; }
     body[data-country='BEN'] .home-tile.map .afg-title {
       background-color: #97bead; }
   body[data-country='BEN'] #sidebar-wrapper {
@@ -6599,7 +6606,7 @@ body[data-country='BFA'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/BFA/BFA-map.svg"); }
     body[data-country='BFA'] .home-tile.map:hover {
-      background-position: 50% 76%; }
+      background-position: 45% 76%; }
     body[data-country='BFA'] .home-tile.map .afg-title {
       background-color: #97bead; }
   body[data-country='BFA'] #sidebar-wrapper {
@@ -6733,7 +6740,7 @@ body[data-country='CIV'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/CIV/CIV-map.svg"); }
     body[data-country='CIV'] .home-tile.map:hover {
-      background-position: 50% 76%; }
+      background-position: 44% 84%; }
     body[data-country='CIV'] .home-tile.map .afg-title {
       background-color: #97bead; }
   body[data-country='CIV'] #sidebar-wrapper {
@@ -6741,13 +6748,13 @@ body[data-country='CIV'] {
     body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li {
       background-color: #345962; }
       body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li.active a {
-        background-color: #345962; }
+        background-color: #3f7d8b; }
         body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li.active a:before {
           background-color: #f07f52; }
         body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li.active a:hover, body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li.active a:active, body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li.active a:focus, body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li.active a:visited {
-          background-color: #345962; }
+          background-color: #3f7d8b; }
       body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li a:hover, body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li a:active, body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li a:focus, body[data-country='CIV'] #sidebar-wrapper .sidebar-nav li a:visited {
-        background-color: #345962; }
+        background-color: #3f7d8b; }
   body[data-country='CIV'] .fx-text-primary-color {
     color: #f07f52; }
   body[data-country='CIV'] .fx-background-color-primary-color {
@@ -6875,13 +6882,13 @@ body[data-country='CMR'] {
     body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li {
       background-color: #345962; }
       body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li.active a {
-        background-color: #345962; }
+        background-color: #3f7d8b; }
         body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li.active a:before {
           background-color: #f07f52; }
         body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li.active a:hover, body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li.active a:active, body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li.active a:focus, body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li.active a:visited {
-          background-color: #345962; }
+          background-color: #3f7d8b; }
       body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li a:hover, body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li a:active, body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li a:focus, body[data-country='CMR'] #sidebar-wrapper .sidebar-nav li a:visited {
-        background-color: #345962; }
+        background-color: #3f7d8b; }
   body[data-country='CMR'] .fx-text-primary-color {
     color: #f07f52; }
   body[data-country='CMR'] .fx-background-color-primary-color {
@@ -7269,7 +7276,7 @@ body[data-country='MLI'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/MLI/MLI-map.svg"); }
     body[data-country='MLI'] .home-tile.map:hover {
-      background-position: 50% 76%; }
+      background-position: 45% 76%; }
     body[data-country='MLI'] .home-tile.map .afg-title {
       background-color: #97bead; }
   body[data-country='MLI'] #sidebar-wrapper {
@@ -7411,13 +7418,13 @@ body[data-country='RWA'] {
     body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li {
       background-color: #345962; }
       body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li.active a {
-        background-color: #345962; }
+        background-color: #3f7d8b; }
         body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li.active a:before {
           background-color: #f07f52; }
         body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li.active a:hover, body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li.active a:active, body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li.active a:focus, body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li.active a:visited {
-          background-color: #345962; }
+          background-color: #3f7d8b; }
       body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li a:hover, body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li a:active, body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li a:focus, body[data-country='RWA'] #sidebar-wrapper .sidebar-nav li a:visited {
-        background-color: #345962; }
+        background-color: #3f7d8b; }
   body[data-country='RWA'] .fx-text-primary-color {
     color: #f07f52; }
   body[data-country='RWA'] .fx-background-color-primary-color {

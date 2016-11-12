@@ -21,14 +21,14 @@ define(function () {
         //Benin BEN
         "BEN": {
             color: '#db514b',
-            percentageOne: 0.44,
-            percentageTwo: 0.56
+            percentageOne: 0.29,
+            percentageTwo: 0.71
         },
         //Burkina Faso BFA
         "BFA": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.44,
+            percentageTwo: 0.56
         },
 
         //Cameroon CMR

@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "echo \"Error: please specify a valid section to develop [e.g. npm run dev:analysis]\" && exit 1",
     "dev:analysis": "SECTIONS=analysis NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
+    "dev:base": "SECTIONS=base NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "dev:data_management": "SECTIONS=data_management NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "w-dev:data_managment": "SET SECTIONS=data_management&&SET NODE_ENV=develop&&webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "build": "SECTIONS=base,analysis,data_management NODE_ENV=production webpack --display-error-details ",
@@ -27,7 +28,8 @@
     "bootstrap": "^3.3.7",
     "fenix-ui-analysis": "^3.0.0-beta.24",
     "fenix-ui-data-management": "^2.0.0-beta.39",
-    "jquery": "^3.1.0"
+    "jquery": "^3.1.0",
+    "progressbar.js": "^1.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",

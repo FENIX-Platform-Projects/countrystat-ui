@@ -1,12 +1,14 @@
 define([
     'jquery',
+    "../config/charts",
     'progressbar.js'
-], function ($, ProgressBar) {
+], function ($, Charts, ProgressBar) {
 
 
     function Base() {
         this._importThirdPartyCss();
-        this._initCharts();
+        this._initCharts("AFG");
+        console.log(Charts["AFG"].color);
     }
 
     //style
@@ -20,15 +22,17 @@ define([
 
     };
 
-    Base.prototype._initCharts = function () {
+    Base.prototype._initCharts = function (code) {
 
         var p = {
             PERCENTAGE_ONE: '#percentage-one',
             PERCENTAGE_TWO: '#percentage-two'
         };
 
+        var country = Charts[code];
+
         var c = {
-            color: '#db514b', //color
+            color: country.color, //color
             strokeWidth: 10,
             trailWidth: 9,
             trailColor: "rgba(255,255,255,0.2)",
@@ -44,11 +48,11 @@ define([
 
         var circle = new ProgressBar.Circle(p.PERCENTAGE_ONE, c);
 
-        circle.animate(0.30);//pOne
+        circle.animate(country.percentageOne);//pOne
 
         var circle_two = new ProgressBar.Circle(p.PERCENTAGE_TWO, c);
 
-        circle_two.animate(0.70);//pTwo
+        circle_two.animate(country.percentageTwo);//pTwo
 
     }
 

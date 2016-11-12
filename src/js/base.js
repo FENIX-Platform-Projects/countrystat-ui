@@ -1,8 +1,9 @@
 define([
     'jquery',
+    "loglevel",
     "../config/charts",
     'progressbar.js'
-], function ($, Charts, ProgressBar) {
+], function ($, log, Charts, ProgressBar) {
 
     var s = {
         COUNTRY: 'data-country'
@@ -13,10 +14,10 @@ define([
         this._importThirdPartyCss();
 
         var f = {
-            country : $(document.body).attr(s.COUNTRY) || "none"
+            country: $(document.body).attr(s.COUNTRY) || "none"
         }
 
-        console.log("Country loaded is" + f.country);
+        log.info("Country loaded is: " + f.country);
 
         this._initCharts(f.country);
 

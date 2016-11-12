@@ -15,8 +15,8 @@ define(function () {
         //Angola AGO
         "AGO": {
             color: '#db514b',
-            percentageOne: 0.20,
-            percentageTwo: 0.80
+            percentageOne: 0.47,
+            percentageTwo: 0.53
         },
         //Benin BEN
         "BEN": {

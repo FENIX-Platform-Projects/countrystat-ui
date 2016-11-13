@@ -7,7 +7,7 @@ define(function () {
 
         cache : false,
         lang : "FR", //default language
-        forceLang : "FR",
+        //forceLang : "FR",
         country : 'COG',
 
         environment : "production",

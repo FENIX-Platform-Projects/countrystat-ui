@@ -53,9 +53,14 @@ define([
             cache: C.cache,
             environment: C.environment,
             lang: opts.lang,
-            //metadataEditor: metadata,
+            metadataEditor: metadata,
             dsdEditor: $.extend(true, DsdConfig, { contextSystem: "cstat_" + country.toLowerCase()}),
-            catalog: $.extend(true, SC[country].catalog, {hideCloseButton: true})
+            catalog: $.extend(true, SC[country].catalog, {hideCloseButton: true}),
+            config: {
+                contextSystem: "cstat_" + country.toLowerCase(),
+                datasources : ["D3S"],
+                resourceRepresentationType: "dataset"
+            }
         };
 
         log.warn("Data management configuration: ");

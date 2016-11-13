@@ -53,7 +53,7 @@ define([
             cache: C.cache,
             environment: C.environment,
             lang: opts.lang,
-            metadataEditor: metadata,
+            //metadataEditor: metadata,
             dsdEditor: $.extend(true, DsdConfig, { contextSystem: "cstat_" + country.toLowerCase()}),
             catalog: $.extend(true, SC[country].catalog, {hideCloseButton: true})
         };

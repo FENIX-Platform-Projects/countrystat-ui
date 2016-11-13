@@ -20,7 +20,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -48,7 +48,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -76,7 +76,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -104,7 +104,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -133,7 +133,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -161,7 +161,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -190,7 +190,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -219,7 +219,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -247,7 +247,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -275,7 +275,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -303,7 +303,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -331,7 +331,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -359,7 +359,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -387,7 +387,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -415,7 +415,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -443,7 +443,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -471,7 +471,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -499,7 +499,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -527,7 +527,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -555,7 +555,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -583,7 +583,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -611,7 +611,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -639,7 +639,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }
@@ -667,7 +667,7 @@ define(function () {
                     },
                     dataDomain: {
                         cl: {
-                            uid: "CountrySTAT_Indicators",
+                            uid: "CSTAT_Core",
                             level: 1,
                             levels: 1
                         }

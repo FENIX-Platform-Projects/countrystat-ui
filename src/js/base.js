@@ -11,11 +11,13 @@ define([
 
     function Base() {
 
+        log.setLevel("trace");
+
         this._importThirdPartyCss();
 
         var f = {
             country: $(document.body).attr(s.COUNTRY) || "none"
-        }
+        };
 
         log.info("Country loaded is: " + f.country);
 

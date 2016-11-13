@@ -14,6 +14,8 @@ define([
 
         console.clear();
 
+        log.setLevel("trace");
+
         this._importThirdPartyCss();
 
         var c = {

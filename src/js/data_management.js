@@ -15,6 +15,8 @@ define([
 
     function DataMngPage() {
 
+        log.setLevel("trace");
+
         console.clear();
 
         this._importThirdPartyCss();

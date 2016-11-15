@@ -3,10 +3,10 @@ define(
 
         var IANA = {uid: 'IANAcharacterSet'},
             Role = [
-                {"value": "owner", "label": "Owner"},
-                {"value": "distributor", "label": "Distributor"},
-                {"value": "producer", "label": "Producer"},
-                {"value": "other", "label": "Other"}
+                {"value": "owner", "label": "Propriétaire"},
+                {"value": "distributor", "label": "Distributeur"},
+                {"value": "producer", "label": "Producteur"},
+                {"value": "other", "label": "Autre"}
             ],
             GAUL = {uid: 'GAUL0', version: "2014"},
             Languages = {uid: 'ISO639-2', version: "1998"},
@@ -246,7 +246,7 @@ define(
                             },
                             "template": {
                                 "title": "Position",
-                                "description": "Role or position of the responsible person."
+                                "description": "Rôle ou position de la personne responsable"
 
                             },
                             "format": {
@@ -396,7 +396,7 @@ define(
 
                 "meContent": {
                     "title": "Contenu",
-                    "description": "This section includes a summary of the content of the resource and the description of the geographical, time and sector coverage.",
+                    "description": "Cette section comprend un résumé du contenu de la ressource et la description de la couverture géographique, temporelle et sectorielle.",
                     "selectors": {
                         "keywords": {
                             "selector": {
@@ -647,10 +647,10 @@ define(
                     "title": "Statistical Processing",
                     "sections": {
                         "seDataSource": {
-                            "title": "Data source",
+                            "title": "Source de données",
                             "template": {
-                                "title": "Data source",
-                                "description": "Process used to collect data. It includes a detailed description both of the primary data collection (e.g. type of collection, method to gather data from respondents, sampling procedures..) and the secondary data collection (information about data that have been already collected by another agency or institution).",
+                                "title": "Source de données",
+                                "description": "Processus utilisé pour collecter les données. Il comprend une description détaillée de la collecte de données primaires (par exemple, type de collecte, méthode de collecte des données des répondants, procédures d'échantillonnage ...) et la collecte de données secondaires (informations sur les données déjà recueillies par une autre agence ou institution).",
                             },
                             "sections": {
                                 "sePrimaryDataCollection": {
@@ -737,7 +737,7 @@ define(
                                             },
                                             "template": {
                                                 "title": "Organisation",
-                                                "description": "Organization is mandatory when 'Other International Organizations' has been chosen in originOfCollectedData *** If the element \u003c\u003coriginOfCollectedData\u003e\u003e has been generally specified as \u0027other International Organizations\u0027 this element requests to report the exact source of the resource.",
+                                                "description": "L'organisation est obligatoire lorsque «Autres Organisations Internationales» a été choisie dans 'originOfCollectedData' *** Si l'élément origine des données collectées a généralement été spécifié comme étant d'autres organisations internationales, cet élément demande de rapporter la source exacte de la ressource.",
 
                                             },
                                             "format": {
@@ -797,7 +797,7 @@ define(
                                             },
                                             "template": {
                                                 "title": "Organisation",
-                                                "description": "If the element \u003c\u003coriginOfCollectedData\u003e\u003e has been generally specified as \u0027other International Organizations\u0027 this element requests to report the exact source of the resource.",
+                                                "description": "Si l'élément origine des données collectées a généralement été spécifié comme étant d'autres organisations internationales, cet élément demande de rapporter la source exacte de la ressource.",
 
                                             },
                                             "format": {
@@ -817,7 +817,7 @@ define(
                                             },
                                             "template": {
                                                 "title": "Collecte de données",
-                                                "description": "Data collection details.",
+                                                "description": "Détails de la collecte des données.",
 
                                             },
                                             "format": {

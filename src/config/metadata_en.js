@@ -182,7 +182,7 @@ define(
                         "default": ['eng']
                     },
                     "template": {
-                        "title": "metadataLanguage",
+                        "title": "Metadata Language",
                         "description": "Language(s) used for metadata",
 
                     },

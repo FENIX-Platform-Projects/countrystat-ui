@@ -160,7 +160,7 @@ define(
                         "default": ['fre']
                     },
                     "template": {
-                        "title": "metadataLanguage",
+                        "title": "Langue des métadonnées",
                         "description": "Langue(s) utilisée(s) pour les métadonnées",
 
                     },
@@ -530,7 +530,7 @@ define(
                             }
                         },
                         "seCoverage": {
-                            "title": "Coverage",
+                            "title": "Couverture",
                             "selectors": {
                                 "coverageSectors": {
                                     "cl": CoverageSector,
@@ -599,7 +599,7 @@ define(
                     }
                 },
                 "meInstitutionalMandate": {
-                    "title": "Institutionale Mandate",
+                    "title": "Mandat institutionnel",
                     "selectors": {
                         "legalActsAgreements": {
                             "selector": {
@@ -644,7 +644,7 @@ define(
                     }
                 },
                 "meStatisticalProcessing": {
-                    "title": "Statistical Processing",
+                    "title": "Traitement statistique",
                     "sections": {
                         "seDataSource": {
                             "title": "Source de données",
@@ -654,7 +654,7 @@ define(
                             },
                             "sections": {
                                 "sePrimaryDataCollection": {
-                                    "title": "Primary Data Collection",
+                                    "title": "Collecte de données primaires",
                                     "selectors": {
                                         "typeOfCollection": {
                                             "cl": TypeOfCollection,
@@ -1295,10 +1295,10 @@ define(
                     }
                 },
                 "meAccessibility": {
-                    "title": "Accessibility",
+                    "title": "Accessibilité",
                     "sections": {
                         "seDataDissemination": {
-                            "title": "Data Dissemination",
+                            "title": "Diffusion des données",
                             "sections": {
                                 "seDistribution": {
                                     "title": "Distribution",

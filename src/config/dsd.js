@@ -17,7 +17,7 @@ define(function(){
                 "value": "GAUL|2014",
                 "text": {
                     "EN": "GAUL",
-                    "FR": "GAUL FR"
+                    "FR": "GAUL"
                 },
                 "subject": "geo"
             },
@@ -25,7 +25,7 @@ define(function(){
                 "value": "CPC|2.1",
                 "text": {
                     "EN": "CPC 2.1",
-                    "FR": "CPC 2.1 FR"
+                    "FR": "CPC 2.1"
                 },
                 "subject": "item"
             },
@@ -33,7 +33,7 @@ define(function(){
                 "value": "Flag",
                 "text": {
                     "EN": "Flag",
-                    "FR": "Flag FR"
+                    "FR": "Flag"
                 },
                 "subject": "flag"
             },
@@ -41,7 +41,7 @@ define(function(){
                 "value": "CountrySTAT_Agricultural_Population",
                 "text": {
                     "EN": "Agricultural",
-                    "FR": "Agricultural FR"
+                    "FR": "Population agricole"
                 },
                 "subject": "agriculturalPopulation"
             },
@@ -49,7 +49,7 @@ define(function(){
                 "value": "CountrySTAT_DAC",
                 "text": {
                     "EN": "DAC",
-                    "FR": "DAC FR"
+                    "FR": "DAC"
                 },
                 "subject": "sector"
             },
@@ -57,7 +57,7 @@ define(function(){
                 "value": "CountrySTAT_Field_Management",
                 "text": {
                     "EN": "Field Management",
-                    "FR": "Field Management FR"
+                    "FR": "Gestion du terrain"
                 },
                 "subject": "fieldManagement"
             },
@@ -65,7 +65,7 @@ define(function(){
                 "value": "CountrySTAT_Food",
                 "text": {
                     "EN": "Food",
-                    "FR": "Food FR"
+                    "FR": "Alimentaire"
                 },
                 "subject": "food"
             },
@@ -73,7 +73,7 @@ define(function(){
                 "value": "CountrySTAT_Gender",
                 "text": {
                     "EN": "Gender",
-                    "FR": "Gender FR"
+                    "FR": "Genre"
                 },
                 "subject": "gender"
             },
@@ -81,7 +81,7 @@ define(function(){
                 "value": "CountrySTAT_Residence",
                 "text": {
                     "EN": "Residence",
-                    "FR": "Residence FR"
+                    "FR": "Résidence"
                 },
                 "subject": "residence"
             },
@@ -89,7 +89,7 @@ define(function(){
                 "value": "CountrySTAT_Indicators",
                 "text": {
                     "EN": "CountrySTAT Indicators",
-                    "FR": "CountrySTAT Indicators FR"
+                    "FR": "Indicateurs de CountrySTAT"
                 },
                 "subject": "indicator"
             },
@@ -97,7 +97,7 @@ define(function(){
                 "value": "HS|full",
                 "text": {
                     "EN": "HS Full",
-                    "FR": "HS Full FR"
+                    "FR": "HS complet"
                 },
                 "subject": "item"
             },
@@ -105,7 +105,7 @@ define(function(){
                 "value": "CountrySTAT_UM",
                 "text": {
                     "EN": "CountrySTAT UM",
-                    "FR": "CountrySTAT UM FR"
+                    "FR": "CountrySTAT Unité de mesure"
                 },
                 "subject": "um"
             },
@@ -113,7 +113,7 @@ define(function(){
                 "value": "CountrySTAT_Fishery_products",
                 "text": {
                     "EN": "Fishery products",
-                    "FR": "Fishery products FR"
+                    "FR": "Produits de la pêche"
                 },
                 "subject": "item"
             },
@@ -121,7 +121,7 @@ define(function(){
                 "value": "CountrySTAT_Forest_products",
                 "text": {
                     "EN": "Forest products",
-                    "FR": "Forest products FR"
+                    "FR": "Produits forestiers"
                 },
                 "subject": "item"
             },
@@ -129,14 +129,14 @@ define(function(){
                 "value": "CountrySTAT_Fishery_products_scientific",
                 "text": {
                     "EN": "Fishery scientific products",
-                    "FR": "Fishery scientific products FR"
+                    "FR": "Produits de la pêche - scientifiques"
                 },
                 "subject": "item"
             },
             {
                 "value": "Activités_agricoles",
                 "text": {
-                    "EN": "Activités agricoles",
+                    "EN": "Farm activities",
                     "FR": "Activités agricoles"
                 },
                 "subject": "census"
@@ -144,7 +144,7 @@ define(function(){
             {
                 "value": "Activités_forestières",
                 "text": {
-                    "EN": "Activités forestières",
+                    "EN": "Forestry activities",
                     "FR": "Activités forestières"
                 },
                 "subject": "census"
@@ -162,7 +162,7 @@ define(function(){
             {
                 "value": "Approvisionement_en_eau",
                 "text": {
-                    "EN": "Approvisionement en eau",
+                    "EN": "Water supply",
                     "FR": "Approvisionement en eau"
                 },
                 "subject": "census"
@@ -170,7 +170,7 @@ define(function(){
             {
                 "value": "Classe_de_distance",
                 "text": {
-                    "EN": "Classe de distance",
+                    "EN": "Distance class",
                     "FR": "Classe de distance"
                 },
                 "subject": "census"
@@ -178,7 +178,7 @@ define(function(){
             {
                 "value": "Difficultés_rencontrées",
                 "text": {
-                    "EN": "Difficultés rencontrées",
+                    "EN": "Encountered difficulties",
                     "FR": "Difficultés rencontrées"
                 },
                 "subject": "census"
@@ -194,7 +194,7 @@ define(function(){
             {
                 "value": "Equipments_agricoles",
                 "text": {
-                    "EN": "Equipments agricoles",
+                    "EN": "Agricultural equipments",
                     "FR": "Equipments agricoles"
                 },
                 "subject": "census"
@@ -218,7 +218,7 @@ define(function(){
             {
                 "value": "Indicateurs_Recensement",
                 "text": {
-                    "EN": "Indicateurs Recensement",
+                    "EN": "Census Indicators",
                     "FR": "Indicateurs Recensement"
                 },
                 "subject": "census"
@@ -226,7 +226,7 @@ define(function(){
             {
                 "value": "Main_d'oeuvre",
                 "text": {
-                    "EN": "Main d'oeuvre",
+                    "EN": "Workforce",
                     "FR": "Main d'oeuvre"
                 },
                 "subject": "census"
@@ -234,7 +234,7 @@ define(function(){
             {
                 "value": "Matériel",
                 "text": {
-                    "EN": "Matériel",
+                    "EN": "Equipment",
                     "FR": "Matériel"
                 },
                 "subject": "census"
@@ -242,7 +242,7 @@ define(function(){
             {
                 "value": "Mode_de_faire_valoir",
                 "text": {
-                    "EN": "Mode de faire valoir",
+                    "EN": "How to claim",
                     "FR": "Mode de faire valoir"
                 },
                 "subject": "census"
@@ -250,7 +250,7 @@ define(function(){
             {
                 "value": "Niveau_Instruction",
                 "text": {
-                    "EN": "Niveau Instruction",
+                    "EN": "Level Instruction",
                     "FR": "Niveau Instruction"
                 },
                 "subject": "census"
@@ -258,7 +258,7 @@ define(function(){
             {
                 "value": "Nombre_conjointes",
                 "text": {
-                    "EN": "Nombre conjointes",
+                    "EN": "Number of joint",
                     "FR": "Nombre conjointes"
                 },
                 "subject": "census"
@@ -266,7 +266,7 @@ define(function(){
             {
                 "value": "Nombre_de_champs_possédés",
                 "text": {
-                    "EN": "Nombre de champs possédés",
+                    "EN": "Number of owned fields",
                     "FR": "Nombre de champs possédés"
                 },
                 "subject": "census"
@@ -274,7 +274,7 @@ define(function(){
             {
                 "value": "Nombre_de_pieds",
                 "text": {
-                    "EN": "Nombre de pieds",
+                    "EN": "Number of feet",
                     "FR": "Nombre de pieds"
                 },
                 "subject": "census"
@@ -282,7 +282,7 @@ define(function(){
             {
                 "value": "Objectifs_de_production",
                 "text": {
-                    "EN": "Objectifs de production",
+                    "EN": "Production targets",
                     "FR": "Objectifs de production"
                 },
                 "subject": "census"
@@ -290,7 +290,7 @@ define(function(){
             {
                 "value": "Oui_Non",
                 "text": {
-                    "EN": "Oui Non EN",
+                    "EN": "Yes No",
                     "FR": "Oui Non"
                 },
                 "subject": "census"
@@ -298,7 +298,7 @@ define(function(){
             {
                 "value": "Répartition_exploitations",
                 "text": {
-                    "EN": "Répartition exploitations EN",
+                    "EN": "Breakdown of holdings",
                     "FR": "Répartition exploitations"
                 },
                 "subject": "census"
@@ -306,7 +306,7 @@ define(function(){
             {
                 "value": "Route_bitumée",
                 "text": {
-                    "EN": "Route bitumée EN",
+                    "EN": "Bitumen road",
                     "FR": "Route bitumée"
                 },
                 "subject": "census"
@@ -314,7 +314,7 @@ define(function(){
             {
                 "value": "Situation_Matrimoniale",
                 "text": {
-                    "EN": "Situation Matrimoniale EN",
+                    "EN": "Marriage Situation",
                     "FR": "Situation Matrimoniale"
                 },
                 "subject": "census"
@@ -322,7 +322,7 @@ define(function(){
             {
                 "value": "Source_éléctricité",
                 "text": {
-                    "EN": "Source éléctricité EN",
+                    "EN": "Source Electricity",
                     "FR": "Source éléctricité"
                 },
                 "subject": "census"
@@ -330,7 +330,7 @@ define(function(){
             {
                 "value": "Superficie_cultivée",
                 "text": {
-                    "EN": "Superficie cultivée EN",
+                    "EN": "Cultivated area",
                     "FR": "Superficie cultivée"
                 },
                 "subject": "census"
@@ -338,7 +338,7 @@ define(function(){
             {
                 "value": "Taille_de_menage",
                 "text": {
-                    "EN": "Taille de menage EN",
+                    "EN": "Household Size",
                     "FR": "Taille de menage"
                 },
                 "subject": "census"

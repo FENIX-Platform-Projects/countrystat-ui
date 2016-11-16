@@ -254,23 +254,6 @@ define(
                             }
 
                         },
-                        "specify": {
-                            "selector": {
-                                "id": "input",
-                                "type": "text",
-                                "source": [{"value": "specify", "label": "Specifiez"}]
-
-                            },
-                            "template": {
-                                "title": "Specifiez",
-                                "description": "Elément de métadonnées textuel qui permet de préciser le rôle de la partie responsable. Ce champ est conditionnel à l'élément",
-
-                            },
-                            "format": {
-                                "output": "label"
-                            }
-
-                        },
                         "pointOfContact": {
                             "selector": {
                                 "id": "input",
@@ -288,7 +271,23 @@ define(
                             }
 
                         },
+                        "specify": {
+                            "selector": {
+                                "id": "input",
+                                "type": "text",
+                                "source": [{"value": "specify", "label": "Specifiez"}]
 
+                            },
+                            "template": {
+                                "title": "Specifiez",
+                                "description": "Elément de métadonnées textuel qui permet de préciser le rôle de la partie responsable. Ce champ est conditionnel à l'élément",
+
+                            },
+                            "format": {
+                                "output": "label"
+                            }
+
+                        },
                         "role": {
                             "selector": {
                                 "id": "dropdown",

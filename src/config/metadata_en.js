@@ -271,23 +271,6 @@ define(
                             }
 
                         },
-                        "specify": {
-                            "selector": {
-                                "id": "input",
-                                "type": "text",
-                                "source": [{"value": "specify", "label": "Specify"}]
-
-                            },
-                            "template": {
-                                "title": "Specify",
-                                "description": "Textual metadata element that allows to specify the role performed by the responsible party. This field is conditional to the element \u003crole\u003e."
-
-                            },
-                            "format": {
-                                "output": "label"
-                            }
-
-                        },
                         "pointOfContact": {
                             "selector": {
                                 "id": "input",
@@ -313,6 +296,24 @@ define(
                             },
                             "template": {
                                 "title": "Role",
+                                "description": "Textual metadata element that allows to specify the role performed by the responsible party. This field is conditional to the element \u003crole\u003e."
+
+                            },
+                            "format": {
+                                "output": "label"
+                            }
+
+                        },
+
+                        "specify": {
+                            "selector": {
+                                "id": "input",
+                                "type": "text",
+                                "source": [{"value": "specify", "label": "Specify"}]
+
+                            },
+                            "template": {
+                                "title": "Specify",
                                 "description": "Textual metadata element that allows to specify the role performed by the responsible party. This field is conditional to the element \u003crole\u003e."
 
                             },

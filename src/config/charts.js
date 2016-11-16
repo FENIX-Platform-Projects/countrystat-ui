@@ -152,6 +152,13 @@ define(function () {
             color: '#db514b',
             percentageOne: 0.30,
             percentageTwo: 0.70
+        },
+        //Training TRAINING
+        "TRAINING": {
+            color: '#005ecc',
+            percentageOne: 0.30,
+            percentageTwo: 0.70
+
         }
     }
 });

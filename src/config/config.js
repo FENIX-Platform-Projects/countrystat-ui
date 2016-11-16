@@ -6,9 +6,9 @@ define(function () {
     return {
 
         cache : false,
-        lang : "FR", //default language
+        lang : "EN", //default language
         //forceLang : "FR",
-        country : 'COG',
+        country : 'TRAINING',
 
         environment : "production",
 

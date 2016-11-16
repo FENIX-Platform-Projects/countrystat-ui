@@ -309,8 +309,12 @@ define(
                             "selector": {
                                 "id": "input",
                                 "type": "text",
-                                "source": [{"value": "specify", "label": "Specify"}]
+                                "source": [{"value": "specify", "label": "Specify"}],
+                                "disabled" : true
 
+                            },
+                            "dependencies" : {
+                                "role" : [{id : "enableIfValue", event: "select", args : {value : "other"}}]
                             },
                             "template": {
                                 "title": "Specify",

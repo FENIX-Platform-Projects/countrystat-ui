@@ -118,7 +118,6 @@ define(function () {
                 menuExcludedItems: ["accessibility"]
             }
         },
-
         //Cameroon CMR
         "CMR": {
             catalog: {
@@ -175,7 +174,6 @@ define(function () {
                 menuExcludedItems: ["accessibility"]
             }
         },
-
         //Congo COG
         "COG": {
             catalog: {
@@ -204,7 +202,6 @@ define(function () {
                 menuExcludedItems: ["accessibility"]
             }
         },
-
         //Ethiopia ETH
         "ETH": {
             catalog: {
@@ -680,6 +677,35 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"]
             }
+        },
+        //Training TRAINING
+        "TRAINING": {
+            catalog: {
+                pluginRegistry: {
+                    contextSystem: {
+                        selector: {
+                            source: [
+                                {value: "cstat_training", label: "CountrySTAT Training"}
+                            ],
+                            default: ["cstat_training"]
+                        }
+                    },
+                    dataDomain: {
+                        cl: {
+                            uid: "CSTAT_Core",
+                            level: 1,
+                            levels: 1
+                        }
+                    }
+                },
+                baseFilter: {
+                    "dsd.contextSystem": {"enumeration": ["cstat_training"]},
+                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
+                },
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
+                menuExcludedItems: ["accessibility"]
+            }
         }
+
     }
 });

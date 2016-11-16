@@ -25,10 +25,9 @@ $countries: (
                 (MDG, #db514b, #df6660, #2b686a, #eca3a0, #e0f1ee, #abb9c4, #b8d7da, #869c93, #97bead,63% 94%, #29403e, #305a52, #3a7f70),
                 (MLI, #db514b, #e4c779, #2b686a, #f5e5bb, #e0f1ee, #abb9c4, #b8d7da, #869c93, #97bead,45% 76%, #29403e, #305a52, #3a7f70),
                 (RWA, #f07f52, #f09752, #2f5674, #f8cba9, #e0f1ee, #abb9c4, #b8d7da, #869c93, #97bead,50% 76%, #2d3e46, #345962, #3f7d8b),
-                (SEN, #db514b, #e4c779, #2b686a, #f5e5bb, #e0f1ee, #abb9c4, #b8d7da, #869c93, #97bead,50% 76%, #29403e, #305a52, #3a7f70)
+                (SEN, #db514b, #e4c779, #2b686a, #f5e5bb, #e0f1ee, #abb9c4, #b8d7da, #869c93, #97bead,50% 76%, #29403e, #305a52, #3a7f70),
+                (ZZZ, #f0e352, #f0e352, #2f5674, #f8f1a9, #e0e9f1, #abb9c4, #c9ddef, #93a0ab, #a5bcd0,50% 50%, #2d3246, #344362, #3f598b)
 );
-
-
 
 
 
@@ -446,6 +445,22 @@ $countries: (
 
 
 }
+
+
+//Specific style for each country
+
+
+body[data-country='ZZZ']{
+
+  .country-details{
+    h1{
+      padding: 0;
+    }
+
+  }
+
+}
+
 
 
 

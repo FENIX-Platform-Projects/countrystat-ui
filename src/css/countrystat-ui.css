@@ -7655,5 +7655,141 @@ body[data-country='SEN'] {
 @keyframes pulse {
   to {
     box-shadow: 0 0 0 45px rgba(219, 81, 75, 0); } }
+body[data-country='ZZZ'] {
+  /* Radio Buttons */
+  /* Checkbox Buttons */ }
+  body[data-country='ZZZ'] .country-welcome {
+    background-color: #f0e352; }
+  body[data-country='ZZZ'] .country-details {
+    background-image: url("http://fenixrepo.fao.org/countrystat/assets/ZZZ/ZZZ-home.jpg"); }
+  body[data-country='ZZZ'] .home-content {
+    background-color: #2f5674; }
+    body[data-country='ZZZ'] .home-content .home-detail-pointer {
+      background-color: #f8f1a9; }
+      body[data-country='ZZZ'] .home-content .home-detail-pointer:before {
+        border-color: transparent transparent transparent #f8f1a9; }
+  body[data-country='ZZZ'] .country-details .home-stats-footer {
+    background-color: rgba(47, 86, 116, 0.5); }
+  body[data-country='ZZZ'] .partners-holder {
+    background-color: #e0e9f1; }
+    body[data-country='ZZZ'] .partners-holder h4 {
+      color: #abb9c4; }
+  body[data-country='ZZZ'] .home-tile.aims ol li:before {
+    color: #c9ddef; }
+  body[data-country='ZZZ'] .home-tile.gray {
+    background-color: #93a0ab; }
+  body[data-country='ZZZ'] .home-tile.map {
+    background-color: #a5bcd0;
+    background-image: url("http://fenixrepo.fao.org/countrystat/assets/ZZZ/ZZZ-map.svg"); }
+    body[data-country='ZZZ'] .home-tile.map:hover {
+      background-position: 50% 50%; }
+    body[data-country='ZZZ'] .home-tile.map .afg-title {
+      background-color: #a5bcd0; }
+  body[data-country='ZZZ'] #sidebar-wrapper {
+    background-color: #2d3246; }
+    body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li {
+      background-color: #344362; }
+      body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li.active a {
+        background-color: #3f598b; }
+        body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li.active a:before {
+          background-color: #f0e352; }
+        body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li.active a:hover, body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li.active a:active, body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li.active a:focus, body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li.active a:visited {
+          background-color: #3f598b; }
+      body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li a:hover, body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li a:active, body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li a:focus, body[data-country='ZZZ'] #sidebar-wrapper .sidebar-nav li a:visited {
+        background-color: #3f598b; }
+  body[data-country='ZZZ'] .fx-text-primary-color {
+    color: #f0e352; }
+  body[data-country='ZZZ'] .fx-background-color-primary-color {
+    background-color: #f0e352; }
+  body[data-country='ZZZ'] .fx-button-primary-color {
+    color: white;
+    border-color: #ecdb23;
+    background-color: #f0e352; }
+    body[data-country='ZZZ'] .fx-button-primary-color:hover {
+      color: white;
+      border-color: #ecdb23;
+      background-color: #eedf3b; }
+    body[data-country='ZZZ'] .fx-button-primary-color:focus {
+      color: white;
+      border-color: #cabb12;
+      background-color: #e2d114; }
+  body[data-country='ZZZ'] input[type="radio"] + label:before {
+    border-color: #f0e352; }
+  body[data-country='ZZZ'] input[type="radio"]:checked + label {
+    color: #f0e352; }
+  body[data-country='ZZZ'] input[type="checkbox"] + label:before {
+    border-color: #f0e352; }
+  body[data-country='ZZZ'] input[type="checkbox"]:checked + label {
+    color: #f0e352; }
+  body[data-country='ZZZ'] .jstree-default .jstree-wholerow-clicked {
+    background: none;
+    background-color: white; }
+  body[data-country='ZZZ'] .jstree-default .jstree-wholerow-hovered {
+    background: none;
+    background-color: white; }
+  body[data-country='ZZZ'] .jstree-default .jstree-disabled.jstree-clicked {
+    background: none;
+    background-color: white; }
+  body[data-country='ZZZ'] .irs-bar {
+    border-top: 1px solid #f0e352;
+    border-bottom: 1px solid #f0e352; }
+  body[data-country='ZZZ'] .irs-bar-edge {
+    border: 1px solid #f0e352; }
+  body[data-country='ZZZ'] .irs-bar, body[data-country='ZZZ'] .irs-bar-edge {
+    background: #f0e352; }
+  body[data-country='ZZZ'] .irs-from, body[data-country='ZZZ'] .irs-to, body[data-country='ZZZ'] .irs-single {
+    color: #f0e352; }
+  body[data-country='ZZZ'] [data-selector-time] .day.active {
+    background-color: #f0e352; }
+    body[data-country='ZZZ'] [data-selector-time] .day.active:hover {
+      background-color: #c1bc81; }
+  body[data-country='ZZZ'] [data-selector-time] .day.today:before {
+    border-bottom-color: #f0e352; }
+  body[data-country='ZZZ'] [data-selector-time] .month.active {
+    background-color: #f0e352; }
+  body[data-country='ZZZ'] [data-selector-time] .year.active {
+    background-color: #f0e352; }
+  body[data-country='ZZZ'] [data-selector-time] .fx-time-addon {
+    color: #f0e352; }
+  body[data-country='ZZZ'] [data-selector-time] [data-action="incrementHours"], body[data-country='ZZZ'] [data-selector-time] [data-action="decrementHours"], body[data-country='ZZZ'] [data-selector-time] [data-action="incrementMinutes"], body[data-country='ZZZ'] [data-selector-time] [data-action="decrementMinutes"] {
+    color: #f0e352; }
+  body[data-country='ZZZ'] [data-selector-time] [data-action="togglePicker"] span {
+    color: #f0e352; }
+  body[data-country='ZZZ'] .cat-toolbar button:hover {
+    color: #f0e352; }
+  body[data-country='ZZZ'] .bootstrap-table .pagination > li > a, body[data-country='ZZZ'] .bootstrap-table .pagination > li > span {
+    color: #f0e352; }
+  body[data-country='ZZZ'] .bootstrap-table .pagination > .active > a, body[data-country='ZZZ'] .bootstrap-table .pagination > .active > a:hover, body[data-country='ZZZ'] .bootstrap-table .pagination > .active > a:focus, body[data-country='ZZZ'] .bootstrap-table .pagination > .active > span, body[data-country='ZZZ'] .bootstrap-table .pagination > .active > span:hover, body[data-country='ZZZ'] .bootstrap-table .pagination > .active > span:focus {
+    color: white;
+    background-color: #f0e352;
+    border-color: #f0e352; }
+  body[data-country='ZZZ'] .vb-toolbar button:hover {
+    color: #f0e352; }
+  body[data-country='ZZZ'] .swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'#f0e352'%2F%3E%3C%2Fsvg%3E"); }
+  body[data-country='ZZZ'] .swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'#f0e352'%2F%3E%3C%2Fsvg%3E"); }
+  body[data-country='ZZZ'] .swiper-pagination-bullet-active {
+    background: #f0e352; }
+  body[data-country='ZZZ'] .gt-row-over td {
+    border-bottom-color: #f0e352; }
+  body[data-country='ZZZ'] .fm-controller-box-item .ui-widget-header {
+    background-color: #f0e352; }
+  body[data-country='ZZZ'] .pulse-button {
+    box-shadow: 0 0 0 0 rgba(240, 227, 82, 0.7); }
+@-webkit-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px rgba(240, 227, 82, 0); } }
+@-moz-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px rgba(240, 227, 82, 0); } }
+@-ms-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px rgba(240, 227, 82, 0); } }
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px rgba(240, 227, 82, 0); } }
+body[data-country='ZZZ'] .country-details h1 {
+  padding: 0; }
 
 /*# sourceMappingURL=countrystat-ui.css.map */

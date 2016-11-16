@@ -271,20 +271,18 @@ define(
                             }
 
                         },
-                        "specify": {
-                            "selector": {
-                                "id": "input",
-                                "type": "text",
-                                "source": [{"value": "specify", "label": "Specifiez"}],
-                                "disabled" : true
 
-                            },
-                            "dependencies" : {
-                                "role" : [{id : "enableIfValue", event: "select", args : {value : "other"}}]
+                        "role": {
+                            "selector": {
+                                "id": "dropdown",
+                                source: Role,
+                                config : {
+                                    maxItems : 1
+                                }
                             },
                             "template": {
-                                "title": "Specifiez",
-                                "description": "Elément de métadonnées textuel qui permet de préciser le rôle de la partie responsable. Ce champ est conditionnel à l'élément",
+                                "title": "Rôle",
+                                "description": "Fonctionne accomplie par la partie responsable concernant la ressource.",
 
                             },
                             "format": {
@@ -292,14 +290,23 @@ define(
                             }
 
                         },
-                        "role": {
+
+                        "specify": {
                             "selector": {
-                                "id": "dropdown",
-                                source: Role
+                                "id": "input",
+                                "type": "text",
+                                "source": [{"value": "specify", "label": "Specifiez"}],
+                                config: {
+                                    readonly: true
+                                }
+
+                            },
+                            "dependencies" : {
+                                "role" : [{id : "readOnlyIfNotValue", event: "select", args : {value : "other"}}]
                             },
                             "template": {
-                                "title": "Rôle",
-                                "description": "Fonctionne accomplie par la partie responsable concernant la ressource.",
+                                "title": "Specifiez",
+                                "description": "Elément de métadonnées textuel qui permet de préciser le rôle de la partie responsable. Ce champ est conditionnel à l'élément",
 
                             },
                             "format": {

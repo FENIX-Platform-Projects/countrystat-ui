@@ -292,7 +292,10 @@ define(
                         "role": {
                             "selector": {
                                 "id": "dropdown",
-                                source: Role
+                                source: Role,
+                                config : {
+                                    maxItems : 1
+                                }
                             },
                             "template": {
                                 "title": "Role",
@@ -310,11 +313,13 @@ define(
                                 "id": "input",
                                 "type": "text",
                                 "source": [{"value": "specify", "label": "Specify"}],
-                                "disabled" : true
+                                config: {
+                                    readonly: true
+                                }
 
                             },
-                            "dependencies" : {
-                                "role" : [{id : "enableIfValue", event: "select", args : {value : "other"}}]
+                            "dependencies": {
+                                "role" : [{id : "readOnlyIfNotValue", event: "select", args : {value : "other"}}]
                             },
                             "template": {
                                 "title": "Specify",

@@ -14,7 +14,7 @@ define([
 
         console.clear();
 
-        log.setLevel("trace");
+        log.setLevel("silent");
 
         this._importThirdPartyCss();
 

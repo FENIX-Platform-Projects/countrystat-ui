@@ -30,6 +30,15 @@
 
       }
 
+      &.CUR{
+
+        a{
+          color: $fx-cool-blue;
+        }
+
+
+      }
+
 
     }
 
@@ -217,3 +226,22 @@ div.tx-dynalist-pi1-pagination{
     display: none;
   }
 }
+
+//Override
+
+.cat-filter-container{
+
+  .has-success .form-control {
+    border-color: rgb(204, 204, 204);
+
+    &:focus{
+      border-color: rgb(204, 204, 204);
+      @include fx-noshadow();
+    }
+
+  }
+
+
+
+}
+

@@ -40,6 +40,26 @@ define(
             },
 
             "selectors": {
+                "uid": {
+                    "selector": {
+                        "id": "input",
+                        "type": "text",
+                        "source": [{"value": "uid", "label": "UID"}],
+                        config: {
+                            readonly: true
+                        }
+
+                    },
+                    "template": {
+                        "title": "Code d'identification de la ressource",
+                        "description": "Identificateur de ressource. Il s'agit d'un code qui crée la correspondance entre la ressource et les métadonnées auxquelles elle est associée.",
+
+                    },
+                    "format": {
+                        "output": "label"
+                    }
+
+                },
                 "title": {
                     "selector": {
                         "id": "input",

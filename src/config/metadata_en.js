@@ -40,6 +40,26 @@ define(
             },
 
             "selectors": {
+                "uid": {
+                    "selector": {
+                        "id": "input",
+                        "type": "text",
+                        "source": [{"value": "uid", "label": "UID"}],
+                        config: {
+                            readonly: true
+                        }
+
+                    },
+                    "template": {
+                        "title": "Resource identification code",
+                        "description": "Resource identifier. It is a code that creates the match between the resource and the metadata it is associated to.",
+
+                    },
+                    "format": {
+                        "output": "label"
+                    }
+
+                },
                 "title": {
                     "selector": {
                         "id": "input",

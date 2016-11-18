@@ -1371,7 +1371,7 @@ define(
 
                                             },
                                             "format": {
-                                                "output": "array<string>"
+                                                "output": "string"
                                             }
                                         }
                                     }
@@ -1486,15 +1486,16 @@ define(
                                             "min": 0,
                                             "max": 100,
                                             "type": "single"
-                                        },
-                                        "template": {
-                                            "title": "Taux de complétude des métadonnées",
-                                            "description": "Le pourcentage de complétude des métadonnées offre une évaluation numérique du degré auquel la ressource est documentée.",
-
-                                        },
-                                        "format": {
-                                            "output": "string"
                                         }
+
+                                    },
+                                    "template": {
+                                        "title": "Taux de complétude des métadonnées",
+                                        "description": "Le pourcentage de complétude des métadonnées offre une évaluation numérique du degré auquel la ressource est documentée.",
+
+                                    },
+                                    "format": {
+                                        "output": "string"
                                     }
                                 }
                             }

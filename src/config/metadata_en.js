@@ -56,7 +56,7 @@ define(
 
                     },
                     "format": {
-                        "output": "label"
+                        "output": "string"
                     }
 
                 },
@@ -313,8 +313,8 @@ define(
                             "selector": {
                                 "id": "dropdown",
                                 source: Role,
-                                config : {
-                                    maxItems : 1
+                                config: {
+                                    maxItems: 1
                                 }
                             },
                             "template": {
@@ -339,7 +339,7 @@ define(
 
                             },
                             "dependencies": {
-                                "role" : [{id : "readOnlyIfNotValue", event: "select", args : {value : "other"}}]
+                                "role": [{id: "readOnlyIfNotValue", event: "select", args: {value: "other"}}]
                             },
                             "template": {
                                 "title": "Specify",
@@ -1377,7 +1377,7 @@ define(
                                             }
                                         },
                                         "disseminationFormat": {
-                                            "incremental": true,
+
                                             "selector": {
                                                 "id": "input",
                                                 "type": "text",
@@ -1394,7 +1394,7 @@ define(
 
                                             },
                                             "format": {
-                                                "output": "array<string>"
+                                                "output": "string"
                                             }
                                         }
                                     }
@@ -1509,15 +1509,15 @@ define(
                                             "min": 0,
                                             "max": 100,
                                             "type": "single"
-                                        },
-                                        "template": {
-                                            "title": "Metadata completeness rate",
-                                            "description": "The percentage of completeness of metadata offers a numerical evaluation of the extent to which the resource is documented.",
-
-                                        },
-                                        "format": {
-                                            "output": "string"
                                         }
+                                    },
+                                    "template": {
+                                        "title": "Metadata completeness rate",
+                                        "description": "The percentage of completeness of metadata offers a numerical evaluation of the extent to which the resource is documented.",
+
+                                    },
+                                    "format": {
+                                        "output": "string"
                                     }
                                 }
                             }

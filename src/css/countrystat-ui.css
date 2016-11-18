@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Default */
 /* Fenix - Buttons Component */
 /** avoid dotted lines when clicking on button**/
@@ -9477,5 +9478,8 @@ body[data-country='ZZZ'] {
     box-shadow: 0 0 0 45px rgba(240, 127, 82, 0); } }
 body[data-country='ZZZ'] .country-details h1 {
   padding: 0; }
+
+#dLabel {
+  display: none !important; }
 
 /*# sourceMappingURL=countrystat-ui.css.map */

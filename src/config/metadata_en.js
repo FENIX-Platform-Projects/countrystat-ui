@@ -2,12 +2,7 @@ define(
     function () {
 
         var IANA = {uid: 'IANAcharacterSet'},
-            Role = [
-                {"value": "owner", "label": "Owner"},
-                {"value": "distributor", "label": "Distributor"},
-                {"value": "producer", "label": "Producer"},
-                {"value": "other", "label": "Other"}
-            ],
+            Role = {uid: 'ResponsiblePartyRole'},
             GAUL = {uid: 'GAUL0', version: "2014"},
             Languages = {uid: 'ISO639-2', version: "1998"},
             PeriodOfReference = {uid: 'FAO_Period', version: "1.0"},
@@ -19,18 +14,8 @@ define(
             DisseminationPeriodicy = {uid: 'FAO_Period', version: "1.0"},
             PeriodicityDataCollection = {uid: 'FAO_Period', version: "1.0"},
             UpdatePeriodicity = {uid: 'FAO_Period', version: "1.0"},
-            CoverageSectorDetails = {uid: 'CSTAT_Core'},
-            CoverageSector = {uid: 'CSTAT_Core'}; // CSTAT_Core
+            CoverageSector = {uid: 'CSTAT_Core'};
 
-        /*
-         {
-         "eng": "English",
-         "fre": "French",
-         "por": "Portuguese",
-         "spa": "Spanish",
-         "ara": "Arabic"
-         }
-         */
 
         return {
 
@@ -82,7 +67,6 @@ define(
                     "constraints": {"presence": true}
 
                 },
-
                 "creationDate": {
                     "selector": {
                         "id": "time"
@@ -230,7 +214,6 @@ define(
                         "output": "string"
                     }
                 },
-
                 "contacts": {
 
                     classNames: "well",
@@ -308,8 +291,8 @@ define(
                             }
 
                         },
-
                         "role": {
+                            "enumeration": Role,
                             "selector": {
                                 "id": "dropdown",
                                 source: Role,
@@ -327,7 +310,6 @@ define(
                             }
 
                         },
-
                         "specify": {
                             "selector": {
                                 "id": "input",
@@ -351,7 +333,6 @@ define(
                             }
 
                         },
-
                         "phone": {
                             "selector": {
                                 "id": "input",
@@ -1346,6 +1327,7 @@ define(
                         }
                     }
                 },
+
                 "meAccessibility": {
                     "title": "Accessibility",
                     "sections": {
@@ -1394,7 +1376,7 @@ define(
 
                                             },
                                             "format": {
-                                                "output": "string"
+                                                "output": "array<string>"
                                             }
                                         }
                                     }

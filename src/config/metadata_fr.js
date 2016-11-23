@@ -2,12 +2,7 @@ define(
     function () {
 
         var IANA = {uid: 'IANAcharacterSet'},
-            Role = [
-                {"value": "owner", "label": "Propriétaire"},
-                {"value": "distributor", "label": "Distributeur"},
-                {"value": "producer", "label": "Producteur"},
-                {"value": "other", "label": "Autre"}
-            ],
+            Role = {uid: 'ResponsiblePartyRole'},
             GAUL = {uid: 'GAUL0', version: "2014"},
             Languages = {uid: 'ISO639-2', version: "1998"},
             PeriodOfReference = {uid: 'FAO_Period', version: "1.0"},
@@ -19,18 +14,7 @@ define(
             DisseminationPeriodicy = {uid: 'FAO_Period', version: "1.0"},
             PeriodicityDataCollection = {uid: 'FAO_Period', version: "1.0"},
             UpdatePeriodicity = {uid: 'FAO_Period', version: "1.0"},
-            CoverageSectorDetails = {uid: 'CSTAT_Core'},
-            CoverageSector = {uid: 'CSTAT_Core'}; // CSTAT_Core
-
-        /*
-         {
-         "eng": "English",
-         "fre": "French",
-         "por": "Portuguese",
-         "spa": "Spanish",
-         "ara": "Arabic"
-         }
-         */
+            CoverageSector = {uid: 'CSTAT_Core'};
 
         return {
 
@@ -201,7 +185,7 @@ define(
                     },
                     "template": {
                         "title": "Valeur assignée Value assigned au manque de donnée",
-                        "description": " Valeur assignée aux cellules pour représenter l'absence de données. Les valeurs manquantes sont généralement mises en évidence par des étiquettes appropriées (tels que \'NA\', \'000\')",
+                        "description": "Valeur assignée aux cellules pour représenter l'absence de données. Les valeurs manquantes sont généralement mises en évidence par des étiquettes appropriées (tels que \'NA\', \'000\')",
 
                     },
                     "format": {
@@ -374,8 +358,8 @@ define(
                                 "source": [{"value": "emailAddress", "label": "Addresse élctronique"}]
                             },
                             "template": {
-                                "title": "Addresse élctronique",
-                                "description": "Addresse élctronique à laquelle l'organisation ou l'individu peuvent être contactés.",
+                                "title": "Addresse électronique",
+                                "description": "Addresse électronique à laquelle l'organisation ou l'individu peuvent être contactés.",
                             },
                             "format": {
                                 "output": "template",
@@ -1332,7 +1316,8 @@ define(
                             "sections": {
                                 "seDistribution": {
                                     "title": "Distribution",
-                                    "description": "Cette section rapporte la modalité de distribution de la ressource en mettant l'accent sur la façon d'accéder à la ressource et sur les formats supportés.",                                    "selectors": {
+                                    "description": "Cette section rapporte la modalité de distribution de la ressource en mettant l'accent sur la façon d'accéder à la ressource et sur les formats supportés.",
+                                    "selectors": {
                                         "onlineResource": {
                                             "selector": {
                                                 "id": "input",

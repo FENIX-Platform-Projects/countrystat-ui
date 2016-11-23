@@ -57,7 +57,7 @@
 
 
   .list-image{
-    height: 100px;
+    height: 80px;
     background-color: $fenix-hr;
     background-image: url(img/camera.svg);
     background-position: center center;
@@ -72,15 +72,15 @@
     /* Default */
 
     @media (min-width: 768px) and (max-width: 991px) {
-      height: 150px;
+      height: 130px;
     }
 
     @media (min-width: 992px) and (max-width: 1199px) {
-      height: 200px;
+      height: 180px;
     }
 
     @media (min-width: 1200px) {
-      height: 250px;
+      height: 230px;
     }
 
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Default */
 /* Fenix - Buttons Component */
 /** avoid dotted lines when clicking on button**/
@@ -5482,7 +5481,7 @@ input[type="radio"]:disabled + label {
     position: relative;
     min-height: 400px; }
   .home-content .home-tiles-title {
-    font-size: 33px;
+    font-size: 20px;
     color: #333;
     margin-top: 10px; }
   .home-content .country-welcome {
@@ -6194,6 +6193,9 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
     .language .tx-srlanguagemenu-pi1 > div.CUR a {
       color: #db514b; }
 
+.tx-dynalist-pi1-recordlist  {
+  padding-bottom: 0px; }
+
 .news-list .list-image {
   height: 100px;
   background-color: #d8d8d8;
@@ -6214,7 +6216,10 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
   .news-list .list-image .img-responsive {
     width: 100%; }
 .news-list h2 {
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 5px; }
 .news-list .tx-dynalist-pi1-recordlist {
   border-top: none;
   border-right: none;
@@ -6222,7 +6227,6 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
   border-left: none;
   border: none;
   border-bottom: 1px solid #d8d8d8;
-  padding-bottom: 35px;
   font-family: inherit; }
   .news-list .tx-dynalist-pi1-recordlist h1 {
     font-size: 20px; }
@@ -6354,7 +6358,7 @@ body[data-country='AGO'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/AGO/AGO-map.svg"); }
     body[data-country='AGO'] .home-tile.map:hover {
       background-position: 50% 100%; }
-    body[data-country='AGO'] .home-tile.map .afg-title {
+    body[data-country='AGO'] .home-tile.map .h4 {
       background-color: #b4a0a9; }
   body[data-country='AGO'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -6504,7 +6508,7 @@ body[data-country='BEN'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/BEN/BEN-map.svg"); }
     body[data-country='BEN'] .home-tile.map:hover {
       background-position: 46% 76%; }
-    body[data-country='BEN'] .home-tile.map .afg-title {
+    body[data-country='BEN'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='BEN'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -6654,7 +6658,7 @@ body[data-country='BFA'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/BFA/BFA-map.svg"); }
     body[data-country='BFA'] .home-tile.map:hover {
       background-position: 45% 76%; }
-    body[data-country='BFA'] .home-tile.map .afg-title {
+    body[data-country='BFA'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='BFA'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -6804,7 +6808,7 @@ body[data-country='CIV'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/CIV/CIV-map.svg"); }
     body[data-country='CIV'] .home-tile.map:hover {
       background-position: 44% 84%; }
-    body[data-country='CIV'] .home-tile.map .afg-title {
+    body[data-country='CIV'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='CIV'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #f07f52; }
@@ -6954,7 +6958,7 @@ body[data-country='CMR'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/CMR/CMR-map.svg"); }
     body[data-country='CMR'] .home-tile.map:hover {
       background-position: 50% 76%; }
-    body[data-country='CMR'] .home-tile.map .afg-title {
+    body[data-country='CMR'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='CMR'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #f07f52; }
@@ -7104,7 +7108,7 @@ body[data-country='COG'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/COG/COG-map.svg"); }
     body[data-country='COG'] .home-tile.map:hover {
       background-position: 50% 76%; }
-    body[data-country='COG'] .home-tile.map .afg-title {
+    body[data-country='COG'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='COG'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -7254,7 +7258,7 @@ body[data-country='MDG'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/MDG/MDG-map.svg"); }
     body[data-country='MDG'] .home-tile.map:hover {
       background-position: 63% 94%; }
-    body[data-country='MDG'] .home-tile.map .afg-title {
+    body[data-country='MDG'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='MDG'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -7404,7 +7408,7 @@ body[data-country='MLI'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/MLI/MLI-map.svg"); }
     body[data-country='MLI'] .home-tile.map:hover {
       background-position: 45% 76%; }
-    body[data-country='MLI'] .home-tile.map .afg-title {
+    body[data-country='MLI'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='MLI'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -7554,7 +7558,7 @@ body[data-country='RWA'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/RWA/RWA-map.svg"); }
     body[data-country='RWA'] .home-tile.map:hover {
       background-position: 50% 76%; }
-    body[data-country='RWA'] .home-tile.map .afg-title {
+    body[data-country='RWA'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='RWA'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #f07f52; }
@@ -7704,7 +7708,7 @@ body[data-country='SEN'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/SEN/SEN-map.svg"); }
     body[data-country='SEN'] .home-tile.map:hover {
       background-position: 50% 76%; }
-    body[data-country='SEN'] .home-tile.map .afg-title {
+    body[data-country='SEN'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='SEN'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -7853,8 +7857,8 @@ body[data-country='GHA'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/GHA/GHA-map.svg"); }
     body[data-country='GHA'] .home-tile.map:hover {
-      background-position: 50% 76%; }
-    body[data-country='GHA'] .home-tile.map .afg-title {
+      background-position: 46% 76%; }
+    body[data-country='GHA'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='GHA'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -8003,8 +8007,8 @@ body[data-country='ETH'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/ETH/ETH-map.svg"); }
     body[data-country='ETH'] .home-tile.map:hover {
-      background-position: 50% 76%; }
-    body[data-country='ETH'] .home-tile.map .afg-title {
+      background-position: 59% 76%; }
+    body[data-country='ETH'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='ETH'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -8153,8 +8157,8 @@ body[data-country='UGA'] {
     background-color: #b4a0a9;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/UGA/UGA-map.svg"); }
     body[data-country='UGA'] .home-tile.map:hover {
-      background-position: 50% 100%; }
-    body[data-country='UGA'] .home-tile.map .afg-title {
+      background-position: 57% 100%; }
+    body[data-country='UGA'] .home-tile.map .h4 {
       background-color: #b4a0a9; }
   body[data-country='UGA'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -8304,7 +8308,7 @@ body[data-country='MOZ'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/MOZ/MOZ-map.svg"); }
     body[data-country='MOZ'] .home-tile.map:hover {
       background-position: 50% 76%; }
-    body[data-country='MOZ'] .home-tile.map .afg-title {
+    body[data-country='MOZ'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='MOZ'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -8453,8 +8457,8 @@ body[data-country='NGA'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/NGA/NGA-map.svg"); }
     body[data-country='NGA'] .home-tile.map:hover {
-      background-position: 50% 76%; }
-    body[data-country='NGA'] .home-tile.map .afg-title {
+      background-position: 48% 76%; }
+    body[data-country='NGA'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='NGA'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -8603,8 +8607,8 @@ body[data-country='MWI'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/MWI/MWI-map.svg"); }
     body[data-country='MWI'] .home-tile.map:hover {
-      background-position: 50% 76%; }
-    body[data-country='MWI'] .home-tile.map .afg-title {
+      background-position: 57% 100%; }
+    body[data-country='MWI'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='MWI'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -8753,8 +8757,8 @@ body[data-country='KEN'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/KEN/KEN-map.svg"); }
     body[data-country='KEN'] .home-tile.map:hover {
-      background-position: 50% 76%; }
-    body[data-country='KEN'] .home-tile.map .afg-title {
+      background-position: 59% 97%; }
+    body[data-country='KEN'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='KEN'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -8903,8 +8907,8 @@ body[data-country='TZA'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/TZA/TZA-map.svg"); }
     body[data-country='TZA'] .home-tile.map:hover {
-      background-position: 50% 76%; }
-    body[data-country='TZA'] .home-tile.map .afg-title {
+      background-position: 58% 91%; }
+    body[data-country='TZA'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='TZA'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -9053,8 +9057,8 @@ body[data-country='ZMB'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/ZMB/ZMB-map.svg"); }
     body[data-country='ZMB'] .home-tile.map:hover {
-      background-position: 50% 76%; }
-    body[data-country='ZMB'] .home-tile.map .afg-title {
+      background-position: 56% 90%; }
+    body[data-country='ZMB'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='ZMB'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -9203,8 +9207,8 @@ body[data-country='AFG'] {
     background-color: #97bead;
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/AFG/AFG-map.svg"); }
     body[data-country='AFG'] .home-tile.map:hover {
-      background-position: 50% 76%; }
-    body[data-country='AFG'] .home-tile.map .afg-title {
+      background-position: 69% 57%; }
+    body[data-country='AFG'] .home-tile.map .h4 {
       background-color: #97bead; }
   body[data-country='AFG'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #db514b; }
@@ -9354,7 +9358,7 @@ body[data-country='ZZZ'] {
     background-image: url("http://fenixrepo.fao.org/countrystat/assets/ZZZ/ZZZ-map.svg"); }
     body[data-country='ZZZ'] .home-tile.map:hover {
       background-position: 50% 50%; }
-    body[data-country='ZZZ'] .home-tile.map .afg-title {
+    body[data-country='ZZZ'] .home-tile.map .h4 {
       background-color: #a5bcd0; }
   body[data-country='ZZZ'] .language .tx-srlanguagemenu-pi1 > div.CUR a {
     color: #f07f52; }

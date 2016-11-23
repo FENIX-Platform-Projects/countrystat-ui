@@ -46,6 +46,10 @@
 
 }
 
+//LISTS
+
+.tx-dynalist-pi1-recordlist  {padding-bottom: 0px;}
+
 
 //NEWS
 
@@ -89,12 +93,14 @@
 
   h2{
     font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
 
   .tx-dynalist-pi1-recordlist{
     @include fx-no-border;
     border-bottom: 1px solid $fenix-hr;
-    padding-bottom: 35px;
     font-family: inherit;
 
     h1{

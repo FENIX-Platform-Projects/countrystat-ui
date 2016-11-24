@@ -4,10 +4,9 @@ define([
     "../config/config",
     "../config/shared",
     "../config/dsd",
-    "../config/metadata_en",
-    "../config/metadata_fr",
+    "../config/metadata",
     "fenix-ui-data-management"
-], function ($, log, C, SC, DsdConfig, MetadataConfigEn, MetadataConfigFr, DataManagement) {
+], function ($, log, C, SC, DsdConfig, MetadataConfig, DataManagement) {
 
     var s = {
         COUNTRY: 'data-country'
@@ -39,8 +38,7 @@ define([
         log.warn(opts);
 
         var config,
-            country = opts.country,
-            metadata;
+            country = opts.country;
 
         if (!SC.hasOwnProperty(country)) {
             log.warn("Impossible to find configuration for country: " + opts.country);
@@ -48,14 +46,13 @@ define([
             log.warn("Using default country instead: " + C.country);
         }
 
-        metadata = opts.lang === "FR" ? MetadataConfigFr : MetadataConfigEn;
 
         config ={
             el: C.dataManagementEl,
             cache: C.cache,
             environment: C.environment,
             lang: opts.lang,
-            metadataEditor: metadata,
+            metadataEditor: MetadataConfig,
             dsdEditor: $.extend(true, DsdConfig, { contextSystem: "cstat_" + country.toLowerCase()}),
             catalog: $.extend(true, SC[country].catalog, {hideCloseButton: true}),
             config: {

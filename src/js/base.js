@@ -68,7 +68,7 @@ define([
 
         circle_two.animate(country.percentageTwo);//pTwo
 
-    }
+    };
 
     return new Base();
 

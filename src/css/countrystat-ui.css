@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Default */
 /* Fenix - Buttons Component */
 /** avoid dotted lines when clicking on button**/
@@ -6193,7 +6194,7 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
     .language .tx-srlanguagemenu-pi1 > div.CUR a {
       color: #db514b; }
 
-.tx-dynalist-pi1-recordlist  {
+.tx-dynalist-pi1-recordlist┬á {
   padding-bottom: 0px; }
 
 .news-list .list-image {

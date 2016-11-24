@@ -2,7 +2,7 @@ define(
     function () {
 
         var IANA = {uid: 'IANAcharacterSet'},
-            Role = {uid: 'ResponsiblePartyRole'},
+            ROLE = { uid: "ResponsiblePartyRole" },
             GAUL = {uid: 'GAUL0', version: "2014"},
             Languages = {uid: 'ISO639-2', version: "1998"},
             PeriodOfReference = {uid: 'FAO_Period', version: "1.0"},
@@ -29,22 +29,24 @@ define(
                     "selector": {
                         "id": "input",
                         "type": "text",
-                        "source": [{"value": "uid", "label": "UID"}],
+                        "source": [
+                            {
+                                "value": "uid",
+                                "label": "Uid"
+                            }
+                        ],
                         config: {
                             readonly: true
                         }
-
                     },
                     "template": {
-                        "title": "Resource identification code",
-                        "description": "Resource identifier. It is a code that creates the match between the resource and the metadata it is associated to.",
-
+                        "title": "Uid",
                     },
                     "format": {
                         "output": "string"
                     }
-
                 },
+
                 "title": {
                     "selector": {
                         "id": "input",
@@ -67,6 +69,7 @@ define(
                     "constraints": {"presence": true}
 
                 },
+
                 "creationDate": {
                     "selector": {
                         "id": "time"
@@ -186,7 +189,7 @@ define(
                         "default": ['eng']
                     },
                     "template": {
-                        "title": "Metadata Language",
+                        "title": "metadataLanguage",
                         "description": "Language(s) used for metadata",
 
                     },
@@ -214,6 +217,7 @@ define(
                         "output": "string"
                     }
                 },
+
                 "contacts": {
 
                     classNames: "well",
@@ -238,7 +242,8 @@ define(
                             },
                             "format": {
                                 "output": "label"
-                            }
+                            },
+                            "constraints": {"presence": true }
                         },
                         "organizationUnit": {
                             "selector": {
@@ -291,11 +296,12 @@ define(
                             }
 
                         },
+
                         "role": {
-                            "enumeration": Role,
+                            enumeration : ROLE,
+
                             "selector": {
                                 "id": "dropdown",
-                                source: Role,
                                 config: {
                                     maxItems: 1
                                 }
@@ -310,6 +316,7 @@ define(
                             }
 
                         },
+
                         "specify": {
                             "selector": {
                                 "id": "input",
@@ -320,19 +327,19 @@ define(
                                 }
 
                             },
-                            "dependencies": {
-                                "role": [{id: "readOnlyIfNotValue", event: "select", args: {value: "other"}}]
-                            },
                             "template": {
                                 "title": "Specify",
                                 "description": "Textual metadata element that allows to specify the role performed by the responsible party. This field is conditional to the element \u003crole\u003e."
-
                             },
                             "format": {
                                 "output": "label"
-                            }
+                            },
+                            dependencies: {
+                                role: [{id: "readOnlyIfNotValue", event: "select", args: {value: "other"}}]
+                            },
 
                         },
+
                         "phone": {
                             "selector": {
                                 "id": "input",
@@ -546,7 +553,8 @@ define(
                                 "referenceArea": {
                                     "cl": AreaOfReference,
                                     "selector": {
-                                        "id": "dropdown"
+                                        "id": "dropdown",
+                                        sort: false
                                     },
                                     "template": {
                                         "title": "Area of reference",
@@ -555,6 +563,7 @@ define(
                                     "format": {
                                         "output": "codes"
                                     }
+
                                 }
                             },
                             "validator": {
@@ -607,7 +616,8 @@ define(
                                     },
                                     "format": {
                                         "output": "codes"
-                                    }
+                                    },
+                                    "constraints": {"presence": true }
                                 },
                                 "coverageTime": {
                                     "selector": {
@@ -683,10 +693,6 @@ define(
                     "sections": {
                         "seDataSource": {
                             "title": "Data source",
-                            "template": {
-                                "title": "Data source",
-                                "description": "Process used to collect data. It includes a detailed description both of the primary data collection (e.g. type of collection, method to gather data from respondents, sampling procedures..) and the secondary data collection (information about data that have been already collected by another agency or institution).",
-                            },
                             "sections": {
                                 "sePrimaryDataCollection": {
                                     "title": "Primary Data Collection",
@@ -1327,7 +1333,6 @@ define(
                         }
                     }
                 },
-
                 "meAccessibility": {
                     "title": "Accessibility",
                     "sections": {
@@ -1376,7 +1381,7 @@ define(
 
                                             },
                                             "format": {
-                                                "output": "array<string>"
+                                                "output": "string"
                                             }
                                         }
                                     }
@@ -1493,13 +1498,13 @@ define(
                                             "type": "single"
                                         }
                                     },
+                                    "format": {
+                                        "output": "string"
+                                    },
                                     "template": {
                                         "title": "Metadata completeness rate",
                                         "description": "The percentage of completeness of metadata offers a numerical evaluation of the extent to which the resource is documented.",
 
-                                    },
-                                    "format": {
-                                        "output": "string"
                                     }
                                 }
                             }

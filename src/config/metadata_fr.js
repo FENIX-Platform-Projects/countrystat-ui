@@ -218,7 +218,8 @@ define(
                             },
                             "format": {
                                 "output": "label"
-                            }
+                            },
+                            "constraints": {"presence": true }
                         },
                         "organizationUnit": {
                             "selector": {
@@ -528,7 +529,8 @@ define(
                                 "referenceArea": {
                                     "cl": AreaOfReference,
                                     "selector": {
-                                        "id": "dropdown"
+                                        "id": "dropdown",
+                                        sort: false
                                     },
                                     "template": {
                                         "title": "Zone de référence",
@@ -589,7 +591,8 @@ define(
                                     },
                                     "format": {
                                         "output": "codes"
-                                    }
+                                    },
+                                    "constraints": {"presence": true }
                                 },
                                 "coverageTime": {
                                     "selector": {

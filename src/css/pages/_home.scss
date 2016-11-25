@@ -279,6 +279,7 @@ background-color: $afg-home-background;
     color: white;
     font-size: 30px;
     padding: 0;
+    z-index: 1;
   }
 
   .news-image{
@@ -291,6 +292,13 @@ background-color: $afg-home-background;
     bottom: 0;
     left: 0;
     pointer-events: none;
+
+    img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
   }
 
 
@@ -354,3 +362,8 @@ background-color: $afg-home-background;
   left: 0;
   top: 10px;
 }
+
+
+// Added by David
+
+.dynafef_file_uploaded  input[type=checkbox] {display: inline}

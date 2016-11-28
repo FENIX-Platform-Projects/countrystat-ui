@@ -5694,9 +5694,6 @@ input[type="radio"]:disabled + label {
   left: 0;
   top: 10px; }
 
-.dynafef_file_uploaded┬á input[type=checkbox] {
-  display: inline; }
-
 /* Theme */
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
@@ -6328,6 +6325,9 @@ div.tx-dynalist-pi1-pagination {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none; }
+
+.dynafef_file_uploaded input[type='checkbox'] {
+  display: inline !important; }
 
 /*  1 iso-name
     2 cool-blue

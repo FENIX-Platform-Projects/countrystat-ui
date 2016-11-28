@@ -46,6 +46,8 @@ define([
             log.warn("Using default country instead: " + C.country);
         }
 
+        //#38
+        //MetadataConfig.sections.meContent.sections.seCoverage.selectors.coverageGeographic.selector = { id:"dropdown", "default": ['106']}
 
         config ={
             el: C.dataManagementEl,
@@ -66,6 +68,7 @@ define([
         log.warn(config);
 
         this.dataMng = new DataManagement(config);
+
     };
 
     //style

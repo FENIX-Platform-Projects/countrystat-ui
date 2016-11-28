@@ -9,8 +9,8 @@ define(function () {
         //Afghanistan AFG
         "AFG": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.58,
+            percentageTwo: 0.42
         },
         //Angola AGO
         "AGO": {
@@ -54,14 +54,14 @@ define(function () {
         //Ethiopia ETH
         "ETH": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.32,
+            percentageTwo: 0.68
         },
         //Ghana GHA
         "GHA": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.65,
+            percentageTwo: 0.35
         },
         //Guinea-Bissau GNB
         "GNB": {
@@ -78,8 +78,8 @@ define(function () {
         //Kenya KEN
         "KEN": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.47,
+            percentageTwo: 0.53
         },
         //Madagascar MDG
         "MDG": {
@@ -90,8 +90,8 @@ define(function () {
         //Malawi MWI
         "MWI": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.47,
+            percentageTwo: 0.53
         },
         //Mali MLI
         "MLI": {
@@ -102,8 +102,8 @@ define(function () {
         //Mozambique MOZ
         "MOZ": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.47,
+            percentageTwo: 0.53
         },
         //Niger NER
         "NER": {
@@ -114,8 +114,8 @@ define(function () {
         //Nigeria NGA
         "NGA": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.81,
+            percentageTwo: 0.19
         },
         //Rwanda RWA
         "RWA": {
@@ -132,8 +132,8 @@ define(function () {
         //Tanzania TZA
         "TZA": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.37,
+            percentageTwo: 0.63
         },
         //Togo TGO
         "TGO": {
@@ -144,14 +144,14 @@ define(function () {
         //Uganda UGA
         "UGA": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.58,
+            percentageTwo: 0.42
         },
         //Zambia ZMB
         "ZMB": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.31,
+            percentageTwo: 0.69
         },
         //Training TRAINING
         "TRAINING": {

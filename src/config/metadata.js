@@ -434,7 +434,8 @@ define(
 
                                     "format": {
                                         "output": "codes"
-                                    }
+                                    },
+                                    "constraints": {"presence": true}
                                 },
                                 "referenceArea": {
                                     "cl": AreaOfReference,
@@ -445,7 +446,8 @@ define(
 
                                     "format": {
                                         "output": "codes"
-                                    }
+                                    },
+                                    "constraints": {"presence": true}
                                 }
                             },
                             "validator": {
@@ -463,7 +465,8 @@ define(
 
                                     "format": {
                                         "output": "codes"
-                                    }
+                                    },
+                                    "constraints": {"presence": true}
                                 },
                                 "coverageSectorsDetails": {
                                     "selector": {
@@ -1108,7 +1111,7 @@ define(
                                             },
 
                                             "format": {
-                                                "output": "string"
+                                                "output": "array"
                                             }
                                         }
                                     }

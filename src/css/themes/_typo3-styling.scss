@@ -1,5 +1,10 @@
 /* Typo 3 Countrystat style */
 
+.fx-box .back-content {
+  background-color: #e0e0e0 !important;
+
+}
+
 #sidebar-wrapper ul.sidebar-nav li.spacer {
   height: 130px;
   margin: 0;
@@ -19,7 +24,6 @@
       display: inline-block;
       margin: 5px;
       text-transform: capitalize;
-
 
       &.NO{
 

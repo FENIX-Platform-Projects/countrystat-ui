@@ -6181,6 +6181,9 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
         margin-left: 5px; }
 
 /* Typo 3 Countrystat style */
+.fx-box .back-content {
+  background-color: #e0e0e0 !important; }
+
 #sidebar-wrapper ul.sidebar-nav li.spacer {
   height: 130px;
   margin: 0;

@@ -5,8 +5,9 @@ define([
     "../config/shared",
     "../config/dsd",
     "../config/metadata",
+    "../config/countries",
     "fenix-ui-data-management"
-], function ($, log, C, SC, DsdConfig, MetadataConfig, DataManagement) {
+], function ($, log, C, SC, DsdConfig, MetadataConfig, CountriesCode, DataManagement) {
 
     var s = {
         COUNTRY: 'data-country'
@@ -15,8 +16,7 @@ define([
     function DataMngPage() {
 
         console.clear();
-
-        log.setLevel("trace");
+        log.setLevel("silent");
 
         this._importThirdPartyCss();
 
@@ -46,8 +46,8 @@ define([
             log.warn("Using default country instead: " + C.country);
         }
 
-        //#38
-        //MetadataConfig.sections.meContent.sections.seCoverage.selectors.coverageGeographic.selector = { id:"dropdown", "default": ['106']}
+        if (CountriesCode[country.toLowerCase()])
+            MetadataConfig.sections.meContent.sections.seCoverage.selectors.coverageGeographic.selector = { id:"dropdown", "default": [CountriesCode[country.toLowerCase()]]}
 
         config ={
             el: C.dataManagementEl,
@@ -55,7 +55,7 @@ define([
             environment: C.environment,
             lang: opts.lang,
             metadataEditor: MetadataConfig,
-            dsdEditor: $.extend(true, DsdConfig, { contextSystem: "cstat_" + country.toLowerCase()}),
+            dsdEditor: $.extend(true, SC[country].dsd, { contextSystem: "cstat_" + country.toLowerCase()}),
             catalog: $.extend(true, SC[country].catalog, {hideCloseButton: true}),
             config: {
                 contextSystem: "cstat_" + country.toLowerCase(),
@@ -68,7 +68,6 @@ define([
         log.warn(config);
 
         this.dataMng = new DataManagement(config);
-
     };
 
     //style

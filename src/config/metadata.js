@@ -177,19 +177,21 @@ define(
                 "contacts": {
 
                     classNames: "well",
-
                     "incremental": true,
+                    initialAmount : 1,
 
                     "selectors": {
                         "organization": {
                             "selector": {
                                 "id": "input",
                                 "type": "text",
-                                "source": [{"value": "organization", "label": "Organization"}]
+                                "source": [{"value": "organization", "label": "Source"}]
                             },
-
                             "format": {
                                 "output": "label"
+                            },
+                            template: {
+                                title: "Source"
                             },
                             "constraints": {"presence": true}
 
@@ -204,32 +206,6 @@ define(
 
                             "format": {
                                 "output": "label"
-                            }
-
-                        },
-                        "position": {
-                            "selector": {
-                                "id": "input",
-                                "type": "text",
-                                "source": [{"value": "organizationUnit", "label": "Position"}]
-
-                            },
-
-                            "format": {
-                                "output": "label"
-                            }
-
-                        },
-                        "pointOfContact": {
-                            "selector": {
-                                "id": "input",
-                                "type": "text",
-                                "source": [{"value": "pointOfContact", "label": "Point of contact"}]
-
-                            },
-
-                            "format": {
-                                "output": "string"
                             }
 
                         },
@@ -267,6 +243,33 @@ define(
                             dependencies: {
                                 role: [{id: "readOnlyIfNotValue", event: "select", args: {value: "other"}}]
                             },
+
+                        },
+
+                        "position": {
+                            "selector": {
+                                "id": "input",
+                                "type": "text",
+                                "source": [{"value": "organizationUnit", "label": "Position"}]
+
+                            },
+
+                            "format": {
+                                "output": "label"
+                            }
+
+                        },
+                        "pointOfContact": {
+                            "selector": {
+                                "id": "input",
+                                "type": "text",
+                                "source": [{"value": "pointOfContact", "label": "Point of contact"}]
+
+                            },
+
+                            "format": {
+                                "output": "string"
+                            }
 
                         },
 
@@ -494,16 +497,23 @@ define(
                                     "constraints": {"presence": true}
                                 },
                                 "coverageTime": {
-                                    "selector": {
-                                        "id": "range",
-                                        "format": "DD/MM/YYYY",
-                                        "config": {
-                                            type: "double"
-                                        }
-                                    },
-
                                     "format": {
                                         "output": "period"
+                                    },
+                                    selectors: {
+                                        from: {
+                                            classNames: "col-xs-6",
+                                            selector: {
+                                                id: "time"
+                                            }
+
+                                        },
+                                        to: {
+                                            classNames: "col-xs-6",
+                                            selector: {
+                                                id: "time"
+                                            }
+                                        }
                                     }
                                 }
                             },
@@ -1162,16 +1172,23 @@ define(
                                             }
                                         },
                                         "embargoTime": {
-                                            "selector": {
-                                                "id": "range",
-                                                "format": "DD/MM/YYYY",
-                                                "config": {
-                                                    type: "double"
-                                                }
-                                            },
-
                                             "format": {
                                                 "output": "period"
+                                            },
+                                            selectors: {
+                                                from: {
+                                                    classNames: "col-xs-6",
+                                                    selector: {
+                                                        id: "time"
+                                                    }
+
+                                                },
+                                                to: {
+                                                    classNames: "col-xs-6",
+                                                    selector: {
+                                                        id: "time"
+                                                    }
+                                                }
                                             }
                                         }
                                     }

@@ -5,7 +5,6 @@ define(function () {
     'use strict';
 
     return {
-
         //Afghanistan AFG
         "AFG": {
             catalog: {
@@ -2636,7 +2635,7 @@ define(function () {
                         "value": "GAUL_Ethiopia|2014",
                         "text": {
                             "EN": "GAUL (Ethiopia)",
-                            "FR": "GAUL (Ethiopia)"
+                            "FR": "GAUL (Ethiopie)"
                         },
                         "subject": "geo"
                     },
@@ -4113,10 +4112,10 @@ define(function () {
                 lang: "EN",
                 DSD_EDITOR_CODELISTS: [
                     {
-                        "value": "GAUL|2014",
+                        "value": "GAUL_Kenya|2014",
                         "text": {
-                            "EN": "GAUL",
-                            "FR": "GAUL"
+                            "EN": "GAUL (Kenya)",
+                            "FR": "GAUL (Kenya)"
                         },
                         "subject": "geo"
                     },
@@ -8186,7 +8185,7 @@ define(function () {
                         "value": "GAUL_Uganda|2014",
                         "text": {
                             "EN": "GAUL (Uganda)",
-                            "FR": "GAUL (Uganda)"
+                            "FR": "GAUL (Ouganda)"
                         },
                         "subject": "geo"
                     },
@@ -9264,6 +9263,5 @@ define(function () {
                 ]
             }
         }
-
     }
 });

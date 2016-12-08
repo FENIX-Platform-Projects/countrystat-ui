@@ -5,15 +5,15 @@ define(
             ROLE = { uid: "ResponsiblePartyRole" },
             GAUL = {uid: 'GAUL0', version: "2014"},
             Languages = {uid: 'ISO639-2', version: "1998"},
-            PeriodOfReference = {uid: 'FAO_Period', version: "1.0"},
+            PeriodOfReference = {uid: 'FAO_Period_cstat', version: "1.0"},
             TypeOfCollection = {uid: 'FAOSTAT_Collection', version: "1.0"},
             OriginOfCollectedData = {uid: 'FAOSTAT_OriginData', version: "1.0"},
             DataAdjustment = {uid: 'CL_ADJUSTMENT', version: "1.1"},
             StatusConfidenciality = {uid: 'CL_CONF_STATUS', version: "1.0"},
-            AreaOfReference = {uid: 'GAUL_ReferenceArea', version: "1.0"},
-            DisseminationPeriodicy = {uid: 'FAO_Period', version: "1.0"},
-            PeriodicityDataCollection = {uid: 'FAO_Period', version: "1.0"},
-            UpdatePeriodicity = {uid: 'FAO_Period', version: "1.0"},
+            AreaOfReference = {uid: 'GAUL_ReferenceArea_cstat', version: "1.0"},
+            DisseminationPeriodicy = {uid: 'FAO_Period_cstat', version: "1.0"},
+            PeriodicityDataCollection = {uid: 'FAO_Period_cstat', version: "1.0"},
+            UpdatePeriodicity = {uid: 'FAO_Period_cstat', version: "1.0"},
             CoverageSector = {uid: 'CSTAT_Core'};
 
 
@@ -263,8 +263,7 @@ define(
                             "selector": {
                                 "id": "input",
                                 "type": "text",
-                                "source": [{"value": "pointOfContact", "label": "Point of contact"}]
-
+                                "source": [{"value": "pointOfContact", "label": "Contact Person"}]
                             },
 
                             "format": {
@@ -361,14 +360,7 @@ define(
                         },
                         "description": {
                             "selector": {
-                                "id": "input",
-                                "type": "text",
-                                "source": [
-                                    {
-                                        "value": "description",
-                                        "label": "Abstract"
-                                    }
-                                ]
+                                "id": "textarea",
                             },
 
                             "format": {
@@ -432,7 +424,8 @@ define(
                                 "referencePeriod": {
                                     "cl": PeriodOfReference,
                                     "selector": {
-                                        "id": "dropdown"
+                                        "id": "dropdown",
+                                        "config": { "maxItems": 1 }
                                     },
 
                                     "format": {
@@ -465,7 +458,6 @@ define(
                                     "selector": {
                                         "id": "dropdown"
                                     },
-
                                     "format": {
                                         "output": "codes"
                                     },
@@ -477,7 +469,7 @@ define(
                                         "type": "text",
                                         "source": [{
                                             "value": "coverageSectorsDetails",
-                                            "label": "Coverage Sector Details"
+                                            "label": "Coverage Sector/Domain Details"
                                         }]
                                     },
 

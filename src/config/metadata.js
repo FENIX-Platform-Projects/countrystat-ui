@@ -427,7 +427,6 @@ define(
                                         "id": "dropdown",
                                         "config": { "maxItems": 1 },
                                         sort: function (a, b) {
-                                            console.log('sort');
                                             if (a.text > b.text) return -1;
                                             if (a.text < b.text) return 1;
                                             return 0;

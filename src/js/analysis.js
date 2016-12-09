@@ -63,10 +63,6 @@ define([
         //Bootstrap
         require('bootstrap/dist/css/bootstrap.css');
 
-        //map
-        require("../../node_modules/leaflet/dist/leaflet.css");
-        require("../../node_modules/fenix-ui-map/dist/fenix-ui-map.min.css");
-
         //dropdown selector
         require("../../node_modules/selectize/dist/css/selectize.bootstrap3.css");
         //tree selector
@@ -76,6 +72,14 @@ define([
 
         // fenix-ui-dropdown
         require("../../node_modules/fenix-ui-dropdown/dist/fenix-ui-dropdown.min.css");
+
+        //map
+        require("../../node_modules/leaflet/dist/leaflet.css");
+        require("../../node_modules/ion-rangeslider/css/ion.rangeSlider.css");
+        require("../../node_modules/ion-rangeslider/css/ion.rangeSlider.skinNice.css");
+        require("../../node_modules/fenix-ui-map-creator/src/css/fenix-ui-leaflet.css");
+        require("../../node_modules/fenix-ui-map-creator/src/css/fenix-ui-map-creator.css");
+
 
         // fenix-ui-table-creator
         require("../../node_modules/fenix-ui-table-creator/dist/fenix-ui-table-creator.min.css");

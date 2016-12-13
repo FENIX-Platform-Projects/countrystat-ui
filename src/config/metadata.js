@@ -644,7 +644,6 @@ define(
                                             "selector": {
                                                 "id": "dropdown"
                                             },
-
                                             "format": {
                                                 "output": "codes"
                                             }

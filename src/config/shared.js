@@ -40,6 +40,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -410,6 +511,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -780,6 +982,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -1150,6 +1453,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -1520,6 +1924,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -1890,6 +2395,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -2260,6 +2866,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -2630,6 +3337,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL_Ethiopia|2014",
@@ -3000,6 +3808,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -3370,6 +4279,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -3740,6 +4750,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -4110,6 +5221,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL_Kenya|2014",
@@ -4480,6 +5692,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -4850,6 +6163,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -5220,6 +6634,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -5590,6 +7105,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -5960,6 +7576,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -6330,6 +8047,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -6700,6 +8518,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -7070,6 +8989,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -7440,6 +9460,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -7810,6 +9931,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -8180,6 +10402,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL_Uganda|2014",
@@ -8550,6 +10873,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "agro_ecological_zones",
@@ -8928,6 +11352,107 @@ define(function () {
                 datasources:["D3S"],
                 D3SConnector: { },
                 lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "gender",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "residence",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "food",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "sector",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "fieldManagement",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "agriculturalPopulation",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "census",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "time",
+                            "datatypes": [
+                                "year",
+                                "month",
+                                "date"
+                            ]
+                        },
+                        {
+                            "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "undefined",
+                            "datatypes": [
+                                "code",
+                                "year"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",

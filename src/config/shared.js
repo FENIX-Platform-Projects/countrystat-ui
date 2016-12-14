@@ -16,13 +16,6 @@ define(function () {
                             ],
                             default: ["cstat_afg"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -486,13 +479,6 @@ define(function () {
                                 {value: "cstat_ago", label: "CountrySTAT Angola"}
                             ],
                             default: ["cstat_ago"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -958,13 +944,6 @@ define(function () {
                             ],
                             default: ["cstat_ben"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -1428,13 +1407,6 @@ define(function () {
                                 {value: "cstat_bfa", label: "CountrySTAT Burkina Faso"}
                             ],
                             default: ["cstat_bfa"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -1900,13 +1872,6 @@ define(function () {
                             ],
                             default: ["cstat_cmr"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -2370,13 +2335,6 @@ define(function () {
                                 {value: "cstat_civ", label: "CountrySTAT Cote d’Ivoire"}
                             ],
                             default: ["cstat_civ"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -2842,13 +2800,6 @@ define(function () {
                             ],
                             default: ["cstat_cog"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -3312,13 +3263,6 @@ define(function () {
                                 {value: "cstat_eth", label: "CountrySTAT Ethiopia"}
                             ],
                             default: ["cstat_eth"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -3784,13 +3728,6 @@ define(function () {
                             ],
                             default: ["cstat_gha"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -4254,13 +4191,6 @@ define(function () {
                                 {value: "cstat_gnb", label: "CountrySTAT Guinea-Bissau"}
                             ],
                             default: ["cstat_gnb"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -4726,13 +4656,6 @@ define(function () {
                             ],
                             default: ["cstat_hti"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -5196,13 +5119,6 @@ define(function () {
                                 {value: "cstat_ken", label: "CountrySTAT Kenya"}
                             ],
                             default: ["cstat_ken"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -5668,13 +5584,6 @@ define(function () {
                             ],
                             default: ["cstat_mdg"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -6138,13 +6047,6 @@ define(function () {
                                 {value: "cstat_mwi", label: "CountrySTAT Malawi"}
                             ],
                             default: ["cstat_mwi"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -6610,13 +6512,6 @@ define(function () {
                             ],
                             default: ["cstat_mli"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -7080,13 +6975,6 @@ define(function () {
                                 {value: "cstat_moz", label: "CountrySTAT Mozambique"}
                             ],
                             default: ["cstat_moz"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -7552,13 +7440,6 @@ define(function () {
                             ],
                             default: ["cstat_ner"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -8022,13 +7903,6 @@ define(function () {
                                 {value: "cstat_nga", label: "CountrySTAT Nigeria"}
                             ],
                             default: ["cstat_nga"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -8494,13 +8368,6 @@ define(function () {
                             ],
                             default: ["cstat_rwa"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -8964,13 +8831,6 @@ define(function () {
                                 {value: "cstat_sen", label: "CountrySTAT Senegal"}
                             ],
                             default: ["cstat_sen"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -9436,13 +9296,6 @@ define(function () {
                             ],
                             default: ["cstat_tza"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -9906,13 +9759,6 @@ define(function () {
                                 {value: "cstat_tgo", label: "CountrySTAT Togo"}
                             ],
                             default: ["cstat_tgo"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -10378,13 +10224,6 @@ define(function () {
                             ],
                             default: ["cstat_uga"]
                         }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
-                        }
                     }
                 },
                 baseFilter: {
@@ -10848,13 +10687,6 @@ define(function () {
                                 {value: "cstat_zmb", label: "CountrySTAT Zambia"}
                             ],
                             default: ["cstat_zmb"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },
@@ -11327,13 +11159,6 @@ define(function () {
                                 {value: "cstat_training", label: "CountrySTAT Training"}
                             ],
                             default: ["cstat_training"]
-                        }
-                    },
-                    dataDomain: {
-                        cl: {
-                            uid: "CSTAT_Core",
-                            level: 1,
-                            levels: 1
                         }
                     }
                 },

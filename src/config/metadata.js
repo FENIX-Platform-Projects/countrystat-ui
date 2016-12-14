@@ -7,7 +7,7 @@ define(
             Languages = {uid: 'ISO639-2', version: "1998"},
             PeriodOfReference = {uid: 'FAO_Period_cstat', version: "1.0"},
             TypeOfCollection = {uid: 'FAOSTAT_Collection', version: "1.0"},
-            OriginOfCollectedData = {uid: 'FAOSTAT_OriginData', version: "1.0"},
+            OriginOfCollectedData = {uid: 'CSTAT_OriginData', version: "1.0"},
             DataAdjustment = {uid: 'CL_ADJUSTMENT', version: "1.1"},
             StatusConfidenciality = {uid: 'CL_CONF_STATUS', version: "1.0"},
             AreaOfReference = {uid: 'GAUL_ReferenceArea_cstat', version: "1.0"},
@@ -427,9 +427,8 @@ define(
                                         "id": "dropdown",
                                         "config": { "maxItems": 1 },
                                         sort: function (a, b) {
-                                            if (a.text > b.text) return -1;
-                                            if (a.text < b.text) return 1;
-                                            return 0;
+                                            var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
+                                            return hash[a] - hash[b];
                                         }
                                     },
 

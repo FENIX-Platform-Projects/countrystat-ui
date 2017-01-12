@@ -16,6 +16,24 @@ define(function () {
                             ],
                             default: ["cstat_afg"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -480,6 +498,24 @@ define(function () {
                             ],
                             default: ["cstat_ago"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -944,6 +980,24 @@ define(function () {
                             ],
                             default: ["cstat_ben"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -1408,6 +1462,24 @@ define(function () {
                             ],
                             default: ["cstat_bfa"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -1872,6 +1944,24 @@ define(function () {
                             ],
                             default: ["cstat_cmr"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -2336,6 +2426,24 @@ define(function () {
                             ],
                             default: ["cstat_civ"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -2800,6 +2908,24 @@ define(function () {
                             ],
                             default: ["cstat_cog"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -3263,7 +3389,26 @@ define(function () {
                                 {value: "cstat_eth", label: "CountrySTAT Ethiopia"}
                             ],
                             default: ["cstat_eth"]
+                        },
+
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
                         }
+
                     }
                 },
                 baseFilter: {
@@ -3728,6 +3873,24 @@ define(function () {
                             ],
                             default: ["cstat_gha"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -4192,6 +4355,24 @@ define(function () {
                             ],
                             default: ["cstat_gnb"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -4656,6 +4837,24 @@ define(function () {
                             ],
                             default: ["cstat_hti"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -5120,6 +5319,24 @@ define(function () {
                             ],
                             default: ["cstat_ken"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -5584,6 +5801,24 @@ define(function () {
                             ],
                             default: ["cstat_mdg"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -6048,6 +6283,24 @@ define(function () {
                             ],
                             default: ["cstat_mwi"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -6512,6 +6765,24 @@ define(function () {
                             ],
                             default: ["cstat_mli"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -6976,6 +7247,24 @@ define(function () {
                             ],
                             default: ["cstat_moz"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -7440,6 +7729,24 @@ define(function () {
                             ],
                             default: ["cstat_ner"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -7904,6 +8211,24 @@ define(function () {
                             ],
                             default: ["cstat_nga"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -8368,6 +8693,24 @@ define(function () {
                             ],
                             default: ["cstat_rwa"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -8832,6 +9175,24 @@ define(function () {
                             ],
                             default: ["cstat_sen"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -9296,6 +9657,24 @@ define(function () {
                             ],
                             default: ["cstat_tza"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -9760,6 +10139,24 @@ define(function () {
                             ],
                             default: ["cstat_tgo"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -10224,6 +10621,24 @@ define(function () {
                             ],
                             default: ["cstat_uga"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -10688,6 +11103,24 @@ define(function () {
                             ],
                             default: ["cstat_zmb"]
                         }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                                mode: 'multi'
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
                     }
                 },
                 baseFilter: {
@@ -11160,7 +11593,25 @@ define(function () {
                             ],
                             default: ["cstat_training"]
                         }
+                    },
+                    dataDomain: {
+                    selector: {
+                        id : "dropdown",
+                        config : {
+                            plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
+                            mode: 'multi'
+                        }
+                    },
+                    cl : {
+                        uid:  "CSTAT_Core"
+                    },
+
+                    format : {
+                        output : "codes",
+                        metadataAttribute: "meContent.seCoverage.coverageSectors"
                     }
+
+                }
                 },
                 baseFilter: {
                     "dsd.contextSystem": {"enumeration": ["cstat_training"]},

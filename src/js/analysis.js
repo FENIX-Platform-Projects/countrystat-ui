@@ -3,11 +3,14 @@ define([
     "loglevel",
     "../config/config",
     "../config/shared",
-    "fenix-ui-analysis"
-], function ($, log, C, SC, Analysis) {
+    "fenix-ui-analysis",
+    "../html/analysis/template.hbs",
+    "../nls/labels"
+], function ($, log, C, SC, Analysis, template, labels) {
 
     var s = {
-        COUNTRY: 'data-country'
+        COUNTRY: 'data-country',
+        MISSING_VALUES : '[data-missing]'
     };
 
     function SearchAndVisualizeSection() {
@@ -16,10 +19,12 @@ define([
 
         log.setLevel("silent");
 
+        this.lang = C.forceLang || $("html").attr("lang") || C.lang;
+
         this._importThirdPartyCss();
 
         var c = {
-            lang : C.forceLang || $("html").attr("lang") || C.lang,
+            lang : this.lang,
             country : $(document.body).attr(s.COUNTRY) || ""
         };
 
@@ -44,6 +49,9 @@ define([
             log.warn("Using default country instead: " + C.country);
         }
 
+        //Missing values message
+        $(C.analysisEl).parent().prepend(template(labels[this.lang.toLowerCase()]));
+
         config = $.extend(true, {
             el: C.analysisEl,
             cache: C.cache,
@@ -56,6 +64,23 @@ define([
 
         this.analysis = new Analysis(config);
 
+        this._bindEventListeners();
+
+    };
+
+    SearchAndVisualizeSection.prototype._bindEventListeners = function() {
+
+        this.analysis.on("change", function ( args) {
+
+            var amount = args.instance.getVisualizationBoxesAmount();
+
+            if (amount === 0) {
+                $(s.MISSING_VALUES).hide();
+            } else {
+                $(s.MISSING_VALUES).show();
+            }
+
+        })
     };
 
     SearchAndVisualizeSection.prototype._importThirdPartyCss = function () {

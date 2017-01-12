@@ -6202,7 +6202,7 @@ div[data-plugin="filter"] .fx-catalog-modular-form-content {
     .language .tx-srlanguagemenu-pi1 > div.CUR a {
       color: #db514b; }
 
-.tx-dynalist-pi1-recordlist┬á {
+.tx-dynalist-pi1-recordlist  {
   padding-bottom: 0px; }
 
 .article-image img {
@@ -9541,5 +9541,8 @@ body[data-country='ZZZ'] {
     box-shadow: 0 0 0 45px rgba(240, 127, 82, 0); } }
 body[data-country='ZZZ'] .country-details h1 {
   padding: 0; }
+
+[data-missing] {
+  display: none; }
 
 /*# sourceMappingURL=countrystat-ui.css.map */

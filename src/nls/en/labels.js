@@ -129,7 +129,9 @@ define(function () {
         "meMaintenance.seMetadataMaintenance": "Metadata Maintenance",
         "meMaintenance.seMetadataMaintenance.metadataLastCertified": "Metadata last certified",
         "meMaintenance.seMetadataMaintenance.metadataLastPosted": "Metadata last posted",
-        "meMaintenance.seMetadataMaintenance.metadataLastUpdate": "Metadata last update"
+        "meMaintenance.seMetadataMaintenance.metadataLastUpdate": "Metadata last update",
+
+        missingValues : "Empty cells represent missing values"
 
 
 

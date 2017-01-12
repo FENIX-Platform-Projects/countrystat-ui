@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "echo \"Error: please specify a valid section to develop [e.g. npm run dev:analysis]\" && exit 1",
-    "dev:analysis": "cross-env SECTIONS=analysis NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
+    "dev:analysis": "cross-env SECTIONS=analysis NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot  --host danisalv.device.fao.org",
     "dev:base": "cross-env SECTIONS=base NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "dev:data_management": "cross-env SECTIONS=data_management NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "build": "cross-env SECTIONS=base,analysis,data_management NODE_ENV=production webpack --display-error-details ",
@@ -17,15 +17,15 @@
     "type": "git",
     "url": "git+https://github.com/FENIX-Platform-Projects/countrystat-ui.git"
   },
-  "author": "Barbara Cintoli <barbara.cintoli@fao.org> (http://fenix.fao.org/)",
+  "author": "FENIX development team",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/FENIX-Platform-Projects/countrystat-ui/issues"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "fenix-ui-analysis": "^3.0.0-beta.42",
-    "fenix-ui-data-management": "^2.0.0-beta.77",
+    "fenix-ui-analysis": "^3.0.0-beta.57",
+    "fenix-ui-data-management": "^2.0.0-beta.96",
     "jquery": "^3.1.0",
     "progressbar.js": "^1.0.1"
   },

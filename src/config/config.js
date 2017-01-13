@@ -9,9 +9,7 @@ define(function () {
         lang : "EN", //default language
         //forceLang : "FR",
         country : 'TRAINING',
-
         environment : "production",
-
         analysisEl : "#fx-analysis-container",
         dataManagementEl : "#data-mng"
 

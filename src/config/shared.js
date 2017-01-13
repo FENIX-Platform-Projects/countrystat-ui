@@ -122,6 +122,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -476,6 +480,14 @@ define(function () {
                         "subject": "census"
                     },
                     {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
+                    },
+                    {
                         "value": "Taille_de_menage",
                         "text": {
                             "EN": "Household Size",
@@ -487,6 +499,7 @@ define(function () {
                 ]
             }
         },
+
         //Angola AGO
         "AGO": {
             catalog: {
@@ -604,6 +617,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -956,6 +973,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -1086,6 +1111,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -1440,6 +1469,14 @@ define(function () {
                         "subject": "census"
                     },
                     {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
+                    },
+                    {
                         "value": "Taille_de_menage",
                         "text": {
                             "EN": "Household Size",
@@ -1566,6 +1603,10 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
+                        },
+                        {
+                            "subject" : "other",
+                            "datatypes": ["code"]
                         },
                         {
                             "subject": "undefined",
@@ -1912,6 +1953,14 @@ define(function () {
                             "FR": "Source éléctricité"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Superficie_cultivée",
@@ -2050,6 +2099,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -2402,6 +2455,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -2532,6 +2593,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -2886,6 +2951,14 @@ define(function () {
                         "subject": "census"
                     },
                     {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
+                    },
+                    {
                         "value": "Taille_de_menage",
                         "text": {
                             "EN": "Household Size",
@@ -2998,6 +3071,10 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
+                        },
+                        {
+                            "subject" : "other",
+                            "datatypes": ["code"]
                         },
                         {
                             "subject": "time",
@@ -3366,6 +3443,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -3495,6 +3580,10 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
+                        },
+                        {
+                            "subject" : "other",
+                            "datatypes": ["code"]
                         },
                         {
                             "subject": "undefined",
@@ -3851,6 +3940,14 @@ define(function () {
                         "subject": "census"
                     },
                     {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
+                    },
+                    {
                         "value": "Taille_de_menage",
                         "text": {
                             "EN": "Household Size",
@@ -3977,6 +4074,10 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
+                        },
+                        {
+                            "subject" : "other",
+                            "datatypes": ["code"]
                         },
                         {
                             "subject": "undefined",
@@ -4331,6 +4432,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -4461,6 +4570,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -4813,6 +4926,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -4943,6 +5064,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -5297,6 +5422,14 @@ define(function () {
                         "subject": "census"
                     },
                     {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
+                    },
+                    {
                         "value": "Taille_de_menage",
                         "text": {
                             "EN": "Household Size",
@@ -5423,6 +5556,10 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
+                        },
+                        {
+                            "subject" : "other",
+                            "datatypes": ["code"]
                         },
                         {
                             "subject": "undefined",
@@ -5779,6 +5916,14 @@ define(function () {
                         "subject": "census"
                     },
                     {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
+                    },
+                    {
                         "value": "Taille_de_menage",
                         "text": {
                             "EN": "Household Size",
@@ -5899,6 +6044,10 @@ define(function () {
                                 "month",
                                 "date"
                             ]
+                        },
+                        {
+                            "subject" : "other",
+                            "datatypes": ["code"]
                         },
                         {
                             "subject": "geo",
@@ -6259,6 +6408,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -6389,6 +6546,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -6741,6 +6902,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -6871,6 +7040,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -7223,6 +7396,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -7353,6 +7534,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -7705,6 +7890,13 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -7835,6 +8027,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -8187,6 +8383,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -8317,6 +8521,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -8677,6 +8885,14 @@ define(function () {
                             "FR": "Taille de menage"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     }
 
                 ]
@@ -8799,12 +9015,17 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
                                 "year"
                             ]
-                        }
+                        },
+
                     ],
                     "value": [
                         {
@@ -9159,7 +9380,15 @@ define(function () {
                             "FR": "Taille de menage"
                         },
                         "subject": "census"
-                    }
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
+                    },
 
                 ]
             }
@@ -9279,6 +9508,10 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
+                        },
+                        {
+                            "subject" : "other",
+                            "datatypes": ["code"]
                         },
                         {
                             "subject": "undefined",
@@ -9633,6 +9866,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -9763,6 +10004,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -10115,6 +10360,14 @@ define(function () {
                             "FR": "Superficie cultivée"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -10245,6 +10498,10 @@ define(function () {
                             ]
                         },
                         {
+                            "subject" : "other",
+                            "datatypes": ["code"]
+                        },
+                        {
                             "subject": "undefined",
                             "datatypes": [
                                 "code",
@@ -10599,6 +10856,14 @@ define(function () {
                         "subject": "census"
                     },
                     {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
+                    },
+                    {
                         "value": "Taille_de_menage",
                         "text": {
                             "EN": "Household Size",
@@ -10725,6 +10990,9 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
+                        },                        {
+                            "subject" : "other",
+                            "datatypes": ["code"]
                         },
                         {
                             "subject": "undefined",
@@ -11081,6 +11349,14 @@ define(function () {
                         "subject": "census"
                     },
                     {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
+                    },
+                    {
                         "value": "Taille_de_menage",
                         "text": {
                             "EN": "Household Size",
@@ -11207,6 +11483,10 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
+                        },
+                        {
+                            "subject" : "other",
+                            "datatypes": ["code"]
                         },
                         {
                             "subject": "undefined",
@@ -11655,6 +11935,12 @@ define(function () {
                             ]
                         },
                         {
+                            "subject": "other",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
                             "subject": "food",
                             "datatypes": [
                                 "code"
@@ -11694,6 +11980,12 @@ define(function () {
                         },
                         {
                             "subject": "geo",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject" : "other",
                             "datatypes": [
                                 "code"
                             ]
@@ -12059,6 +12351,14 @@ define(function () {
                             "FR": "Taille de menage"
                         },
                         "subject": "census"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "other"
                     }
 
                 ]

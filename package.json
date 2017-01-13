@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "echo \"Error: please specify a valid section to develop [e.g. npm run dev:analysis]\" && exit 1",
-    "dev:analysis": "cross-env SECTIONS=analysis NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot  --host danisalv.device.fao.org",
+    "dev:analysis": "cross-env SECTIONS=analysis NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot ",
     "dev:base": "cross-env SECTIONS=base NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "dev:data_management": "cross-env SECTIONS=data_management NODE_ENV=develop webpack-dev-server --content-base dev --display-error-details --progress --color --inline --hot",
     "build": "cross-env SECTIONS=base,analysis,data_management NODE_ENV=production webpack --display-error-details ",

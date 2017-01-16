@@ -499,7 +499,6 @@ define(function () {
                 ]
             }
         },
-
         //Angola AGO
         "AGO": {
             catalog: {
@@ -11930,12 +11929,6 @@ define(function () {
                         },
                         {
                             "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "other",
                             "datatypes": [
                                 "code"
                             ]

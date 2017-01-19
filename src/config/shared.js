@@ -123,14 +123,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -617,14 +614,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -1111,14 +1105,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -1605,14 +1596,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -2099,14 +2087,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -2593,14 +2578,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -3073,7 +3055,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
+                            "datatypes": [
+                                "code",
+                                "date"
+                            ]
+
                         },
                         {
                             "subject": "time",
@@ -3087,13 +3073,6 @@ define(function () {
                             "subject": "geo",
                             "datatypes": [
                                 "code"
-                            ]
-                        },
-                        {
-                            "subject": "undefined",
-                            "datatypes": [
-                                "code",
-                                "year"
                             ]
                         }
                     ],
@@ -3582,14 +3561,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -4076,14 +4052,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -4570,13 +4543,9 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
                         }
                     ],
@@ -5064,13 +5033,9 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
                         }
                     ],
@@ -5558,14 +5523,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -6046,19 +6008,15 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
+                            "datatypes": [
+                                "code",
+                                "date"
+                            ]
                         },
                         {
                             "subject": "geo",
                             "datatypes": [
                                 "code"
-                            ]
-                        },
-                        {
-                            "subject": "undefined",
-                            "datatypes": [
-                                "code",
-                                "year"
                             ]
                         }
                     ],
@@ -6546,14 +6504,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -7040,14 +6995,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -7534,14 +7486,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -8027,14 +7976,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -8521,14 +8467,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -9015,14 +8958,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         },
 
                     ],
@@ -9510,14 +9450,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -10004,14 +9941,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -10498,14 +10432,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -10989,16 +10920,14 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },                        {
-                            "subject" : "other",
-                            "datatypes": ["code"]
                         },
                         {
-                            "subject": "undefined",
+                            "subject" : "other",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -11485,14 +11414,11 @@ define(function () {
                         },
                         {
                             "subject" : "other",
-                            "datatypes": ["code"]
-                        },
-                        {
-                            "subject": "undefined",
                             "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
+
                         }
                     ],
                     "value": [
@@ -11980,14 +11906,8 @@ define(function () {
                         {
                             "subject" : "other",
                             "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "undefined",
-                            "datatypes": [
                                 "code",
-                                "year"
+                                "date"
                             ]
                         }
                     ],

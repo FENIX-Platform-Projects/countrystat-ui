@@ -66,48 +66,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -120,14 +78,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -153,6 +103,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -184,7 +198,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -192,7 +206,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -200,7 +214,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -208,7 +222,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -216,7 +230,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -224,7 +238,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -275,222 +289,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -557,48 +361,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -611,14 +373,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -644,6 +398,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -675,7 +493,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -683,7 +501,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -691,7 +509,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -699,7 +517,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -707,7 +525,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -715,7 +533,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -723,7 +541,7 @@ define(function () {
                             "EN": "CountrySTAT Indicators",
                             "FR": "Indicateurs de CountrySTAT"
                         },
-                        "subject": "indicator"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "HS|full",
@@ -766,222 +584,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -1048,48 +656,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -1102,14 +668,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -1135,6 +693,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -1166,7 +788,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -1174,7 +796,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -1182,7 +804,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -1190,7 +812,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -1198,7 +820,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -1206,7 +828,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -1257,222 +879,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -1539,48 +951,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -1593,14 +963,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -1626,6 +988,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -1657,7 +1083,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -1665,7 +1091,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -1673,7 +1099,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -1681,7 +1107,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -1689,7 +1115,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -1697,7 +1123,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -1748,222 +1174,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -2030,48 +1246,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -2084,14 +1258,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -2117,6 +1283,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -2148,7 +1378,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -2156,7 +1386,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -2164,7 +1394,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -2172,7 +1402,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -2180,7 +1410,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -2188,7 +1418,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -2239,222 +1469,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
                         "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
                     }
 
                 ]
@@ -2521,48 +1541,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -2575,14 +1553,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -2608,6 +1578,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -2639,7 +1673,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -2647,7 +1681,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -2655,7 +1689,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -2663,7 +1697,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -2671,7 +1705,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -2679,7 +1713,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -2730,222 +1764,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
                         "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
                     }
 
                 ]
@@ -3012,56 +1836,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -3099,7 +1873,87 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "census",
+                        "text": {
+                            "EN": "Census Congo 1",
+                            "FR": "Census Congo 1"
+                        },
+                        "codelistSubject": "census"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
+                    {
+                        "value": "Recensement2",
+                        "text": {
+                            "EN": "Census Congo 2",
+                            "FR": "Census Congo 2"
+                        },
+                        "subject": "freesubject"
+                    },
                     {
                         "value": "GAUL|2014",
                         "text": {
@@ -3130,7 +1984,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -3138,7 +1992,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -3146,7 +2000,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -3154,7 +2008,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -3162,7 +2016,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -3170,7 +2024,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -3236,8 +2090,6 @@ define(function () {
                         },
                         "subject": "census"
                     },
-
-
                     {
                         "value": "Alphabetisation",
                         "text": {
@@ -3428,7 +2280,7 @@ define(function () {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -3504,48 +2356,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -3558,14 +2368,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -3591,6 +2393,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL_Ethiopia|2014",
@@ -3622,7 +2488,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -3630,7 +2496,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -3638,7 +2504,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -3646,7 +2512,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -3654,7 +2520,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -3662,7 +2528,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -3713,222 +2579,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
                         "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
                     }
 
                 ]
@@ -3995,48 +2651,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -4049,14 +2663,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -4082,6 +2688,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -4113,7 +2783,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -4121,7 +2791,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -4129,7 +2799,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -4137,7 +2807,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -4145,7 +2815,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -4153,7 +2823,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -4204,222 +2874,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
                         "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
                     }
 
                 ]
@@ -4486,48 +2946,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -4539,13 +2957,6 @@ define(function () {
                             "subject": "geo",
                             "datatypes": [
                                 "code"
-                            ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
                             ]
                         }
                     ],
@@ -4572,6 +2983,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -4603,7 +3078,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -4611,7 +3086,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -4619,7 +3094,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -4627,7 +3102,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -4635,7 +3110,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -4643,7 +3118,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -4651,7 +3126,7 @@ define(function () {
                             "EN": "CountrySTAT Indicators",
                             "FR": "Indicateurs de CountrySTAT"
                         },
-                        "subject": "indicator"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "HS|full",
@@ -4694,222 +3169,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
                         "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
                     }
 
                 ]
@@ -4976,48 +3241,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -5029,13 +3252,6 @@ define(function () {
                             "subject": "geo",
                             "datatypes": [
                                 "code"
-                            ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
                             ]
                         }
                     ],
@@ -5062,6 +3278,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -5093,7 +3373,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -5101,7 +3381,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -5109,7 +3389,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -5117,7 +3397,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -5125,7 +3405,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -5133,7 +3413,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -5184,222 +3464,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
                         "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
                     }
 
                 ]
@@ -5466,48 +3536,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -5520,14 +3548,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -5553,6 +3573,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL_Kenya|2014",
@@ -5584,7 +3668,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -5592,7 +3676,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -5600,7 +3684,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -5608,7 +3692,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -5616,7 +3700,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -5624,7 +3708,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -5675,222 +3759,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -5957,59 +3831,10 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
                                 "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
                                 "date"
                             ]
                         },
@@ -6043,6 +3868,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -6074,7 +3963,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -6082,7 +3971,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -6090,7 +3979,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -6098,7 +3987,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -6106,7 +3995,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -6114,7 +4003,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -6165,222 +4054,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -6447,48 +4126,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -6501,14 +4138,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -6534,6 +4163,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -6565,7 +4258,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -6573,7 +4266,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -6581,7 +4274,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -6589,7 +4282,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -6597,7 +4290,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -6605,7 +4298,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -6656,222 +4349,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -6938,48 +4421,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -6992,14 +4433,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -7025,6 +4458,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -7056,7 +4553,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -7064,7 +4561,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -7072,7 +4569,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -7080,7 +4577,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -7088,7 +4585,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -7096,7 +4593,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -7147,222 +4644,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -7429,48 +4716,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -7483,14 +4728,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -7516,6 +4753,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -7547,7 +4848,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -7555,7 +4856,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -7563,7 +4864,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -7571,7 +4872,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -7579,7 +4880,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -7587,7 +4888,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -7638,221 +4939,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -7919,48 +5011,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -7973,14 +5023,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -8006,6 +5048,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -8037,7 +5143,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -8045,7 +5151,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -8053,7 +5159,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -8061,7 +5167,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -8069,7 +5175,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -8077,7 +5183,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -8128,222 +5234,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -8410,48 +5306,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -8464,14 +5318,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -8497,6 +5343,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -8528,7 +5438,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -8536,7 +5446,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -8544,7 +5454,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -8552,7 +5462,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -8560,7 +5470,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -8568,7 +5478,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -8619,222 +5529,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -8901,48 +5601,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -8955,16 +5613,7 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
-                        },
-
+                        }
                     ],
                     "value": [
                         {
@@ -8989,6 +5638,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -9020,7 +5733,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -9028,7 +5741,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -9036,7 +5749,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -9044,7 +5757,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -9052,7 +5765,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -9060,7 +5773,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -9111,223 +5824,13 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
+                        "subject": "freesubject"
+                    }
 
                 ]
             }
@@ -9393,48 +5896,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -9447,14 +5908,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -9480,6 +5933,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -9511,7 +6028,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -9519,7 +6036,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -9527,7 +6044,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -9535,7 +6052,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -9543,7 +6060,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -9551,7 +6068,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -9602,222 +6119,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -9884,48 +6191,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -9938,14 +6203,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -9971,6 +6228,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -10002,7 +6323,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -10010,7 +6331,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -10018,7 +6339,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -10026,7 +6347,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -10034,7 +6355,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -10042,7 +6363,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -10093,222 +6414,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -10375,48 +6486,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -10429,14 +6498,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -10462,6 +6523,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -10493,7 +6618,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -10501,7 +6626,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -10509,7 +6634,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -10517,7 +6642,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -10525,7 +6650,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -10533,7 +6658,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -10584,222 +6709,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -10866,48 +6781,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -10920,14 +6793,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -10953,6 +6818,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL_Uganda|2014",
@@ -10984,7 +6913,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -10992,7 +6921,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -11000,7 +6929,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -11008,7 +6937,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -11016,7 +6945,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -11024,7 +6953,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -11075,222 +7004,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
-                        "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
                         "value": "Size",
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -11357,48 +7076,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -11411,14 +7088,6 @@ define(function () {
                             "datatypes": [
                                 "code"
                             ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
-                            ]
-
                         }
                     ],
                     "value": [
@@ -11444,6 +7113,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Free Subject"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "agro_ecological_zones",
@@ -11483,7 +7216,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -11491,7 +7224,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -11499,7 +7232,7 @@ define(function () {
                             "EN": "Field Management",
                             "FR": "Gestion du terrain"
                         },
-                        "subject": "fieldManagement"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Food",
@@ -11507,7 +7240,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -11515,7 +7248,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -11523,7 +7256,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -11574,214 +7307,12 @@ define(function () {
                         "subject": "item"
                     },
                     {
-                        "value": "Activités_agricoles",
+                        "value": "Size",
                         "text": {
-                            "EN": "Farm activities",
-                            "FR": "Activités agricoles"
+                            "EN": "Size",
+                            "FR": "Taille"
                         },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Activités_forestières",
-                        "text": {
-                            "EN": "Forestry activities",
-                            "FR": "Activités forestières"
-                        },
-                        "subject": "census"
-                    },
-
-
-                    {
-                        "value": "Alphabetisation",
-                        "text": {
-                            "EN": "Alphabetisation",
-                            "FR": "Alphabetisation"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Approvisionement_en_eau",
-                        "text": {
-                            "EN": "Water supply",
-                            "FR": "Approvisionement en eau"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Classe_de_distance",
-                        "text": {
-                            "EN": "Distance class",
-                            "FR": "Classe de distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Difficultés_rencontrées",
-                        "text": {
-                            "EN": "Encountered difficulties",
-                            "FR": "Difficultés rencontrées"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Distance",
-                        "text": {
-                            "EN": "Distance",
-                            "FR": "Distance"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Equipments_agricoles",
-                        "text": {
-                            "EN": "Agricultural equipments",
-                            "FR": "Equipments agricoles"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Existence",
-                        "text": {
-                            "EN": "Existence",
-                            "FR": "Existence"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Group_Age",
-                        "text": {
-                            "EN": "Group Age",
-                            "FR": "Group Age"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Indicateurs_Recensement",
-                        "text": {
-                            "EN": "Census Indicators",
-                            "FR": "Indicateurs Recensement"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Main_d'oeuvre",
-                        "text": {
-                            "EN": "Workforce",
-                            "FR": "Main d'oeuvre"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Matériel",
-                        "text": {
-                            "EN": "Equipment",
-                            "FR": "Matériel"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Mode_de_faire_valoir",
-                        "text": {
-                            "EN": "How to claim",
-                            "FR": "Mode de faire valoir"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Niveau_Instruction",
-                        "text": {
-                            "EN": "Level Instruction",
-                            "FR": "Niveau Instruction"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_conjointes",
-                        "text": {
-                            "EN": "Number of joint",
-                            "FR": "Nombre conjointes"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_champs_possédés",
-                        "text": {
-                            "EN": "Number of owned fields",
-                            "FR": "Nombre de champs possédés"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Nombre_de_pieds",
-                        "text": {
-                            "EN": "Number of feet",
-                            "FR": "Nombre de pieds"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Objectifs_de_production",
-                        "text": {
-                            "EN": "Production targets",
-                            "FR": "Objectifs de production"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Oui_Non",
-                        "text": {
-                            "EN": "Yes No",
-                            "FR": "Oui Non"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Répartition_exploitations",
-                        "text": {
-                            "EN": "Breakdown of holdings",
-                            "FR": "Répartition exploitations"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Route_bitumée",
-                        "text": {
-                            "EN": "Bitumen road",
-                            "FR": "Route bitumée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Situation_Matrimoniale",
-                        "text": {
-                            "EN": "Marriage Situation",
-                            "FR": "Situation Matrimoniale"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Source_éléctricité",
-                        "text": {
-                            "EN": "Source Electricity",
-                            "FR": "Source éléctricité"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Superficie_cultivée",
-                        "text": {
-                            "EN": "Cultivated area",
-                            "FR": "Superficie cultivée"
-                        },
-                        "subject": "census"
-                    },
-                    {
-                        "value": "Taille_de_menage",
-                        "text": {
-                            "EN": "Household Size",
-                            "FR": "Taille de menage"
-                        },
-                        "subject": "census"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -11848,48 +7379,6 @@ define(function () {
                             ]
                         },
                         {
-                            "subject": "gender",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "residence",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "food",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "sector",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "fieldManagement",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "agriculturalPopulation",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "census",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
                             "subject": "time",
                             "datatypes": [
                                 "year",
@@ -11901,13 +7390,6 @@ define(function () {
                             "subject": "geo",
                             "datatypes": [
                                 "code"
-                            ]
-                        },
-                        {
-                            "subject" : "other",
-                            "datatypes": [
-                                "code",
-                                "date"
                             ]
                         }
                     ],
@@ -11934,6 +7416,70 @@ define(function () {
                         }
                     ]
                 },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Sujet libre"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
                 DSD_EDITOR_CODELISTS: [
                     {
                         "value": "GAUL|2014",
@@ -11965,7 +7511,7 @@ define(function () {
                             "EN": "Agricultural",
                             "FR": "Population agricole"
                         },
-                        "subject": "agriculturalPopulation"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_DAC",
@@ -11973,7 +7519,7 @@ define(function () {
                             "EN": "DAC",
                             "FR": "DAC"
                         },
-                        "subject": "sector"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Field_Management",
@@ -11989,7 +7535,7 @@ define(function () {
                             "EN": "Food",
                             "FR": "Alimentaire"
                         },
-                        "subject": "food"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Gender",
@@ -11997,7 +7543,7 @@ define(function () {
                             "EN": "Gender",
                             "FR": "Genre"
                         },
-                        "subject": "gender"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Residence",
@@ -12005,7 +7551,7 @@ define(function () {
                             "EN": "Residence",
                             "FR": "Résidence"
                         },
-                        "subject": "residence"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "CountrySTAT_Indicators",
@@ -12061,7 +7607,7 @@ define(function () {
                             "EN": "Farm activities",
                             "FR": "Activités agricoles"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Activités_forestières",
@@ -12069,17 +7615,15 @@ define(function () {
                             "EN": "Forestry activities",
                             "FR": "Activités forestières"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
-
-
                     {
                         "value": "Alphabetisation",
                         "text": {
                             "EN": "Alphabetisation",
                             "FR": "Alphabetisation"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Approvisionement_en_eau",
@@ -12087,7 +7631,7 @@ define(function () {
                             "EN": "Water supply",
                             "FR": "Approvisionement en eau"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Classe_de_distance",
@@ -12095,7 +7639,7 @@ define(function () {
                             "EN": "Distance class",
                             "FR": "Classe de distance"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Difficultés_rencontrées",
@@ -12103,7 +7647,7 @@ define(function () {
                             "EN": "Encountered difficulties",
                             "FR": "Difficultés rencontrées"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Distance",
@@ -12111,7 +7655,7 @@ define(function () {
                             "EN": "Distance",
                             "FR": "Distance"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Equipments_agricoles",
@@ -12119,7 +7663,7 @@ define(function () {
                             "EN": "Agricultural equipments",
                             "FR": "Equipments agricoles"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Existence",
@@ -12127,7 +7671,7 @@ define(function () {
                             "EN": "Existence",
                             "FR": "Existence"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Group_Age",
@@ -12135,7 +7679,7 @@ define(function () {
                             "EN": "Group Age",
                             "FR": "Group Age"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Indicateurs_Recensement",
@@ -12143,7 +7687,7 @@ define(function () {
                             "EN": "Census Indicators",
                             "FR": "Indicateurs Recensement"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Main_d'oeuvre",
@@ -12151,7 +7695,7 @@ define(function () {
                             "EN": "Workforce",
                             "FR": "Main d'oeuvre"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Matériel",
@@ -12159,7 +7703,7 @@ define(function () {
                             "EN": "Equipment",
                             "FR": "Matériel"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Mode_de_faire_valoir",
@@ -12167,7 +7711,7 @@ define(function () {
                             "EN": "How to claim",
                             "FR": "Mode de faire valoir"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Niveau_Instruction",
@@ -12175,7 +7719,7 @@ define(function () {
                             "EN": "Level Instruction",
                             "FR": "Niveau Instruction"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Nombre_conjointes",
@@ -12183,7 +7727,7 @@ define(function () {
                             "EN": "Number of joint",
                             "FR": "Nombre conjointes"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Nombre_de_champs_possédés",
@@ -12191,7 +7735,7 @@ define(function () {
                             "EN": "Number of owned fields",
                             "FR": "Nombre de champs possédés"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Nombre_de_pieds",
@@ -12199,7 +7743,7 @@ define(function () {
                             "EN": "Number of feet",
                             "FR": "Nombre de pieds"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Objectifs_de_production",
@@ -12207,7 +7751,7 @@ define(function () {
                             "EN": "Production targets",
                             "FR": "Objectifs de production"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Oui_Non",
@@ -12215,7 +7759,7 @@ define(function () {
                             "EN": "Yes No",
                             "FR": "Oui Non"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Répartition_exploitations",
@@ -12223,7 +7767,7 @@ define(function () {
                             "EN": "Breakdown of holdings",
                             "FR": "Répartition exploitations"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Route_bitumée",
@@ -12231,7 +7775,7 @@ define(function () {
                             "EN": "Bitumen road",
                             "FR": "Route bitumée"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Situation_Matrimoniale",
@@ -12239,7 +7783,7 @@ define(function () {
                             "EN": "Marriage Situation",
                             "FR": "Situation Matrimoniale"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Source_éléctricité",
@@ -12247,7 +7791,7 @@ define(function () {
                             "EN": "Source Electricity",
                             "FR": "Source éléctricité"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Superficie_cultivée",
@@ -12255,7 +7799,7 @@ define(function () {
                             "EN": "Cultivated area",
                             "FR": "Superficie cultivée"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Taille_de_menage",
@@ -12263,7 +7807,7 @@ define(function () {
                             "EN": "Household Size",
                             "FR": "Taille de menage"
                         },
-                        "subject": "census"
+                        "subject": "freesubject"
                     },
                     {
                         "value": "Size",
@@ -12271,7 +7815,7 @@ define(function () {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
+                        "subject": "freesubject"
                     }
 
                 ]

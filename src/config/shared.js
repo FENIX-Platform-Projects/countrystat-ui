@@ -2,7 +2,7 @@
 
 define(function () {
 
-    'use strict';
+    "use strict";
 
     return {
         //Afghanistan AFG
@@ -21,8 +21,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -61,20 +61,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -316,8 +302,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -356,20 +342,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -611,8 +583,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -651,20 +623,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -906,8 +864,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -946,20 +904,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -1201,8 +1145,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -1241,20 +1185,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -1496,8 +1426,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -1536,20 +1466,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -1791,8 +1707,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -1831,20 +1747,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -2304,15 +2206,14 @@ define(function () {
                                 {value: "cstat_eth", label: "CountrySTAT Ethiopia"}
                             ],
                             default: ["cstat_eth"]
-                        },
-
+                        }
                     },
                     dataDomain: {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -2351,20 +2252,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -2606,8 +2493,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -2646,20 +2533,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -2901,8 +2774,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -2941,20 +2814,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -3196,8 +3055,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -3236,20 +3095,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -3491,8 +3336,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -3531,20 +3376,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -3786,8 +3617,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -3826,20 +3657,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -4081,8 +3898,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -4121,20 +3938,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -4376,8 +4179,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -4416,20 +4219,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -4671,8 +4460,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -4711,20 +4500,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -4966,8 +4741,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -5006,20 +4781,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -5261,8 +5022,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -5301,20 +5062,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -5556,8 +5303,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -5596,20 +5343,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -5851,8 +5584,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -5891,20 +5624,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -6146,8 +5865,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -6186,20 +5905,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -6441,8 +6146,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -6481,20 +6186,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -6736,8 +6427,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -6776,20 +6467,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -7031,8 +6708,8 @@ define(function () {
                         selector: {
                             id : "dropdown",
                             config : {
-                                plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                                mode: 'multi'
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
                             }
                         },
                         cl : {
@@ -7071,20 +6748,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -7331,23 +6994,23 @@ define(function () {
                         }
                     },
                     dataDomain: {
-                    selector: {
-                        id : "dropdown",
-                        config : {
-                            plugins: ['remove_button'], //in combination with mode:'multi' create a 'X' button to remove items
-                            mode: 'multi'
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
                         }
-                    },
-                    cl : {
-                        uid:  "CSTAT_Core"
-                    },
 
-                    format : {
-                        output : "codes",
-                        metadataAttribute: "meContent.seCoverage.coverageSectors"
                     }
-
-                }
                 },
                 baseFilter: {
                     "dsd.contextSystem": {"enumeration": ["cstat_training"]},
@@ -7374,20 +7037,6 @@ define(function () {
                         },
                         {
                             "subject": "indicator",
-                            "datatypes": [
-                                "code"
-                            ]
-                        },
-                        {
-                            "subject": "time",
-                            "datatypes": [
-                                "year",
-                                "month",
-                                "date"
-                            ]
-                        },
-                        {
-                            "subject": "geo",
                             "datatypes": [
                                 "code"
                             ]
@@ -7821,5 +7470,5 @@ define(function () {
                 ]
             }
         }
-    }
+    };
 });

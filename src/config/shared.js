@@ -94,7 +94,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -375,7 +375,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -656,7 +656,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -937,7 +937,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -1218,7 +1218,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -1499,7 +1499,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -1780,7 +1780,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -2285,7 +2285,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -2566,7 +2566,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -2847,7 +2847,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -3128,7 +3128,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -3409,7 +3409,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -3690,7 +3690,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -3971,7 +3971,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -4208,7 +4208,7 @@ define(function () {
                 contextSystem:"cstat_mli",
                 datasources:["D3S"],
                 D3SConnector: { },
-                lang: "EN",
+                lang: "FR",
                 columnEditorReader: {
                     "dimension": [
                         {
@@ -4252,7 +4252,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -4533,7 +4533,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -4814,7 +4814,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -5095,7 +5095,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -5376,7 +5376,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -5657,7 +5657,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -5938,7 +5938,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -6219,7 +6219,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -6500,7 +6500,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },
@@ -6781,7 +6781,7 @@ define(function () {
                         "value": "freesubject",
                         "text": {
                             "EN": "Free Subject",
-                            "FR": "Free Subject"
+                            "FR": "Sujet libre"
                         },
                         "codelistSubject": "freesubject"
                     },

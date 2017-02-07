@@ -23,6 +23,8 @@ define(function () {
         eth: '79',
         //Ghana GHA
         gha: '94',
+        //Gabon GAB
+        gab: '89',
         //Guinea-Bissau GNB
         gnb: '105',
         //Haiti HTI

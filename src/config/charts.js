@@ -30,7 +30,6 @@ define(function () {
             percentageOne: 0.44,
             percentageTwo: 0.56
         },
-
         //Cameroon CMR
         "CMR": {
             color: '#f07f52',
@@ -43,19 +42,23 @@ define(function () {
             percentageOne: 0.63,
             percentageTwo: 0.37
         },
-
         //Congo COG
         "COG": {
             color: '#db514b',
             percentageOne: 0.30,
             percentageTwo: 0.70
         },
-
         //Ethiopia ETH
         "ETH": {
             color: '#db514b',
             percentageOne: 0.32,
             percentageTwo: 0.68
+        },
+        //Gabon GAB
+        "GAB": {
+            color: '#db514b',
+            percentageOne: 0.65,
+            percentageTwo: 0.35
         },
         //Ghana GHA
         "GHA": {

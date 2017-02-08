@@ -57,8 +57,8 @@ define(function () {
         //Gabon GAB
         "GAB": {
             color: '#db514b',
-            percentageOne: 0.65,
-            percentageTwo: 0.35
+            percentageOne: 0.19,
+            percentageTwo: 0.81
         },
         //Ghana GHA
         "GHA": {

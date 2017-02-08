@@ -2765,7 +2765,7 @@ define(function () {
                     contextSystem: {
                         selector: {
                             source: [
-                                {value: "cstat_gha", label: "CountrySTAT Gabon"}
+                                {value: "cstat_gab", label: "CountrySTAT Gabon"}
                             ],
                             default: ["cstat_gab"]
                         }
@@ -2790,7 +2790,7 @@ define(function () {
                     }
                 },
                 baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_gha"]},
+                    "dsd.contextSystem": {"enumeration": ["cstat_gab"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],

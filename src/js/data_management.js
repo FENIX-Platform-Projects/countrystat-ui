@@ -56,7 +56,7 @@ define([
             lang: opts.lang,
             metadataEditor: MetadataConfig,
             dsdEditor: $.extend(true, SC[country].dsd, { contextSystem: "cstat_" + country.toLowerCase()}),
-            catalog: $.extend(true, SC[country].catalog, {hideCloseButton: true}),
+            catalog: $.extend(true, SC[country].catalogDM, {hideCloseButton: true}),
             config: {
                 contextSystem: "cstat_" + country.toLowerCase(),
                 datasources : ["D3S"],

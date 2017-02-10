@@ -1588,7 +1588,7 @@ define(function () {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -1906,7 +1906,7 @@ define(function () {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -2766,7 +2766,7 @@ define(function () {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -3084,7 +3084,7 @@ define(function () {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -3402,7 +3402,7 @@ define(function () {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -3720,7 +3720,7 @@ define(function () {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -4038,7 +4038,7 @@ define(function () {
                             "EN": "Size",
                             "FR": "Taille"
                         },
-                        "subject": "other"
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -8280,6 +8280,12 @@ define(function () {
                             "subject": "indicator",
                             "datatypes": [
                                 "code"
+                            ]
+                        },
+                        {
+                            "subject": "other",
+                            "datatypes": [
+                                "year"
                             ]
                         }
                     ],

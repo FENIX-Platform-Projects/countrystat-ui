@@ -7877,9 +7877,9 @@ body[data-country='GAB'] {
   body[data-country='GAB'] .home-content {
     background-color: #2f5674; }
     body[data-country='GAB'] .home-content .home-detail-pointer {
-      background-color: #f8cba9; }
+      background-color: #f8f1a9; }
       body[data-country='GAB'] .home-content .home-detail-pointer:before {
-        border-color: transparent transparent transparent #f8cba9; }
+        border-color: transparent transparent transparent #f8f1a9; }
   body[data-country='GAB'] .country-details .home-stats-footer {
     background-color: rgba(47, 86, 116, 0.5); }
   body[data-country='GAB'] .partners-holder {

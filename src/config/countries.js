@@ -9,6 +9,8 @@ define(function () {
         afg: '1',
         //Angola AGO
         ago: '8',
+        //Azerbaijan AZE
+        aze: '19',
         //Benin BEN
         ben: '29',
         //Burkina Faso BFA

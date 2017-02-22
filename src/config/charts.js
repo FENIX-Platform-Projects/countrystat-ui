@@ -18,6 +18,12 @@ define(function () {
             percentageOne: 0.47,
             percentageTwo: 0.53
         },
+        //Azerbaijan AZE
+        "AZE": {
+            color: '#db514b',
+            percentageOne: 0.58,
+            percentageTwo: 0.42
+        },
         //Benin BEN
         "BEN": {
             color: '#db514b',

@@ -641,6 +641,324 @@ define(function () {
                 ]
             }
         },
+        //Azerbaijan AZE
+        "AZE": {
+            catalog: {
+                pluginRegistry: {
+                    contextSystem: {
+                        selector: {
+                            source: [
+                                {value: "cstat_aze", label: "CountrySTAT Azerbaijan"}
+                            ],
+                            default: ["cstat_aze"]
+                        }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
+                    }
+                },
+                baseFilter: {
+                    "dsd.contextSystem": {"enumeration": ["cstat_aze"]},
+                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
+                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
+                },
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
+                menuExcludedItems: ["accessibility"]
+            },
+            catalogDM: {
+                pluginRegistry: {
+                    contextSystem: {
+                        selector: {
+                            source: [
+                                {value: "cstat_aze", label: "CountrySTAT Azerbaijan"}
+                            ],
+                            default: ["cstat_aze"]
+                        }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
+                    }
+                },
+                baseFilter: {
+                    "dsd.contextSystem": {"enumeration": ["cstat_aze"]},
+                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
+                },
+                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
+                menuExcludedItems: ["accessibility"]
+            },
+            dsd : {
+                MLEditor: {
+                    langs: ["EN", "FR"]
+                },
+                contextSystem:"cstat_aze",
+                datasources:["D3S"],
+                D3SConnector: { },
+                lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Sujet libre"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
+                DSD_EDITOR_CODELISTS: [
+                    {
+                        "value": "GAUL|2014",
+                        "text": {
+                            "EN": "GAUL",
+                            "FR": "GAUL"
+                        },
+                        "subject": "geo"
+                    },
+                    {
+                        "value": "CPC|2.1",
+                        "text": {
+                            "EN": "CPC 2.1",
+                            "FR": "CPC 2.1"
+                        },
+                        "subject": "item"
+                    },
+                    {
+                        "value": "Flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "subject": "flag"
+                    },
+                    {
+                        "value": "CountrySTAT_Agricultural_Population",
+                        "text": {
+                            "EN": "Agricultural",
+                            "FR": "Population agricole"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_DAC",
+                        "text": {
+                            "EN": "DAC",
+                            "FR": "DAC"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_Field_Management",
+                        "text": {
+                            "EN": "Field Management",
+                            "FR": "Gestion du terrain"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_Food",
+                        "text": {
+                            "EN": "Food",
+                            "FR": "Alimentaire"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_Gender",
+                        "text": {
+                            "EN": "Gender",
+                            "FR": "Genre"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_Residence",
+                        "text": {
+                            "EN": "Residence",
+                            "FR": "Résidence"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_Indicators",
+                        "text": {
+                            "EN": "CountrySTAT Indicators",
+                            "FR": "Indicateurs de CountrySTAT"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "HS|full",
+                        "text": {
+                            "EN": "HS Full",
+                            "FR": "HS complet"
+                        },
+                        "subject": "item"
+                    },
+                    {
+                        "value": "CountrySTAT_UM",
+                        "text": {
+                            "EN": "CountrySTAT UM",
+                            "FR": "CountrySTAT Unité de mesure"
+                        },
+                        "subject": "um"
+                    },
+                    {
+                        "value": "CountrySTAT_Fishery_products",
+                        "text": {
+                            "EN": "Fishery products",
+                            "FR": "Produits de la pêche"
+                        },
+                        "subject": "item"
+                    },
+                    {
+                        "value": "CountrySTAT_Forest_products",
+                        "text": {
+                            "EN": "Forest products",
+                            "FR": "Produits forestiers"
+                        },
+                        "subject": "item"
+                    },
+                    {
+                        "value": "CountrySTAT_Fishery_products_scientific",
+                        "text": {
+                            "EN": "Fishery scientific products",
+                            "FR": "Produits de la pêche - scientifiques"
+                        },
+                        "subject": "item"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    }
+
+                ]
+            }
+        },
         //Benin BEN
         "BEN": {
             catalog: {

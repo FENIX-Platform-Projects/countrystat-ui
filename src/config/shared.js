@@ -11,6 +11,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_afg", label: "CountrySTAT Afghanistan"}
                             ],
@@ -48,6 +49,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_afg", label: "CountrySTAT Afghanistan"}
                             ],
@@ -329,6 +331,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_ago", label: "CountrySTAT Angola"}
                             ],
@@ -366,6 +369,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_ago", label: "CountrySTAT Angola"}
                             ],
@@ -647,6 +651,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_aze", label: "CountrySTAT Azerbaijan"}
                             ],
@@ -684,6 +689,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_aze", label: "CountrySTAT Azerbaijan"}
                             ],
@@ -965,6 +971,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_ben", label: "CountrySTAT Benin"}
                             ],
@@ -1001,6 +1008,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_ben", label: "CountrySTAT Benin"}
                             ],
@@ -1282,6 +1290,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_bfa", label: "CountrySTAT Burkina Faso"}
                             ],
@@ -1318,6 +1327,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_bfa", label: "CountrySTAT Burkina Faso"}
                             ],
@@ -1600,6 +1610,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_cmr", label: "CountrySTAT Cameroon"}
                             ],
@@ -1637,6 +1648,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_cmr", label: "CountrySTAT Cameroon"}
                             ],
@@ -1918,6 +1930,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_civ", label: "CountrySTAT Cote d’Ivoire"}
                             ],
@@ -1955,6 +1968,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_civ", label: "CountrySTAT Cote d’Ivoire"}
                             ],
@@ -2236,6 +2250,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_cog", label: "CountrySTAT Congo"}
                             ],
@@ -2273,6 +2288,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_cog", label: "CountrySTAT Congo"}
                             ],
@@ -2778,6 +2794,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_eth", label: "CountrySTAT Ethiopia"}
                             ],
@@ -2815,6 +2832,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_eth", label: "CountrySTAT Ethiopia"}
                             ],
@@ -3096,6 +3114,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_gha", label: "CountrySTAT Ghana"}
                             ],
@@ -3133,6 +3152,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_gha", label: "CountrySTAT Ghana"}
                             ],
@@ -3414,6 +3434,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_gab", label: "CountrySTAT Gabon"}
                             ],
@@ -3451,6 +3472,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_gab", label: "CountrySTAT Gabon"}
                             ],
@@ -3732,6 +3754,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_gnb", label: "CountrySTAT Guinea-Bissau"}
                             ],
@@ -3769,6 +3792,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_gnb", label: "CountrySTAT Guinea-Bissau"}
                             ],
@@ -4050,6 +4074,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_hti", label: "CountrySTAT Haiti"}
                             ],
@@ -4087,6 +4112,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_hti", label: "CountrySTAT Haiti"}
                             ],
@@ -4368,6 +4394,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_ken", label: "CountrySTAT Kenya"}
                             ],
@@ -4405,6 +4432,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_ken", label: "CountrySTAT Kenya"}
                             ],
@@ -4686,6 +4714,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_mdg", label: "CountrySTAT Madagascar"}
                             ],
@@ -4723,6 +4752,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_mdg", label: "CountrySTAT Madagascar"}
                             ],
@@ -5004,6 +5034,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_mwi", label: "CountrySTAT Malawi"}
                             ],
@@ -5040,6 +5071,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_mwi", label: "CountrySTAT Malawi"}
                             ],
@@ -5321,6 +5353,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_mli", label: "CountrySTAT Mali"}
                             ],
@@ -5358,6 +5391,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_mli", label: "CountrySTAT Mali"}
                             ],
@@ -5639,6 +5673,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_moz", label: "CountrySTAT Mozambique"}
                             ],
@@ -5676,6 +5711,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_moz", label: "CountrySTAT Mozambique"}
                             ],
@@ -5956,6 +5992,7 @@ define(function () {
             catalog: {
                 pluginRegistry: {
                     contextSystem: {
+                        id: 'dropdown',
                         selector: {
                             source: [
                                 {value: "cstat_ner", label: "CountrySTAT Niger"}
@@ -5994,6 +6031,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_ner", label: "CountrySTAT Niger"}
                             ],
@@ -6275,6 +6313,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_nga", label: "CountrySTAT Nigeria"}
                             ],
@@ -6312,6 +6351,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_nga", label: "CountrySTAT Nigeria"}
                             ],
@@ -6593,6 +6633,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_rwa", label: "CountrySTAT Rwanda"}
                             ],
@@ -6630,6 +6671,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_rwa", label: "CountrySTAT Rwanda"}
                             ],
@@ -6911,6 +6953,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_sen", label: "CountrySTAT Senegal"}
                             ],
@@ -6948,6 +6991,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_sen", label: "CountrySTAT Senegal"}
                             ],
@@ -7229,6 +7273,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_tza", label: "CountrySTAT Tanzania"}
                             ],
@@ -7266,6 +7311,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_tza", label: "CountrySTAT Tanzania"}
                             ],
@@ -7547,6 +7593,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_tgo", label: "CountrySTAT Togo"}
                             ],
@@ -7584,6 +7631,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_tgo", label: "CountrySTAT Togo"}
                             ],
@@ -7865,6 +7913,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_uga", label: "CountrySTAT Uganda"}
                             ],
@@ -7902,6 +7951,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_uga", label: "CountrySTAT Uganda"}
                             ],
@@ -8183,6 +8233,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_zmb", label: "CountrySTAT Zambia"}
                             ],
@@ -8220,6 +8271,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_zmb", label: "CountrySTAT Zambia"}
                             ],
@@ -8509,6 +8561,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_training", label: "CountrySTAT Training"}
                             ],
@@ -8546,6 +8599,7 @@ define(function () {
                 pluginRegistry: {
                     contextSystem: {
                         selector: {
+                            id: 'dropdown',
                             source: [
                                 {value: "cstat_training", label: "CountrySTAT Training"}
                             ],

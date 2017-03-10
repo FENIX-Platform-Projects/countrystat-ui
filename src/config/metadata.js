@@ -160,6 +160,7 @@ define(
                     "selector": {
                         "id": "input",
                         "type": "text",
+                        "default": "m",
                         "source": [
                             {
                                 "value": "noDataValue",
@@ -167,7 +168,6 @@ define(
                             }
                         ]
                     },
-
                     "format": {
                         "output": "string"
                     }

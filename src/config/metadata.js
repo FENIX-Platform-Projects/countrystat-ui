@@ -14,7 +14,8 @@ define(
             DisseminationPeriodicy = {uid: 'FAO_Period_cstat', version: "1.0"},
             PeriodicityDataCollection = {uid: 'FAO_Period_cstat', version: "1.0"},
             UpdatePeriodicity = {uid: 'FAO_Period_cstat', version: "1.0"},
-            CoverageSector = {uid: 'CSTAT_Core'};
+            CoverageSector = {uid: 'CSTAT_Core'},
+            currentDate = +new Date;
 
         return {
 
@@ -56,17 +57,18 @@ define(
                     "constraints": {"presence": true}
 
                 },
-
+                /* removed as CSTAT-101
                 "creationDate": {
                     "selector": {
-                        "id": "time"
+                        "id": "time",
+                        "default": currentDate
                     },
-
                     "format": {
                         "output": "date"
                     },
                     "constraints": {"presence": true}
                 },
+                 */
                 "characterSet": {
 
                     "cl": IANA,
@@ -1305,7 +1307,8 @@ define(
                             "selectors": {
                                 "updateDate": {
                                     "selector": {
-                                        "id": "time"
+                                        "id": "time",
+                                        "default": currentDate
                                     },
 
                                     "format": {
@@ -1332,7 +1335,6 @@ define(
                                     "selector": {
                                         "id": "time"
                                     },
-
                                     "format": {
                                         "output": "date"
                                     }
@@ -1341,16 +1343,15 @@ define(
                                     "selector": {
                                         "id": "time"
                                     },
-
                                     "format": {
                                         "output": "date"
                                     }
                                 },
                                 "metadataLastUpdate": {
                                     "selector": {
-                                        "id": "time"
+                                        "id": "time",
+                                        "default": currentDate
                                     },
-
                                     "format": {
                                         "output": "date"
                                     }

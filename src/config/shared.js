@@ -9329,7 +9329,7 @@ define(function () {
                     "dsd.contextSystem": {"enumeration": ["cstat_zmb"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
+                defaultSelectors: ["freeText", "dataDomain", "referencePeriod", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
                     engine: ['cstat','fenix']

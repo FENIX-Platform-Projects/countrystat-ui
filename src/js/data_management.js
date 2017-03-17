@@ -6,8 +6,9 @@ define([
     "../config/dsd",
     "../config/metadata",
     "../config/countries",
+    "../nls/config",
     "fenix-ui-data-management"
-], function ($, log, C, SC, DsdConfig, MetadataConfig, CountriesCode, DataManagement) {
+], function ($, log, C, SC, DsdConfig, MetadataConfig, CountriesCode, Lang, DataManagement) {
 
     var s = {
         COUNTRY: 'data-country'
@@ -56,13 +57,18 @@ define([
             lang: opts.lang,
             metadataEditor: MetadataConfig,
             dsdEditor: $.extend(true, SC[country].dsd, { contextSystem: "cstat_" + country.toLowerCase()}),
-            catalog: $.extend(true, SC[country].catalogDM, {hideCloseButton: true}),
+            catalog: $.extend(true, SC[country].catalog,
+                    {hideCloseButton: true},
+                    {pluginRegistry: {freeText:{template:{footer: Lang[opts.lang.toLowerCase()]['freeText.footer']}}}}
+                ),
             config: {
                 contextSystem: "cstat_" + country.toLowerCase(),
                 datasources : ["D3S"],
                 resourceRepresentationType: "dataset"
             }
         };
+
+        console.log(config.catalog.self);
 
         log.warn("Data management configuration: ");
         log.warn(config);

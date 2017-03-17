@@ -5,8 +5,9 @@ define([
     "../config/shared",
     "fenix-ui-analysis",
     "../html/analysis/template.hbs",
-    "../nls/labels"
-], function ($, log, C, SC, Analysis, template, labels) {
+    "../nls/labels",
+    "../nls/config",
+], function ($, log, C, SC, Analysis, template, labels, Lang) {
 
     var s = {
         COUNTRY: 'data-country',
@@ -57,7 +58,14 @@ define([
             cache: C.cache,
             environment: C.environment,
             lang: opts.lang
-        }, SC[country]);
+        }, SC[country],
+            { catalog: {
+                pluginRegistry: {freeText:{template:{footer: Lang[opts.lang.toLowerCase()]['freeText.footer']}}},
+                baseFilter: {
+                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
+                }
+            }}
+        );
 
         log.warn("Analysis configuration: ");
         log.warn(config);

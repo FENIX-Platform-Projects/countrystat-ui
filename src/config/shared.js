@@ -52,63 +52,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_afg"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_afg", label: "CountrySTAT Afghanistan"}
-                            ],
-                            default: ["cstat_afg"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -412,63 +367,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_ago"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_ago", label: "CountrySTAT Angola"}
-                            ],
-                            default: ["cstat_ago"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -772,63 +682,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_aze"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_aze", label: "CountrySTAT Azerbaijan"}
-                            ],
-                            default: ["cstat_aze"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -1132,62 +997,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_ben"]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_ben", label: "CountrySTAT Benin"}
-                            ],
-                            default: ["cstat_ben"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -1491,68 +1312,23 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_bfa"]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_bfa", label: "CountrySTAT Burkina Faso"}
-                            ],
-                            default: ["cstat_bfa"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
                 baseFilter: {
                     "dsd.contextSystem": {"enumeration": ["cstat_bfa"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
@@ -1851,68 +1627,24 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
+                    },
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
+                        },
+                        template : {
+                            footer: ""
+                        },
+                        format : {
+                            output : "freeText",
+                            metadataAttribute: "freetext"
+                        }
                     }
                 },
                 baseFilter: {
                     "dsd.contextSystem": {"enumeration": ["cstat_cmr"]},
                     "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_cmr", label: "CountrySTAT Cameroon"}
-                            ],
-                            default: ["cstat_cmr"]
-                        }
-                    },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
-                        },
-                        cl : {
-                            uid:  "CSTAT_Core"
-                        },
-
-                        format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
-                        }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_cmr"]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
@@ -2211,63 +1943,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_civ"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_civ", label: "CountrySTAT Cote d’Ivoire"}
-                            ],
-                            default: ["cstat_civ"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -2571,63 +2258,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_cog"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_cog", label: "CountrySTAT Congo"}
-                            ],
-                            default: ["cstat_cog"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -3155,63 +2797,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_eth"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_eth", label: "CountrySTAT Ethiopia"}
-                            ],
-                            default: ["cstat_eth"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -3515,63 +3112,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_gha"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_gha", label: "CountrySTAT Ghana"}
-                            ],
-                            default: ["cstat_gha"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -3875,63 +3427,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_gab"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_gab", label: "CountrySTAT Gabon"}
-                            ],
-                            default: ["cstat_gab"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -4235,63 +3742,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_gnb"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_gnb", label: "CountrySTAT Guinea-Bissau"}
-                            ],
-                            default: ["cstat_gnb"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -4595,63 +4057,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_hti"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_hti", label: "CountrySTAT Haiti"}
-                            ],
-                            default: ["cstat_hti"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -4955,63 +4372,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_ken"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_ken", label: "CountrySTAT Kenya"}
-                            ],
-                            default: ["cstat_ken"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -5315,63 +4687,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_mdg"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_mdg", label: "CountrySTAT Madagascar"}
-                            ],
-                            default: ["cstat_mdg"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -5675,62 +5002,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_mwi"]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_mwi", label: "CountrySTAT Malawi"}
-                            ],
-                            default: ["cstat_mwi"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -6034,63 +5317,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_mli"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_mli", label: "CountrySTAT Mali"}
-                            ],
-                            default: ["cstat_mli"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -6394,63 +5632,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_moz"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_moz", label: "CountrySTAT Mozambique"}
-                            ],
-                            default: ["cstat_moz"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -6753,62 +5946,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_ner"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_ner", label: "CountrySTAT Niger"}
-                            ],
-                            default: ["cstat_ner"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -7111,62 +6260,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_nga"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_nga", label: "CountrySTAT Nigeria"}
-                            ],
-                            default: ["cstat_nga"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -7469,62 +6574,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_rwa"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_rwa", label: "CountrySTAT Rwanda"}
-                            ],
-                            default: ["cstat_rwa"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -7827,62 +6888,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_sen"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_sen", label: "CountrySTAT Senegal"}
-                            ],
-                            default: ["cstat_sen"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -8185,62 +7202,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_tza"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_tza", label: "CountrySTAT Tanzania"}
-                            ],
-                            default: ["cstat_tza"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -8543,63 +7516,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_tgo"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_tgo", label: "CountrySTAT Togo"}
-                            ],
-                            default: ["cstat_tgo"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -8903,63 +7831,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_uga"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_uga", label: "CountrySTAT Uganda"}
-                            ],
-                            default: ["cstat_uga"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },
@@ -9263,73 +8146,26 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
+                    },
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
+                        },
+                        template : {
+                            footer: ""
+                        },
+                        format : {
+                            output : "freeText",
+                            metadataAttribute: "freetext"
+                        }
                     }
-
                 },
                 baseFilter: {
                     "dsd.contextSystem": {"enumeration": ["cstat_zmb"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_zmb", label: "CountrySTAT Zambia"}
-                            ],
-                            default: ["cstat_zmb"]
-                        }
-                    },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
-                        },
-                        cl : {
-                            uid:  "CSTAT_Core"
-                        },
-
-                        format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
-                        }
-                    }
-
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_zmb"]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "referencePeriod", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
                     engine: ['cstat','fenix']
@@ -9632,63 +8468,18 @@ define(function () {
                             uid: "FAO_Period_cstat",
                             version: "1.0"
                         }
-                    }
-                },
-                baseFilter: {
-                    "dsd.contextSystem": {"enumeration": ["cstat_training"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
-                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
-                },
-                defaultSelectors: ["freeText", "dataDomain", "referencePeriod", "referenceArea"],
-                menuExcludedItems: ["accessibility"],
-                findServiceParams: {
-                    engine: ['cstat','fenix']
-                }
-            },
-            catalogDM: {
-                pluginRegistry: {
-                    contextSystem: {
-                        selector: {
-                            id: 'dropdown',
-                            source: [
-                                {value: "cstat_training", label: "CountrySTAT Training"}
-                            ],
-                            default: ["cstat_training"]
-                        }
                     },
-                    dataDomain: {
-                        selector: {
-                            id : "dropdown",
-                            config : {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                                mode: "multi"
-                            }
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "text"
                         },
-                        cl : {
-                            uid:  "CSTAT_Core"
+                        template : {
+                            footer: ""
                         },
-
                         format : {
-                            output : "codes",
-                            metadataAttribute: "meContent.seCoverage.coverageSectors"
-                        }
-
-                    },
-                    referencePeriod: {
-                        selector: {
-                            id : "dropdown",
-                            config: {
-                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
-                            },
-                            sort: function (a, b) {
-                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
-                                return hash[a.value] - hash[b.value];
-                            }
-
-                        },
-                        cl : {
-                            uid: "FAO_Period_cstat",
-                            version: "1.0"
+                            output : "freeText",
+                            metadataAttribute: "freetext"
                         }
                     }
                 },

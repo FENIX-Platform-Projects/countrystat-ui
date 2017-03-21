@@ -74,7 +74,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -389,7 +391,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -704,7 +708,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -1019,7 +1025,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -1334,7 +1342,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -1650,7 +1660,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -1965,7 +1977,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -2280,7 +2294,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -2819,7 +2835,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -3134,7 +3152,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -3449,7 +3469,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -3764,7 +3786,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -4079,7 +4103,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -4394,7 +4420,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -4709,7 +4737,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -5024,7 +5054,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -5339,7 +5371,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -5654,7 +5688,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -5968,7 +6004,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -6282,7 +6320,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -6596,7 +6636,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -6910,7 +6952,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -7224,7 +7268,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -7538,7 +7584,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -7853,7 +7901,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {
@@ -8168,7 +8218,9 @@ define(function () {
                 defaultSelectors: ["freeText", "dataDomain", "region", "referenceArea"],
                 menuExcludedItems: ["accessibility"],
                 findServiceParams: {
-                    engine: ['cstat','fenix']
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
                 }
             },
             dsd : {

@@ -5,6 +5,8 @@ define(function () {
     "use strict";
 
     return {
+        // Total of 27 Instances (26+1)
+
         //Afghanistan AFG
         "AFG": {
             catalog: {
@@ -914,7 +916,7 @@ define(function () {
                             "EN": "CountrySTAT Indicators",
                             "FR": "Indicateurs de CountrySTAT"
                         },
-                        "subject": "freesubject"
+                        "subject": "indicator"
                     },
                     {
                         "value": "HS|full",
@@ -964,6 +966,7 @@ define(function () {
                         },
                         "subject": "freesubject"
                     }
+
 
                 ]
             }

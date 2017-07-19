@@ -3759,6 +3759,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "gabon_free",
+                        "text": {
+                            "EN": "Gabon Codelist",
+                            "FR": "Codelist du Gabon"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]

@@ -243,7 +243,7 @@ define(
                             },
                             dependencies: {
                                 role: [{id: "readOnlyIfNotValue", event: "select", args: {value: "other"}}]
-                            },
+                            }
 
                         },
 
@@ -361,7 +361,7 @@ define(
                         },
                         "description": {
                             "selector": {
-                                "id": "textarea",
+                                "id": "textarea"
                             },
 
                             "format": {
@@ -633,7 +633,7 @@ define(
                                             "format": {
                                                 "output": "string"
                                             }
-                                        },
+                                        }
                                     }
                                 },
                                 "seSecondaryDataCollection": {
@@ -1223,7 +1223,7 @@ define(
                                     },
                                     "format": {
                                         "output": "string"
-                                    },
+                                    }
 
                                 }
                             }
@@ -1267,9 +1267,9 @@ define(
                                 "confidentialityStatus": {
                                     "cl": StatusConfidenciality,
                                     "selector": {
-                                        "id": "dropdown"
+                                        "id": "dropdown",
+                                        "default": ['F']
                                     },
-
                                     "format": {
                                         "output": "codes"
                                     }

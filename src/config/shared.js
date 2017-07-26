@@ -5693,6 +5693,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "mali_free",
+                        "text": {
+                            "EN": "Mali Codelist",
+                            "FR": "Codelist du Mali"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -9116,6 +9124,22 @@ define(function () {
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "gabon_free",
+                        "text": {
+                            "EN": "Gabon Codelist",
+                            "FR": "Codelist du Gabon"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "mali_free",
+                        "text": {
+                            "EN": "Mali Codelist",
+                            "FR": "Codelist du Mali"
                         },
                         "subject": "freesubject"
                     }

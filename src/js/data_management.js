@@ -68,7 +68,7 @@ define([
             }
         };
 
-        console.log(config.catalog.self);
+        log.warn(config.catalog.self);
 
         log.warn("Data management configuration: ");
         log.warn(config);

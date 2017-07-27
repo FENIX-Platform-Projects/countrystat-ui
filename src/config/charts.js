@@ -81,8 +81,8 @@ define(function () {
         //Haiti HTI
         "HTI": {
             color: '#db514b',
-            percentageOne: 0.30,
-            percentageTwo: 0.70
+            percentageOne: 0.67,
+            percentageTwo: 0.33
         },
         //Kenya KEN
         "KEN": {

@@ -24,8 +24,8 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "fenix-ui-analysis": "^3.0.0-beta.58",
-    "fenix-ui-data-management": "^2.0.0-beta.117",
+    "fenix-ui-analysis": "^3.0.0-beta.72",
+    "fenix-ui-data-management": "^2.0.0-beta.118",
     "jquery": "^3.1.0",
     "progressbar.js": "^1.0.1"
   },
@@ -44,7 +44,7 @@
     "jshint": "^2.9.3",
     "jshint-loader": "^0.8.3",
     "json-loader": "^0.5.4",
-    "karma": "^1.2.0",
+    "karma": "^1.7.1",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.1.1",

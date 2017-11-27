@@ -42,7 +42,11 @@
 
 // CSTAT-43
 [data-role=actions] [data-action] {
-  width: 100px;
+  width: 75px;
 }
 
 
+// CSTAT-145
+div[data-role="courtesy"], div[data-role="box"] div.content-message-img {
+  visibility: hidden;
+}

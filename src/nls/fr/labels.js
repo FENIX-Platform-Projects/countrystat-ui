@@ -130,7 +130,9 @@ define(function () {
         "meMaintenance.seMetadataMaintenance.metadataLastPosted": "Dernière publication des métadonnées",
         "meMaintenance.seMetadataMaintenance.metadataLastUpdate": "Dernière mise à jour des métadonnées",
 
-        missingValues : "Les cellules vides représentent les valeurs manquantes"
+        missingValues : "Les cellules vides représentent les valeurs manquantes",
+        estimatedValues : "Flag \"e\" = valeur estimée",
+        calculatedValues : "Flag \"c\" = valeur estimée"
 
     }
 });

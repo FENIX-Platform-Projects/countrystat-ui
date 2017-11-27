@@ -223,8 +223,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -239,8 +239,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -263,8 +263,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -544,8 +544,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -560,8 +560,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -584,8 +584,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -865,8 +865,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -881,8 +881,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -905,8 +905,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -1187,8 +1187,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -1203,8 +1203,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -1227,8 +1227,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -1508,8 +1508,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -1524,8 +1524,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -1548,8 +1548,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -1681,7 +1681,6 @@ define(function () {
                 },
                 baseFilter: {
                     "dsd.contextSystem": {"enumeration": ["cstat_cmr"]},
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
                 defaultSelectors: ["freeText", "dataDomain", "referenceArea"],
@@ -1830,8 +1829,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -1846,8 +1845,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -1870,8 +1869,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -2003,6 +2002,7 @@ define(function () {
                 },
                 baseFilter: {
                     "dsd.contextSystem": {"enumeration": ["cstat_civ"]},
+
                     "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
                 },
                 defaultSelectors: ["freeText", "dataDomain", "referenceArea"],
@@ -2151,8 +2151,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -2167,8 +2167,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -2191,8 +2191,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -2488,8 +2488,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -2504,8 +2504,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -2528,8 +2528,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -3017,8 +3017,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -3033,8 +3033,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -3057,8 +3057,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -3338,8 +3338,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -3354,8 +3354,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -3378,8 +3378,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -3659,8 +3659,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -3675,8 +3675,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -3699,8 +3699,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -3988,8 +3988,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -4004,8 +4004,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -4028,8 +4028,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -4309,8 +4309,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -4325,8 +4325,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -4349,8 +4349,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -4630,8 +4630,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -4646,8 +4646,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -4670,8 +4670,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -4951,8 +4951,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -4967,8 +4967,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -4991,8 +4991,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -5272,8 +5272,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -5288,8 +5288,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -5312,8 +5312,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -5593,8 +5593,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -5609,8 +5609,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -5633,8 +5633,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -5922,8 +5922,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -5938,8 +5938,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -5962,8 +5962,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -6242,8 +6242,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -6258,8 +6258,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -6282,8 +6282,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -6562,8 +6562,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -6578,8 +6578,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -6602,8 +6602,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -6882,8 +6882,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -6898,8 +6898,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -6922,8 +6922,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -7202,8 +7202,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -7218,8 +7218,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -7242,8 +7242,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -7522,8 +7522,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -7538,8 +7538,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -7562,8 +7562,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -7842,8 +7842,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -7858,8 +7858,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -7882,8 +7882,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -8163,8 +8163,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -8179,8 +8179,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -8203,8 +8203,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -8492,8 +8492,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -8508,8 +8508,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "freesubject"
                     },
@@ -8532,8 +8532,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },
@@ -8605,7 +8605,8 @@ define(function () {
                         selector: {
                             id: 'dropdown',
                             source: [
-                                {value: "cstat_training", label: "CountrySTAT Training"}
+                                {value: "cstat_training", label: "CountrySTAT Training"},
+                                {value: "cstat_uga", label: "CountrySTAT Uganda"}
                             ],
                             default: ["cstat_training"]
                         }
@@ -8818,8 +8819,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Agricultural_Population",
                         "text": {
-                            "EN": "Agricultural",
-                            "FR": "Population agricole"
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
                         },
                         "subject": "freesubject"
                     },
@@ -8834,8 +8835,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Field_Management",
                         "text": {
-                            "EN": "Field Management",
-                            "FR": "Gestion du terrain"
+                            "EN": "Field",
+                            "FR": "Terrain"
                         },
                         "subject": "fieldManagement"
                     },
@@ -8858,8 +8859,8 @@ define(function () {
                     {
                         "value": "CountrySTAT_Residence",
                         "text": {
-                            "EN": "Residence",
-                            "FR": "Résidence"
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
                         },
                         "subject": "freesubject"
                     },

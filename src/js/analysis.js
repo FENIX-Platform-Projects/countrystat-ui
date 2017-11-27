@@ -62,7 +62,7 @@ define([
             { catalog: {
                 pluginRegistry: {freeText:{template:{footer: Lang[opts.lang.toLowerCase()]['freeText.footer']}}},
                 baseFilter: {
-                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]},
+                    "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]}
                 }
             }}
         );
@@ -78,7 +78,17 @@ define([
 
     SearchAndVisualizeSection.prototype._bindEventListeners = function() {
 
-        this.analysis.on("change", function ( args) {
+        this.analysis.on("removed", function (args) {
+            var amount = args.instance.getVisualizationBoxesAmount();
+
+            if (amount === 0) {
+                $(s.MISSING_VALUES).hide();
+            } else {
+                $(s.MISSING_VALUES).show();
+            }
+        })
+
+        this.analysis.on("change", function (args) {
 
             var amount = args.instance.getVisualizationBoxesAmount();
 

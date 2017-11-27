@@ -131,7 +131,9 @@ define(function () {
         "meMaintenance.seMetadataMaintenance.metadataLastPosted": "Metadata last posted",
         "meMaintenance.seMetadataMaintenance.metadataLastUpdate": "Metadata last update",
 
-        missingValues : "Empty cells represent missing values"
+        missingValues : "Empty cells represent missing values",
+        estimatedValues : "Flag \"e\" = estimated value",
+        calculatedValues : "Flag \"c\" = calculated value"
 
 
 

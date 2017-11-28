@@ -8605,8 +8605,7 @@ define(function () {
                         selector: {
                             id: 'dropdown',
                             source: [
-                                {value: "cstat_training", label: "CountrySTAT Training"},
-                                {value: "cstat_uga", label: "CountrySTAT Uganda"}
+                                {value: "cstat_training", label: "CountrySTAT Training"}
                             ],
                             default: ["cstat_training"]
                         }

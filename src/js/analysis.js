@@ -60,7 +60,10 @@ define([
             lang: opts.lang
         }, SC[country],
             { catalog: {
-                pluginRegistry: {freeText:{template:{footer: Lang[opts.lang.toLowerCase()]['freeText.footer']}}},
+                pluginRegistry: {
+                    freeText:{template:{footer: Lang[opts.lang.toLowerCase()]['freeText.footer']}},
+                    contextSystem: {selector: {source : C.cstat_contexts}}
+                },
                 baseFilter: {
                     "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]}
                 }

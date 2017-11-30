@@ -24,8 +24,9 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "fenix-ui-analysis": "^3.0.0-beta.76",
-    "fenix-ui-data-management": "^2.0.0-beta.123",
+    "fenix-ui-analysis": "^3.0.0-beta.78",
+    "fenix-ui-data-management": "^2.0.0-beta.124",
+    "fenix-ui-pivotator-utils": "^1.0.0-beta.7",
     "jquery": "^3.1.0",
     "progressbar.js": "^1.0.1"
   },

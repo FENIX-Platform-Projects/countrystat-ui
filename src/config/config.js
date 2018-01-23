@@ -27,6 +27,7 @@ define(function () {
                 {value: "cstat_gnb", label: "CountrySTAT Guinea-Bissau"},
                 {value: "cstat_hti", label: "CountrySTAT Haiti"},
                 {value: "cstat_ken", label: "CountrySTAT Kenya"},
+                {value: "cstat_lbr", label: "CountrySTAT Liberia"},
                 {value: "cstat_mdg", label: "CountrySTAT Madagascar"},
                 {value: "cstat_mwi", label: "CountrySTAT Malawi"},
                 {value: "cstat_mli", label: "CountrySTAT Mali"},

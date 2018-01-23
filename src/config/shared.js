@@ -5,7 +5,7 @@ define(function () {
     "use strict";
 
     return {
-        // Total of 27 Instances (26+1)
+        // Total of 28 Instances (27+1)
 
         //Afghanistan AFG
         "AFG": {
@@ -62,7 +62,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -383,7 +383,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -704,7 +704,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -1026,7 +1026,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -1347,7 +1347,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -1668,7 +1668,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -1989,7 +1989,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -2251,6 +2251,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "cotedivoire_free",
+                        "text": {
+                            "EN": "Côte d'Ivoire Codelist",
+                            "FR": "Codelist du Côte d'Ivoire"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -2311,7 +2319,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -2856,7 +2864,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -3177,7 +3185,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -3498,7 +3506,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -3827,7 +3835,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -4148,7 +4156,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -4469,7 +4477,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -4735,6 +4743,335 @@ define(function () {
                 ]
             }
         },
+        //Liberia LBR
+        "LBR": {
+            catalog: {
+                pluginRegistry: {
+                    contextSystem: {
+                        selector: {
+                            id: 'dropdown',
+                            source: [
+                                {value: "cstat_lbr", label: "CountrySTAT Liberia"}
+                            ],
+                            default: ["cstat_lbr"]
+                        }
+                    },
+                    dataDomain: {
+                        selector: {
+                            id : "dropdown",
+                            config : {
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                                mode: "multi"
+                            }
+                        },
+                        cl : {
+                            uid:  "CSTAT_Core"
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seCoverage.coverageSectors"
+                        }
+
+                    },
+                    referencePeriod: {
+                        selector: {
+                            id : "dropdown",
+                            config: {
+                                plugins: ["remove_button"], //in combination with mode:"multi" create a "X" button to remove items
+                            },
+                            sort: function (a, b) {
+                                var hash = {  9:1, 6:2, 4:3, 3:4, 14:5, 13:6, 12:7, 11:8, 10:9, 8:10, 7:11, 5:12, 2:13, 1:14 };
+                                return hash[a.value] - hash[b.value];
+                            }
+
+                        },
+                        cl : {
+                            uid: "FAO_Period_cstat",
+                            version: "1.0"
+                        },
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seReferencePopulation.referencePeriod"
+                        }
+                    },
+                    freeText: {
+                        selector : {
+                            id : "input",
+                            type : "livesearch"
+                        },
+                        template : {
+                            footer: ""
+                        },
+                        format : {
+                            output : "freeText",
+                            metadataAttribute: "freetext"
+                        }
+                    }
+                },
+                baseFilter: {
+                    "dsd.contextSystem": {"enumeration": ["cstat_lbr"]},
+                    "meContent.resourceRepresentationType": {"enumeration": ["dataset"]}
+                },
+                defaultSelectors: ["freeText", "dataDomain", "referenceArea"],
+                menuExcludedItems: ["accessibility"],
+                findServiceParams: {
+                    engine: ['cstat','fenix'],
+                    full: true,
+                    order : "meMaintenance.seUpdate.updateDate:desc" //order by last update
+                }
+            },
+            dsd : {
+                MLEditor: {
+                    langs: ["EN", "FR"]
+                },
+                contextSystem:"cstat_lbr",
+                datasources:["D3S"],
+                D3SConnector: { },
+                lang: "EN",
+                columnEditorReader: {
+                    "dimension": [
+                        {
+                            "subject": "item",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "indicator",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ],
+                    "value": [
+                        {
+                            "subject": "value",
+                            "datatypes": [
+                                "number"
+                            ]
+                        }
+                    ],
+                    "other": [
+                        {
+                            "subject": "flag",
+                            "datatypes": [
+                                "code"
+                            ]
+                        },
+                        {
+                            "subject": "um",
+                            "datatypes": [
+                                "code"
+                            ]
+                        }
+                    ]
+                },
+                subjects: [
+                    {
+                        "value": "freesubject",
+                        "text": {
+                            "EN": "Free Subject",
+                            "FR": "Sujet libre"
+                        },
+                        "codelistSubject": "freesubject"
+                    },
+                    {
+                        "value": "item",
+                        "text": {
+                            "EN": "Item",
+                            "FR": "Article"
+                        },
+                        "codelistSubject": "item"
+                    },
+                    {
+                        "value": "indicator",
+                        "text": {
+                            "EN": "Indicator",
+                            "FR": "Indicateur"
+                        },
+                        "codelistSubject": "indicator"
+                    },
+                    {
+                        "value": "time",
+                        "text": {
+                            "EN": "Time",
+                            "FR": "Temps"
+                        }
+                    },
+                    {
+                        "value": "geo",
+                        "text": {
+                            "EN": "Geo",
+                            "FR": "Geo"
+                        },
+                        "codelistSubject": "geo"
+                    },
+                    {
+                        "value": "flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "codelistSubject": "flag"
+                    },
+                    {
+                        "value": "value",
+                        "text": {
+                            "EN": "Value",
+                            "FR": "Valeur"
+                        }
+                    },
+                    {
+                        "value": "um",
+                        "text": {
+                            "EN": "UM",
+                            "FR": "Unité"
+                        },
+                        "codelistSubject": "um"
+                    }
+                ],
+                DSD_EDITOR_CODELISTS: [
+                    {
+                        "value": "GAUL|2014",
+                        "text": {
+                            "EN": "GAUL",
+                            "FR": "GAUL"
+                        },
+                        "subject": "geo"
+                    },
+                    {
+                        "value": "CPC|2.1",
+                        "text": {
+                            "EN": "CPC 2.1",
+                            "FR": "CPC 2.1"
+                        },
+                        "subject": "item"
+                    },
+                    {
+                        "value": "Flag",
+                        "text": {
+                            "EN": "Flag",
+                            "FR": "Flag"
+                        },
+                        "subject": "flag"
+                    },
+                    {
+                        "value": "CountrySTAT_Agricultural_Population",
+                        "text": {
+                            "EN": "Agriculture and Livestock",
+                            "FR": "Agriculture et élevage"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_DAC",
+                        "text": {
+                            "EN": "DAC",
+                            "FR": "DAC"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_Field_Management",
+                        "text": {
+                            "EN": "Field",
+                            "FR": "Terrain"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_Food",
+                        "text": {
+                            "EN": "Food",
+                            "FR": "Alimentaire"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_Gender",
+                        "text": {
+                            "EN": "Gender",
+                            "FR": "Genre"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_Residence",
+                        "text": {
+                            "EN": "Population and Status",
+                            "FR": "Population et statut"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "CountrySTAT_Indicators",
+                        "text": {
+                            "EN": "CountrySTAT Indicators",
+                            "FR": "Indicateurs de CountrySTAT"
+                        },
+                        "subject": "indicator"
+                    },
+                    {
+                        "value": "HS|full",
+                        "text": {
+                            "EN": "HS Full",
+                            "FR": "HS complet"
+                        },
+                        "subject": "item"
+                    },
+                    {
+                        "value": "CountrySTAT_UM",
+                        "text": {
+                            "EN": "CountrySTAT UM",
+                            "FR": "CountrySTAT Unité de mesure"
+                        },
+                        "subject": "um"
+                    },
+                    {
+                        "value": "CountrySTAT_Fishery_products",
+                        "text": {
+                            "EN": "Fishery products",
+                            "FR": "Produits de la pêche"
+                        },
+                        "subject": "item"
+                    },
+                    {
+                        "value": "CountrySTAT_Forest_products",
+                        "text": {
+                            "EN": "Forest products",
+                            "FR": "Produits forestiers"
+                        },
+                        "subject": "item"
+                    },
+                    {
+                        "value": "CountrySTAT_Fishery_products_scientific",
+                        "text": {
+                            "EN": "Fishery scientific products",
+                            "FR": "Produits de la pêche - scientifiques"
+                        },
+                        "subject": "item"
+                    },
+                    {
+                        "value": "Size",
+                        "text": {
+                            "EN": "Size",
+                            "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "liberia_free",
+                        "text": {
+                            "EN": "Liberia Codelist",
+                            "FR": "Codelist du Liberia"
+                        },
+                        "subject": "freesubject"
+                    }
+
+                ]
+            }
+        },
         //Madagascar MDG
         "MDG": {
             catalog: {
@@ -4790,7 +5127,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -5111,7 +5448,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -5432,7 +5769,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -5761,7 +6098,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -6081,7 +6418,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -6401,7 +6738,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -6721,7 +7058,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -7041,7 +7378,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -7361,7 +7698,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -7681,7 +8018,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -8002,7 +8339,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -8323,7 +8660,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -8651,7 +8988,7 @@ define(function () {
                     freeText: {
                         selector : {
                             id : "input",
-                            type : "text"
+                            type : "livesearch"
                         },
                         template : {
                             footer: ""
@@ -9140,6 +9477,22 @@ define(function () {
                         "text": {
                             "EN": "Mali Codelist",
                             "FR": "Codelist du Mali"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "cotedivoire_free",
+                        "text": {
+                            "EN": "Côte d'Ivoire Codelist",
+                            "FR": "Codelist du Côte d'Ivoire"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "liberia_free",
+                        "text": {
+                            "EN": "Liberia Codelist",
+                            "FR": "Codelist du Liberia"
                         },
                         "subject": "freesubject"
                     }

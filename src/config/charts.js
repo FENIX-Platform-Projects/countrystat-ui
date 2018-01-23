@@ -90,6 +90,12 @@ define(function () {
             percentageOne: 0.47,
             percentageTwo: 0.53
         },
+        //Liberia LBR
+        "LBR": {
+            color: '#db514b',
+            percentageOne: 0.28,
+            percentageTwo: 0.72
+        },
         //Madagascar MDG
         "MDG": {
             color: '#db514b',

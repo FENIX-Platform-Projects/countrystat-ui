@@ -24,10 +24,12 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "fenix-ui-analysis": "^3.0.0-beta.78",
-    "fenix-ui-data-management": "^2.0.0-beta.124",
+    "fenix-ui-analysis": "^3.0.0-beta.79",
+    "fenix-ui-catalog": "^2.0.0-beta.47",
+    "fenix-ui-data-management": "^2.0.0-beta.127",
+    "fenix-ui-filter": "^3.0.0-beta.97",
     "fenix-ui-pivotator-utils": "^1.0.0-beta.7",
-    "jquery": "^3.1.0",
+    "jquery": "^3.3.1",
     "progressbar.js": "^1.0.1"
   },
   "devDependencies": {
@@ -49,7 +51,7 @@
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-coverage": "^1.1.1",
-    "karma-firefox-launcher": "^1.0.0",
+    "karma-firefox-launcher": "^1.1.0",
     "karma-mocha": "^1.1.1",
     "karma-webpack": "^1.8.0",
     "mocha": "^3.0.2",

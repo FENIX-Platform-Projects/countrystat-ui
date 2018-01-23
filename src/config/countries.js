@@ -32,6 +32,8 @@ define(function () {
         //Haiti HTI
         hti: '108',
         //Kenya KEN
+        lbr: '144',
+        //Kenya KEN
         ken: '133',
         //Madagascar MDG
         mdg: '150',

@@ -24,17 +24,17 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "fenix-ui-analysis": "^3.0.0-beta.79",
-    "fenix-ui-catalog": "^2.0.0-beta.47",
-    "fenix-ui-data-management": "^2.0.0-beta.127",
-    "fenix-ui-filter": "^3.0.0-beta.97",
+    "fenix-ui-analysis": "^3.0.0-beta.81",
+    "fenix-ui-catalog": "^2.0.0-beta.57",
+    "fenix-ui-data-management": "^2.0.0-beta.132",
+    "fenix-ui-filter": "^3.0.0-beta.98",
     "fenix-ui-pivotator-utils": "^1.0.0-beta.7",
     "jquery": "^3.3.1",
     "progressbar.js": "^1.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "clean-webpack-plugin": "^0.1.10",
+    "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^3.1.3",
     "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "^1.0.1",

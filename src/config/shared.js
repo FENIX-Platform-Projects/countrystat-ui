@@ -2267,7 +2267,35 @@ define(function () {
         //Congo COG
         "COG": {
             catalog: {
+                pagination: false,
+                perPage: 10,
                 pluginRegistry: {
+
+                    referenceArea: {
+
+                        cl : {
+                            uid: "GAUL_ReferenceArea_cstat",
+                            version: "1.0"
+                        },
+
+                        selector : {
+                            id : "dropdown",
+                            hideSummary : true,
+                            config : {
+                                plugins: ['remove_button'],
+                                mode: 'multi'
+                            }
+                        },
+
+                        template : {
+                            hideRemoveButton : false
+                        },
+
+                        format : {
+                            output : "codes",
+                            metadataAttribute: "meContent.seReferencePopulation.referenceArea"
+                        }
+                    },
                     contextSystem: {
                         selector: {
                             id: 'dropdown',
@@ -8937,6 +8965,8 @@ define(function () {
         //Training TRAINING
         "TRAINING": {
             catalog: {
+                pagination: false,
+                perPage: 10,
                 pluginRegistry: {
                     contextSystem: {
                         selector: {

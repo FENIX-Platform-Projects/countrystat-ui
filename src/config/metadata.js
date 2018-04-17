@@ -346,7 +346,8 @@ define(
 
                 "meContent": {
                     "title": "Content",
-                    "description": "This section includes a summary of the content of the resource and the description of the geographical, time and sector coverage.",
+                    "description": "This section includes a summary of t" +
+                    "he content of the resource and the description of the geographical, time and sector coverage.",
                     "selectors": {
                         "keywords": {
                             "selector": {

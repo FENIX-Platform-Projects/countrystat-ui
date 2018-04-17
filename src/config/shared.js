@@ -2125,7 +2125,7 @@ define(function () {
                 ],
                 DSD_EDITOR_CODELISTS: [
                     {
-                        "value": "GAUL|2014",
+                        "value": "GAUL_civ",
                         "text": {
                             "EN": "GAUL",
                             "FR": "GAUL"
@@ -2257,6 +2257,14 @@ define(function () {
                         "text": {
                             "EN": "Côte d'Ivoire Codelist",
                             "FR": "Codelist du Côte d'Ivoire"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "recensement_civ",
+                        "text": {
+                            "EN": "Census",
+                            "FR": "Census"
                         },
                         "subject": "freesubject"
                     }
@@ -8965,8 +8973,6 @@ define(function () {
         //Training TRAINING
         "TRAINING": {
             catalog: {
-                pagination: false,
-                perPage: 10,
                 pluginRegistry: {
                     contextSystem: {
                         selector: {

@@ -8,7 +8,7 @@ define(function () {
         cache : false,
         lang : "EN", //default language
         //forceLang : "FR",
-        country : 'TRAINING',
+        country : 'CIV',
         environment : "production",
         analysisEl : "#fx-analysis-container",
         dataManagementEl : "#data-mng",

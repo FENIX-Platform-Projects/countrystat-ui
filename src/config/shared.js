@@ -2259,14 +2259,6 @@ define(function () {
                             "FR": "Codelist du Côte d'Ivoire"
                         },
                         "subject": "freesubject"
-                    },
-                    {
-                        "value": "recensement_civ",
-                        "text": {
-                            "EN": "Census",
-                            "FR": "Census"
-                        },
-                        "subject": "freesubject"
                     }
 
                 ]

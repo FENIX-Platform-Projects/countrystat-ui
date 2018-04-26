@@ -7667,6 +7667,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "senegal_free",
+                        "text": {
+                            "EN": "Senegal Codelist",
+                            "FR": "Codelist du Senegal"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -9521,6 +9529,14 @@ define(function () {
                         "text": {
                             "EN": "Liberia Codelist",
                             "FR": "Codelist du Liberia"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "senegal_free",
+                        "text": {
+                            "EN": "Senegal Codelist",
+                            "FR": "Codelist du Senegal"
                         },
                         "subject": "freesubject"
                     }

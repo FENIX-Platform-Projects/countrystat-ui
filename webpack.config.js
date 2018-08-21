@@ -27,6 +27,8 @@ module.exports = sections.map(function (section) {
             root: Path.resolve(__dirname),
             alias: {
                 'bootstrap-table': Path.join(__dirname, 'node_modules/bootstrap-table/dist/bootstrap-table.min.js'),
+                // The line below is necessary due to a changes in highchart-exporting package.
+                'highcharts-exporting' : Path.join(__dirname, 'node_modules/highcharts/modules/exporting.js'),
                 handlebars: Path.join(__dirname, 'node_modules/handlebars/dist/handlebars.js'),
                 //"fenix-ui-analysis": Path.join(__dirname, 'node_modules/fenix-ui-analysis/src/js/index.js'),
                 jquery: Path.join(__dirname, 'node_modules/jquery/dist/jquery')

@@ -12,7 +12,7 @@ define(function () {
         environment : "production",
         analysisEl : "#fx-analysis-container",
         dataManagementEl : "#data-mng",
-        cstat_contexts : [,
+        cstat_contexts : [
                 {value: "cstat_afg", label: "CountrySTAT Afghanistan"},
                 {value: "cstat_ago", label: "CountrySTAT Angola"},
                 {value: "cstat_aze", label: "CountrySTAT Azerbaijan"},

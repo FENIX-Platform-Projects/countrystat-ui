@@ -50,3 +50,9 @@
 div[data-role="courtesy"], div[data-role="box"] div.content-message-img {
   visibility: hidden;
 }
+
+// CSTAT-201
+
+.dropdown-menu > li > a {
+  padding: 10px 20px;
+}

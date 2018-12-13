@@ -133,7 +133,8 @@ define(function () {
 
         missingValues : "Empty cells represent missing values",
         estimatedValues : "Flag \"e\" = estimated value",
-        calculatedValues : "Flag \"c\" = calculated value"
+        calculatedValues : "Flag \"c\" = calculated value",
+        noValues : "Flag \"na\" = data not available"
 
 
 

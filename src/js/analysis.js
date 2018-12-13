@@ -67,7 +67,9 @@ define([
                 baseFilter: {
                     "meAccessibility.seConfidentiality.confidentialityStatus" : {codes: [{uid : "CL_CONF_STATUS", version: "1.0", codes: ["F"]}]}
                 }
-            }}
+            },
+                autostart : true
+            }
         );
 
         log.warn("Analysis configuration: ");

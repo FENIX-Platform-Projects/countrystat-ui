@@ -132,7 +132,8 @@ define(function () {
 
         missingValues : "Les cellules vides représentent les valeurs manquantes",
         estimatedValues : "Flag \"e\" = valeur estimée",
-        calculatedValues : "Flag \"c\" = valeur estimée"
+        calculatedValues : "Flag \"c\" = valeur estimée",
+        noValues : "Flag \"na\" = Donnée non existante"
 
     }
 });

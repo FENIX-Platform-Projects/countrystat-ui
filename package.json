@@ -25,9 +25,9 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "fenix-ui-analysis": "^3.0.0-beta.81",
-    "fenix-ui-catalog": "^2.0.0-beta.57",
-    "fenix-ui-data-management": "^2.0.0-beta.134",
-    "fenix-ui-filter": "^3.0.0-beta.98",
+    "fenix-ui-catalog": "^2.0.0-beta.58",
+    "fenix-ui-data-management": "^2.0.0-beta.135",
+    "fenix-ui-filter": "^3.0.0-beta.100",
     "fenix-ui-pivotator-utils": "^1.0.0-beta.7",
     "jquery": "^3.3.1",
     "progressbar.js": "^1.0.1"
@@ -39,7 +39,7 @@
     "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
-    "handlebars": "^4.0.5",
+    "handlebars": "^4.0.12",
     "handlebars-loader": "^1.7.0",
     "html-webpack-plugin": "^2.22.0",
     "image-webpack-loader": "^2.0.0",

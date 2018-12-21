@@ -10159,4 +10159,7 @@ body[data-country='ZZZ'] .country-details h1 {
 div[data-role="courtesy"], div[data-role="box"] div.content-message-img {
   visibility: hidden; }
 
+.dropdown-menu > li > a {
+  padding: 10px 20px; }
+
 /*# sourceMappingURL=countrystat-ui.css.map */

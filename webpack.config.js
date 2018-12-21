@@ -31,6 +31,7 @@ module.exports = sections.map(function (section) {
                 'highcharts-exporting' : Path.join(__dirname, 'node_modules/highcharts/modules/exporting.js'),
                 handlebars: Path.join(__dirname, 'node_modules/handlebars/dist/handlebars.js'),
                 "fenix-ui-analysis": Path.join(__dirname, 'node_modules/fenix-ui-analysis/src/js/index.js'),
+                "fenix-ui-catalog": Path.join(__dirname, 'node_modules/fenix-ui-catalog/src/js/index.js'),
                 jquery: Path.join(__dirname, 'node_modules/jquery/dist/jquery')
 
             }

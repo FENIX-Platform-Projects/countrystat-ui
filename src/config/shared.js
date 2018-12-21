@@ -323,6 +323,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "afghanistan_free",
+                        "text": {
+                            "EN": "Afghanistan Codelist",
+                            "FR": "Codelist du Afghanistan"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -644,7 +652,15 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
-                    }
+                    },
+                    {
+                        "value": "angola_free",
+                        "text": {
+                            "EN": "Angola Codelist",
+                            "FR": "Codelist du Angola"
+                        },
+                        "subject": "freesubject"
+                    },
 
                 ]
             }
@@ -963,6 +979,14 @@ define(function () {
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "azerbaijan_free",
+                        "text": {
+                            "EN": "Azerbaijan Codelist",
+                            "FR": "Codelist du Azerbaijan"
                         },
                         "subject": "freesubject"
                     }
@@ -1287,6 +1311,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "benin_free",
+                        "text": {
+                            "EN": "Benin Codelist",
+                            "FR": "Codelist du Benin"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -1608,6 +1640,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "burkina_free",
+                        "text": {
+                            "EN": "Burkina Faso Codelist",
+                            "FR": "Codelist du Burkina Faso"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -1927,6 +1967,14 @@ define(function () {
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "cameroun_free",
+                        "text": {
+                            "EN": "Cameroun Codelist",
+                            "FR": "Codelist du Cameroun"
                         },
                         "subject": "freesubject"
                     }
@@ -3153,6 +3201,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "ethiopia_free",
+                        "text": {
+                            "EN": "Ethiopia Codelist",
+                            "FR": "Codelist du Ethiopian"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -3472,6 +3528,14 @@ define(function () {
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "ghana_free",
+                        "text": {
+                            "EN": "Ghana Codelist",
+                            "FR": "Codelist du Ghana"
                         },
                         "subject": "freesubject"
                     }
@@ -4124,6 +4188,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "guinebissau_free",
+                        "text": {
+                            "EN": "Guinea Bissau Codelist",
+                            "FR": "Codelist du Guinea Bissau"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -4445,6 +4517,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "haiti_free",
+                        "text": {
+                            "EN": "Haiti Codelist",
+                            "FR": "Codelist du Haiti"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -4764,6 +4844,14 @@ define(function () {
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "kenya_free",
+                        "text": {
+                            "EN": "Kenya Codelist",
+                            "FR": "Codelist du Kenya"
                         },
                         "subject": "freesubject"
                     }
@@ -5416,6 +5504,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "madagascar_free",
+                        "text": {
+                            "EN": "Madagascar Codelist",
+                            "FR": "Codelist du Madagascar"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -5735,6 +5831,14 @@ define(function () {
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "malawi_free",
+                        "text": {
+                            "EN": "Malawi Codelist",
+                            "FR": "Codelist du Malawi"
                         },
                         "subject": "freesubject"
                     }
@@ -6707,6 +6811,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "niger_free",
+                        "text": {
+                            "EN": "Niger Codelist",
+                            "FR": "Codelist du Niger"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -7027,6 +7139,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "nigeria_free",
+                        "text": {
+                            "EN": "Nigeria Codelist",
+                            "FR": "Codelist du Nigeria"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -7345,6 +7465,14 @@ define(function () {
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "rwanda_free",
+                        "text": {
+                            "EN": "Rwanda Codelist",
+                            "FR": "Codelist du Rwanda"
                         },
                         "subject": "freesubject"
                     }
@@ -7995,6 +8123,14 @@ define(function () {
                             "FR": "Taille"
                         },
                         "subject": "freesubject"
+                    },
+                    {
+                        "value": "tanzania_free",
+                        "text": {
+                            "EN": "Tanzania Codelist",
+                            "FR": "Codelist du Tanzania"
+                        },
+                        "subject": "freesubject"
                     }
 
                 ]
@@ -8313,6 +8449,14 @@ define(function () {
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "togo_free",
+                        "text": {
+                            "EN": "Togo Codelist",
+                            "FR": "Codelist du Togo"
                         },
                         "subject": "freesubject"
                     }
@@ -8634,6 +8778,14 @@ define(function () {
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "uganda_free",
+                        "text": {
+                            "EN": "Uganda Codelist",
+                            "FR": "Codelist du Uganda"
                         },
                         "subject": "freesubject"
                     }
@@ -8963,6 +9115,14 @@ define(function () {
                         "text": {
                             "EN": "Size",
                             "FR": "Taille"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "zambia_free",
+                        "text": {
+                            "EN": "Zambia Codelist",
+                            "FR": "Codelist du Zambia"
                         },
                         "subject": "freesubject"
                     }
@@ -9501,10 +9661,114 @@ define(function () {
                         "subject": "freesubject"
                     },
                     {
-                        "value": "gabon_free",
+                        "value": "afghanistan_free",
                         "text": {
-                            "EN": "Gabon Codelist",
-                            "FR": "Codelist du Gabon"
+                            "EN": "Afghanistan Codelist",
+                            "FR": "Codelist du Afghanistan"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "angola_free",
+                        "text": {
+                            "EN": "Angola Codelist",
+                            "FR": "Codelist du Angola"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "azerbaijan_free",
+                        "text": {
+                            "EN": "Azerbaijan Codelist",
+                            "FR": "Codelist du Azerbaijan"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "azerbaijan_free",
+                        "text": {
+                            "EN": "Azerbaijan Codelist",
+                            "FR": "Codelist du Azerbaijan"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "benin_free",
+                        "text": {
+                            "EN": "Benin Codelist",
+                            "FR": "Codelist du Benin"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "bhutan_free",
+                        "text": {
+                            "EN": "Bhutan Codelist",
+                            "FR": "Codelist du Bhutan"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "burkina_free",
+                        "text": {
+                            "EN": "Burkina Faso Codelist",
+                            "FR": "Codelist du Burkina Faso"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "burundi_free",
+                        "text": {
+                            "EN": "Burundi Codelist",
+                            "FR": "Codelist du Burundi"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "cameroun_free",
+                        "text": {
+                            "EN": "Cameroun Codelist",
+                            "FR": "Codelist du Cameroun"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "ethiopia_free",
+                        "text": {
+                            "EN": "Ethiopia Codelist",
+                            "FR": "Codelist du Ethiopian"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "gambia_free",
+                        "text": {
+                            "EN": "Gambia Codelist",
+                            "FR": "Codelist du Gambia"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "ghana_free",
+                        "text": {
+                            "EN": "Ghana Codelist",
+                            "FR": "Codelist du Ghana"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "guinebissau_free",
+                        "text": {
+                            "EN": "Guinea Bissau Codelist",
+                            "FR": "Codelist du Guinea Bissau"
+                        },
+                        "subject": "freesubject"
+                    },
+                    {
+                        "value": "haiti_free",
+                        "text": {
+                            "EN": "Haiti Codelist",
+                            "FR": "Codelist du Haiti"
                         },
                         "subject": "freesubject"
                     },
